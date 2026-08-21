@@ -15,6 +15,7 @@ This private archive separates normal Git content from large GitHub Release asse
 | Asset family | Content | Restore location |
 |---|---|---|
 | `RegionSuff-project-history.tar.gz` | Full RegionSuff experiment, paper-design, and manuscript-build history | research workspace root |
+| `RegionSuff-legacy-local-materials.tar.gz` | Legacy render/audit workspaces and early editable Figure 1 materials retained outside the main history bundle | research workspace root |
 | `RegionSuff-model-weights.tar.gz` | Frozen RetinaRadar and other locally retained model assets | `models/` |
 | `MMRDR.zip.001` … `MMRDR.zip.009` | Split MMRDR source archive | `datasets/MMRDR_figshare/parts/` |
 | `UWF_DR_1630-source.zip` | UWF-DR source archive | `datasets/UWF_DR_1630/` |

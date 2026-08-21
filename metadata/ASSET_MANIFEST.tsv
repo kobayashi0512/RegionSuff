@@ -6,6 +6,7 @@ data	Disease_Grading.zip	7hao/datasets/IDRiD_Zenodo/Disease_Grading.zip	21240512
 data	RFMiD2_0.zip	7hao/datasets/RFMiD2_0.zip	63658404	f979241706e334e1db1a56635c2d0c0e08ecdcc44a2b19cd7b614a133ea00f74
 weight	RegionSuff-model-weights.tar.gz	repository/archives/RegionSuff-model-weights.tar.gz	824484687	8e7e6de70be950446566ed9468cad111e925a3db6c582f05f9aa0f317d5ccf33
 archive	RegionSuff-project-history.tar.gz	repository/archives/RegionSuff-project-history.tar.gz	1409740732	0fb3ef3d24d03f2c3c2809b248eca9d25eb67fd5a51b7f667dedddea6f0671a1
+archive	RegionSuff-legacy-local-materials.tar.gz	7hao/docx_edit_2_9; 7hao/regionsuff_3_2_audit; legacy editable Figure 1 assets	42476939	b3b954ae6e1240b11d12131459d0bfbf14c9fe49d9886ed5780ec03b8547467b
 data	MMRDR.zip.001	7hao/datasets/MMRDR_figshare/parts/MMRDR.zip.001	2097152000	916788e53baf24491798ff8be2175437129e043a5dc4e28d0e23056d8eaf282a
 data	MMRDR.zip.002	7hao/datasets/MMRDR_figshare/parts/MMRDR.zip.002	2097152000	9233740fb69cd5775bfbf084bc50eee2e9c557fcd556078eb18d3c77e47ed5e4
 data	MMRDR.zip.003	7hao/datasets/MMRDR_figshare/parts/MMRDR.zip.003	2097152000	5c4f52f332d9b412ed17cb10d23032fe88c58ac37a9e42040ec135b9817836bd
