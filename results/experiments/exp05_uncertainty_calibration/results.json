@@ -1,0 +1,118 @@
+{
+  "risk_head": {
+    "n": 390,
+    "positive_rate": 0.15128205128205127,
+    "auroc": 0.7488862716984996,
+    "auroc_95ci": [
+      0.6830497007032095,
+      0.8137002133207057
+    ],
+    "brier": 0.11449363310085503,
+    "brier_95ci": [
+      0.09458981387894233,
+      0.13718432275885203
+    ],
+    "ece_10bin": 0.04395719637383739,
+    "ece_95ci": [
+      0.03204776314491721,
+      0.0832365299024896
+    ]
+  },
+  "view_fraction_bootstrap": {
+    "0.35": {
+      "n": 390,
+      "accuracy": 0.6384615384615384,
+      "accuracy_95ci": [
+        0.5897435897435898,
+        0.6846153846153846
+      ],
+      "underestimate_rate": 0.17435897435897435,
+      "underestimate_rate_95ci": [
+        0.13846153846153847,
+        0.2128205128205128
+      ]
+    },
+    "0.45": {
+      "n": 390,
+      "accuracy": 0.6307692307692307,
+      "accuracy_95ci": [
+        0.584551282051282,
+        0.6794871794871795
+      ],
+      "underestimate_rate": 0.15897435897435896,
+      "underestimate_rate_95ci": [
+        0.12307692307692308,
+        0.19743589743589743
+      ]
+    },
+    "0.55": {
+      "n": 390,
+      "accuracy": 0.6230769230769231,
+      "accuracy_95ci": [
+        0.5743589743589743,
+        0.6717948717948717
+      ],
+      "underestimate_rate": 0.15128205128205127,
+      "underestimate_rate_95ci": [
+        0.11538461538461539,
+        0.18717948717948718
+      ]
+    },
+    "0.65": {
+      "n": 390,
+      "accuracy": 0.6153846153846154,
+      "accuracy_95ci": [
+        0.5692307692307692,
+        0.6641025641025641
+      ],
+      "underestimate_rate": 0.14615384615384616,
+      "underestimate_rate_95ci": [
+        0.11282051282051282,
+        0.18205128205128204
+      ]
+    },
+    "0.75": {
+      "n": 390,
+      "accuracy": 0.6102564102564103,
+      "accuracy_95ci": [
+        0.5615384615384615,
+        0.658974358974359
+      ],
+      "underestimate_rate": 0.13846153846153847,
+      "underestimate_rate_95ci": [
+        0.10512820512820513,
+        0.17435897435897435
+      ]
+    },
+    "0.9": {
+      "n": 390,
+      "accuracy": 0.6051282051282051,
+      "accuracy_95ci": [
+        0.5564102564102564,
+        0.6564102564102564
+      ],
+      "underestimate_rate": 0.15128205128205127,
+      "underestimate_rate_95ci": [
+        0.11538461538461539,
+        0.18717948717948718
+      ]
+    }
+  },
+  "paired_difference_0.90_minus_0.35": {
+    "accuracy_difference": -0.033333333333333326,
+    "accuracy_difference_95ci": [
+      -0.08461538461538454,
+      0.02051282051282055
+    ],
+    "underestimate_rate_difference": -0.023076923076923078,
+    "underestimate_rate_difference_95ci": [
+      -0.05641025641025643,
+      0.01282051282051283
+    ]
+  },
+  "notes": [
+    "CIs are nonparametric bootstrap intervals on the existing patient-level test split.",
+    "The risk head score was trained on the training split and evaluated on held-out test predictions.",
+    "This quantifies uncertainty; it does not replace external clinical validation."
+  ]
+}

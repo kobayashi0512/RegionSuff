@@ -1,0 +1,1491 @@
+{
+  "grid": "3x3 frozen-region features on pixel-masked inputs",
+  "n_seeds": 5,
+  "rows": [
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.35",
+      "shape": "rect",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.4897435897435897,
+      "macro_f1": 0.3839748635731059,
+      "severity_mae": 0.7410256410256411,
+      "underestimation_rate": 0.49743589743589745
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.35",
+      "shape": "rect",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6871794871794872,
+      "macro_f1": 0.6934346451543462,
+      "severity_mae": 0.32051282051282054,
+      "underestimation_rate": 0.14615384615384616
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.35",
+      "shape": "rect",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.6871794871794872,
+      "macro_f1": 0.6767022451232978,
+      "severity_mae": 0.4205128205128205,
+      "underestimation_rate": 0.2743589743589744
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.35",
+      "shape": "rect",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.6974358974358974,
+      "macro_f1": 0.6830778595739013,
+      "severity_mae": 0.34615384615384615,
+      "underestimation_rate": 0.2282051282051282
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.35",
+      "shape": "rect",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7743589743589744,
+      "macro_f1": 0.7778716166296414,
+      "severity_mae": 0.24102564102564103,
+      "underestimation_rate": 0.11794871794871795
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.45",
+      "shape": "rect",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6538461538461539,
+      "macro_f1": 0.6518783378511886,
+      "severity_mae": 0.35384615384615387,
+      "underestimation_rate": 0.07692307692307693
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.45",
+      "shape": "rect",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6307692307692307,
+      "macro_f1": 0.6277785561211517,
+      "severity_mae": 0.4282051282051282,
+      "underestimation_rate": 0.06923076923076923
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.45",
+      "shape": "rect",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7666666666666667,
+      "macro_f1": 0.767576796885625,
+      "severity_mae": 0.2512820512820513,
+      "underestimation_rate": 0.10512820512820513
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.45",
+      "shape": "rect",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7025641025641025,
+      "macro_f1": 0.7083745741911432,
+      "severity_mae": 0.3076923076923077,
+      "underestimation_rate": 0.11025641025641025
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.45",
+      "shape": "rect",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7205128205128205,
+      "macro_f1": 0.7263519866947266,
+      "severity_mae": 0.28717948717948716,
+      "underestimation_rate": 0.11025641025641025
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6282051282051282,
+      "macro_f1": 0.6063353723452245,
+      "severity_mae": 0.40512820512820513,
+      "underestimation_rate": 0.035897435897435895
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.5820512820512821,
+      "macro_f1": 0.5681159420289855,
+      "severity_mae": 0.5333333333333333,
+      "underestimation_rate": 0.028205128205128206
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7846153846153846,
+      "macro_f1": 0.7847566167944019,
+      "severity_mae": 0.23846153846153847,
+      "underestimation_rate": 0.05641025641025641
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.6974358974358974,
+      "macro_f1": 0.6928333116686165,
+      "severity_mae": 0.3282051282051282,
+      "underestimation_rate": 0.05384615384615385
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.735897435897436,
+      "macro_f1": 0.7384100332672329,
+      "severity_mae": 0.27692307692307694,
+      "underestimation_rate": 0.07435897435897436
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.65",
+      "shape": "rect",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6871794871794872,
+      "macro_f1": 0.6784697235935626,
+      "severity_mae": 0.33589743589743587,
+      "underestimation_rate": 0.04358974358974359
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.65",
+      "shape": "rect",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6692307692307692,
+      "macro_f1": 0.666821826883587,
+      "severity_mae": 0.40512820512820513,
+      "underestimation_rate": 0.038461538461538464
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.65",
+      "shape": "rect",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.782051282051282,
+      "macro_f1": 0.7836088409400608,
+      "severity_mae": 0.2358974358974359,
+      "underestimation_rate": 0.05641025641025641
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.65",
+      "shape": "rect",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7487179487179487,
+      "macro_f1": 0.7483734492594354,
+      "severity_mae": 0.27692307692307694,
+      "underestimation_rate": 0.04871794871794872
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.65",
+      "shape": "rect",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7256410256410256,
+      "macro_f1": 0.7257252784507188,
+      "severity_mae": 0.28974358974358977,
+      "underestimation_rate": 0.05897435897435897
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.75",
+      "shape": "rect",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.7435897435897436,
+      "macro_f1": 0.7447855064301135,
+      "severity_mae": 0.28205128205128205,
+      "underestimation_rate": 0.05641025641025641
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.75",
+      "shape": "rect",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.7307692307692307,
+      "macro_f1": 0.7315036148265047,
+      "severity_mae": 0.33589743589743587,
+      "underestimation_rate": 0.04358974358974359
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.75",
+      "shape": "rect",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7871794871794872,
+      "macro_f1": 0.7905288826801952,
+      "severity_mae": 0.2358974358974359,
+      "underestimation_rate": 0.05897435897435897
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.75",
+      "shape": "rect",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7666666666666667,
+      "macro_f1": 0.7687054253496384,
+      "severity_mae": 0.26666666666666666,
+      "underestimation_rate": 0.04871794871794872
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.75",
+      "shape": "rect",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7410256410256411,
+      "macro_f1": 0.7439429794906468,
+      "severity_mae": 0.28205128205128205,
+      "underestimation_rate": 0.07692307692307693
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.90",
+      "shape": "rect",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.8205128205128205,
+      "macro_f1": 0.8227996342253842,
+      "severity_mae": 0.18974358974358974,
+      "underestimation_rate": 0.0641025641025641
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.90",
+      "shape": "rect",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.7846153846153846,
+      "macro_f1": 0.7875716960385152,
+      "severity_mae": 0.22564102564102564,
+      "underestimation_rate": 0.08974358974358974
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.90",
+      "shape": "rect",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.8349493643611291,
+      "severity_mae": 0.17692307692307693,
+      "underestimation_rate": 0.07179487179487179
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.90",
+      "shape": "rect",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.8282051282051283,
+      "macro_f1": 0.8305723721759194,
+      "severity_mae": 0.1794871794871795,
+      "underestimation_rate": 0.06923076923076923
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.90",
+      "shape": "rect",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7897435897435897,
+      "macro_f1": 0.7918830726735139,
+      "severity_mae": 0.2153846153846154,
+      "underestimation_rate": 0.08974358974358974
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6282051282051282,
+      "macro_f1": 0.6063353723452245,
+      "severity_mae": 0.40512820512820513,
+      "underestimation_rate": 0.035897435897435895
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.5820512820512821,
+      "macro_f1": 0.5681159420289855,
+      "severity_mae": 0.5333333333333333,
+      "underestimation_rate": 0.028205128205128206
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7846153846153846,
+      "macro_f1": 0.7847566167944019,
+      "severity_mae": 0.23846153846153847,
+      "underestimation_rate": 0.05641025641025641
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.6974358974358974,
+      "macro_f1": 0.6928333116686165,
+      "severity_mae": 0.3282051282051282,
+      "underestimation_rate": 0.05384615384615385
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_center_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.735897435897436,
+      "macro_f1": 0.7384100332672329,
+      "severity_mae": 0.27692307692307694,
+      "underestimation_rate": 0.07435897435897436
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_left_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": -1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6615384615384615,
+      "macro_f1": 0.6450920136631721,
+      "severity_mae": 0.3769230769230769,
+      "underestimation_rate": 0.23076923076923078
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_left_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": -1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6282051282051282,
+      "macro_f1": 0.6284026769105319,
+      "severity_mae": 0.4564102564102564,
+      "underestimation_rate": 0.06666666666666667
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_left_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": -1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7410256410256411,
+      "macro_f1": 0.743515660369593,
+      "severity_mae": 0.28974358974358977,
+      "underestimation_rate": 0.08974358974358974
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_left_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": -1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.6948717948717948,
+      "macro_f1": 0.697190894084585,
+      "severity_mae": 0.3487179487179487,
+      "underestimation_rate": 0.07692307692307693
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_left_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": -1,
+      "dy": 0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.658974358974359,
+      "macro_f1": 0.6571738790325105,
+      "severity_mae": 0.41025641025641024,
+      "underestimation_rate": 0.07692307692307693
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_right_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6051282051282051,
+      "macro_f1": 0.5900777846479204,
+      "severity_mae": 0.4076923076923077,
+      "underestimation_rate": 0.2230769230769231
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_right_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6564102564102564,
+      "macro_f1": 0.6506273086425173,
+      "severity_mae": 0.3769230769230769,
+      "underestimation_rate": 0.06153846153846154
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_right_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.735897435897436,
+      "macro_f1": 0.7385820829460191,
+      "severity_mae": 0.2846153846153846,
+      "underestimation_rate": 0.07948717948717948
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_right_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 1,
+      "dy": 0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.6846153846153846,
+      "macro_f1": 0.6842199895903979,
+      "severity_mae": 0.32051282051282054,
+      "underestimation_rate": 0.08974358974358974
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_right_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 1,
+      "dy": 0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7076923076923077,
+      "macro_f1": 0.707426250988442,
+      "severity_mae": 0.3076923076923077,
+      "underestimation_rate": 0.07179487179487179
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_up_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": -1,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.6025641025641025,
+      "macro_f1": 0.5785507020859119,
+      "severity_mae": 0.4282051282051282,
+      "underestimation_rate": 0.24871794871794872
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_up_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": -1,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6153846153846154,
+      "macro_f1": 0.6064952989785711,
+      "severity_mae": 0.44358974358974357,
+      "underestimation_rate": 0.06923076923076923
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_up_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": -1,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7769230769230769,
+      "macro_f1": 0.7788631109877518,
+      "severity_mae": 0.2512820512820513,
+      "underestimation_rate": 0.10512820512820513
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_up_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": -1,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7153846153846154,
+      "macro_f1": 0.7167156474827481,
+      "severity_mae": 0.30256410256410254,
+      "underestimation_rate": 0.07179487179487179
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_up_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": -1,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.6948717948717948,
+      "macro_f1": 0.694725417995384,
+      "severity_mae": 0.3333333333333333,
+      "underestimation_rate": 0.07435897435897436
+    },
+    {
+      "seed": 0,
+      "scenario": "rect_down_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 1,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.5923076923076923,
+      "macro_f1": 0.5479388903332513,
+      "severity_mae": 0.4717948717948718,
+      "underestimation_rate": 0.31794871794871793
+    },
+    {
+      "seed": 1,
+      "scenario": "rect_down_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 1,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6435897435897436,
+      "macro_f1": 0.6410974328202936,
+      "severity_mae": 0.4153846153846154,
+      "underestimation_rate": 0.05897435897435897
+    },
+    {
+      "seed": 2,
+      "scenario": "rect_down_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 1,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7333333333333333,
+      "macro_f1": 0.7324313173329408,
+      "severity_mae": 0.3076923076923077,
+      "underestimation_rate": 0.17435897435897435
+    },
+    {
+      "seed": 3,
+      "scenario": "rect_down_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 1,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.6974358974358974,
+      "macro_f1": 0.7022134819184966,
+      "severity_mae": 0.32051282051282054,
+      "underestimation_rate": 0.14615384615384616
+    },
+    {
+      "seed": 4,
+      "scenario": "rect_down_0.55",
+      "shape": "rect",
+      "linear_fraction": 0.55,
+      "dx": 0,
+      "dy": 1,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.735897435897436,
+      "macro_f1": 0.7401902194684026,
+      "severity_mae": 0.28205128205128205,
+      "underestimation_rate": 0.09743589743589744
+    },
+    {
+      "seed": 0,
+      "scenario": "circle_center_0.35",
+      "shape": "circle",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.5333333333333333,
+      "macro_f1": 0.4228790977257235,
+      "severity_mae": 0.6,
+      "underestimation_rate": 0.4128205128205128
+    },
+    {
+      "seed": 1,
+      "scenario": "circle_center_0.35",
+      "shape": "circle",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6512820512820513,
+      "macro_f1": 0.6531085228527753,
+      "severity_mae": 0.35384615384615387,
+      "underestimation_rate": 0.1794871794871795
+    },
+    {
+      "seed": 2,
+      "scenario": "circle_center_0.35",
+      "shape": "circle",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.6,
+      "macro_f1": 0.582810529542161,
+      "severity_mae": 0.5256410256410257,
+      "underestimation_rate": 0.37948717948717947
+    },
+    {
+      "seed": 3,
+      "scenario": "circle_center_0.35",
+      "shape": "circle",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5375255584405911,
+      "severity_mae": 0.45384615384615384,
+      "underestimation_rate": 0.2794871794871795
+    },
+    {
+      "seed": 4,
+      "scenario": "circle_center_0.35",
+      "shape": "circle",
+      "linear_fraction": 0.35,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.717948717948718,
+      "macro_f1": 0.722084663920643,
+      "severity_mae": 0.30256410256410254,
+      "underestimation_rate": 0.17692307692307693
+    },
+    {
+      "seed": 0,
+      "scenario": "circle_center_0.45",
+      "shape": "circle",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.5230769230769231,
+      "macro_f1": 0.433452380952381,
+      "severity_mae": 0.5384615384615384,
+      "underestimation_rate": 0.35384615384615387
+    },
+    {
+      "seed": 1,
+      "scenario": "circle_center_0.45",
+      "shape": "circle",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6820512820512821,
+      "macro_f1": 0.6824471542028795,
+      "severity_mae": 0.3487179487179487,
+      "underestimation_rate": 0.09230769230769231
+    },
+    {
+      "seed": 2,
+      "scenario": "circle_center_0.45",
+      "shape": "circle",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.7717948717948718,
+      "macro_f1": 0.7712016130832723,
+      "severity_mae": 0.26153846153846155,
+      "underestimation_rate": 0.14871794871794872
+    },
+    {
+      "seed": 3,
+      "scenario": "circle_center_0.45",
+      "shape": "circle",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.676923076923077,
+      "macro_f1": 0.6820225932783877,
+      "severity_mae": 0.34102564102564104,
+      "underestimation_rate": 0.16923076923076924
+    },
+    {
+      "seed": 4,
+      "scenario": "circle_center_0.45",
+      "shape": "circle",
+      "linear_fraction": 0.45,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7512820512820513,
+      "macro_f1": 0.7549220051491746,
+      "severity_mae": 0.26153846153846155,
+      "underestimation_rate": 0.11538461538461539
+    },
+    {
+      "seed": 0,
+      "scenario": "circle_center_0.55",
+      "shape": "circle",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.7230769230769231,
+      "macro_f1": 0.7238524838345072,
+      "severity_mae": 0.2923076923076923,
+      "underestimation_rate": 0.05384615384615385
+    },
+    {
+      "seed": 1,
+      "scenario": "circle_center_0.55",
+      "shape": "circle",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6871794871794872,
+      "macro_f1": 0.6873365207407373,
+      "severity_mae": 0.36923076923076925,
+      "underestimation_rate": 0.05641025641025641
+    },
+    {
+      "seed": 2,
+      "scenario": "circle_center_0.55",
+      "shape": "circle",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.8051282051282052,
+      "macro_f1": 0.8062942947876227,
+      "severity_mae": 0.2076923076923077,
+      "underestimation_rate": 0.05897435897435897
+    },
+    {
+      "seed": 3,
+      "scenario": "circle_center_0.55",
+      "shape": "circle",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7692307692307693,
+      "macro_f1": 0.7726368111017022,
+      "severity_mae": 0.24615384615384617,
+      "underestimation_rate": 0.0641025641025641
+    },
+    {
+      "seed": 4,
+      "scenario": "circle_center_0.55",
+      "shape": "circle",
+      "linear_fraction": 0.55,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7564102564102564,
+      "macro_f1": 0.7599068056150254,
+      "severity_mae": 0.25384615384615383,
+      "underestimation_rate": 0.07948717948717948
+    },
+    {
+      "seed": 0,
+      "scenario": "circle_center_0.65",
+      "shape": "circle",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.676923076923077,
+      "macro_f1": 0.6661959629822659,
+      "severity_mae": 0.3435897435897436,
+      "underestimation_rate": 0.0641025641025641
+    },
+    {
+      "seed": 1,
+      "scenario": "circle_center_0.65",
+      "shape": "circle",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.6461538461538462,
+      "macro_f1": 0.6311188811188811,
+      "severity_mae": 0.4461538461538462,
+      "underestimation_rate": 0.041025641025641026
+    },
+    {
+      "seed": 2,
+      "scenario": "circle_center_0.65",
+      "shape": "circle",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.8128205128205128,
+      "macro_f1": 0.81536052405133,
+      "severity_mae": 0.19487179487179487,
+      "underestimation_rate": 0.0641025641025641
+    },
+    {
+      "seed": 3,
+      "scenario": "circle_center_0.65",
+      "shape": "circle",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7282051282051282,
+      "macro_f1": 0.729309642239072,
+      "severity_mae": 0.28974358974358977,
+      "underestimation_rate": 0.0641025641025641
+    },
+    {
+      "seed": 4,
+      "scenario": "circle_center_0.65",
+      "shape": "circle",
+      "linear_fraction": 0.65,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7794871794871795,
+      "macro_f1": 0.7826293209264964,
+      "severity_mae": 0.23333333333333334,
+      "underestimation_rate": 0.07692307692307693
+    },
+    {
+      "seed": 0,
+      "scenario": "circle_center_0.75",
+      "shape": "circle",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.7410256410256411,
+      "macro_f1": 0.7416554259331831,
+      "severity_mae": 0.27692307692307694,
+      "underestimation_rate": 0.06153846153846154
+    },
+    {
+      "seed": 1,
+      "scenario": "circle_center_0.75",
+      "shape": "circle",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.735897435897436,
+      "macro_f1": 0.7387844402727678,
+      "severity_mae": 0.3153846153846154,
+      "underestimation_rate": 0.0641025641025641
+    },
+    {
+      "seed": 2,
+      "scenario": "circle_center_0.75",
+      "shape": "circle",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.8205128205128205,
+      "macro_f1": 0.8225873818538596,
+      "severity_mae": 0.18974358974358974,
+      "underestimation_rate": 0.06923076923076923
+    },
+    {
+      "seed": 3,
+      "scenario": "circle_center_0.75",
+      "shape": "circle",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.7846153846153846,
+      "macro_f1": 0.7887946695261592,
+      "severity_mae": 0.2282051282051282,
+      "underestimation_rate": 0.07179487179487179
+    },
+    {
+      "seed": 4,
+      "scenario": "circle_center_0.75",
+      "shape": "circle",
+      "linear_fraction": 0.75,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7923076923076923,
+      "macro_f1": 0.7940385097413696,
+      "severity_mae": 0.2153846153846154,
+      "underestimation_rate": 0.07948717948717948
+    },
+    {
+      "seed": 0,
+      "scenario": "circle_center_0.90",
+      "shape": "circle",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7578849652516272,
+      "epochs": 47,
+      "accuracy": 0.8205128205128205,
+      "macro_f1": 0.8218772783610381,
+      "severity_mae": 0.18974358974358974,
+      "underestimation_rate": 0.07948717948717948
+    },
+    {
+      "seed": 1,
+      "scenario": "circle_center_0.90",
+      "shape": "circle",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7608917234678296,
+      "epochs": 68,
+      "accuracy": 0.8128205128205128,
+      "macro_f1": 0.8138173840697082,
+      "severity_mae": 0.2,
+      "underestimation_rate": 0.08974358974358974
+    },
+    {
+      "seed": 2,
+      "scenario": "circle_center_0.90",
+      "shape": "circle",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7386532460424086,
+      "epochs": 49,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.8345055834548689,
+      "severity_mae": 0.1717948717948718,
+      "underestimation_rate": 0.08461538461538462
+    },
+    {
+      "seed": 3,
+      "scenario": "circle_center_0.90",
+      "shape": "circle",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.7592964047848154,
+      "epochs": 52,
+      "accuracy": 0.8307692307692308,
+      "macro_f1": 0.8323805341196646,
+      "severity_mae": 0.18205128205128204,
+      "underestimation_rate": 0.07435897435897436
+    },
+    {
+      "seed": 4,
+      "scenario": "circle_center_0.90",
+      "shape": "circle",
+      "linear_fraction": 0.9,
+      "dx": 0.0,
+      "dy": 0.0,
+      "best_val_macro_f1": 0.76846533495698,
+      "epochs": 81,
+      "accuracy": 0.7897435897435897,
+      "macro_f1": 0.7899583934066694,
+      "severity_mae": 0.21794871794871795,
+      "underestimation_rate": 0.08974358974358974
+    }
+  ],
+  "aggregate": {
+    "rect_center_0.35": {
+      "accuracy": {
+        "mean": 0.6671794871794872,
+        "std": 0.10569577869118565
+      },
+      "macro_f1": {
+        "mean": 0.6430122460108585,
+        "std": 0.15047433594276233
+      },
+      "severity_mae": {
+        "mean": 0.41384615384615386,
+        "std": 0.19381121649613242
+      },
+      "underestimation_rate": {
+        "mean": 0.2528205128205129,
+        "std": 0.15039505286532612
+      }
+    },
+    "rect_center_0.45": {
+      "accuracy": {
+        "mean": 0.6948717948717948,
+        "std": 0.053998563304237676
+      },
+      "macro_f1": {
+        "mean": 0.696392050348767,
+        "std": 0.056563524009391054
+      },
+      "severity_mae": {
+        "mean": 0.32564102564102565,
+        "std": 0.06827449720868896
+      },
+      "underestimation_rate": {
+        "mean": 0.09435897435897436,
+        "std": 0.019728599037611632
+      }
+    },
+    "rect_center_0.55": {
+      "accuracy": {
+        "mean": 0.6856410256410257,
+        "std": 0.07672529178563553
+      },
+      "macro_f1": {
+        "mean": 0.6780902552208923,
+        "std": 0.08495313584800565
+      },
+      "severity_mae": {
+        "mean": 0.3564102564102564,
+        "std": 0.11025309741262973
+      },
+      "underestimation_rate": {
+        "mean": 0.04974358974358975,
+        "std": 0.017145222452129686
+      }
+    },
+    "rect_center_0.65": {
+      "accuracy": {
+        "mean": 0.7225641025641025,
+        "std": 0.04563094097748224
+      },
+      "macro_f1": {
+        "mean": 0.7205998238254729,
+        "std": 0.04856644699079865
+      },
+      "severity_mae": {
+        "mean": 0.3087179487179487,
+        "std": 0.06462861077497709
+      },
+      "underestimation_rate": {
+        "mean": 0.04923076923076923,
+        "std": 0.008581128477272569
+      }
+    },
+    "rect_center_0.75": {
+      "accuracy": {
+        "mean": 0.7538461538461538,
+        "std": 0.022790242095681
+      },
+      "macro_f1": {
+        "mean": 0.7558932817554197,
+        "std": 0.023584020674492247
+      },
+      "severity_mae": {
+        "mean": 0.2805128205128205,
+        "std": 0.03624375073658383
+      },
+      "underestimation_rate": {
+        "mean": 0.05692307692307692,
+        "std": 0.012743357579270953
+      }
+    },
+    "rect_center_0.90": {
+      "accuracy": {
+        "mean": 0.8112820512820514,
+        "std": 0.022543697067008508
+      },
+      "macro_f1": {
+        "mean": 0.8135552278948923,
+        "std": 0.022234981238418997
+      },
+      "severity_mae": {
+        "mean": 0.19743589743589746,
+        "std": 0.021907701911070596
+      },
+      "underestimation_rate": {
+        "mean": 0.07692307692307693,
+        "std": 0.012026707076470333
+      }
+    },
+    "rect_left_0.55": {
+      "accuracy": {
+        "mean": 0.676923076923077,
+        "std": 0.042905642386362866
+      },
+      "macro_f1": {
+        "mean": 0.6742750248120786,
+        "std": 0.04628113088942112
+      },
+      "severity_mae": {
+        "mean": 0.3764102564102564,
+        "std": 0.0628963435572618
+      },
+      "underestimation_rate": {
+        "mean": 0.10820512820512822,
+        "std": 0.06900247258526092
+      }
+    },
+    "rect_right_0.55": {
+      "accuracy": {
+        "mean": 0.677948717948718,
+        "std": 0.05013459858238062
+      },
+      "macro_f1": {
+        "mean": 0.6741866833630593,
+        "std": 0.05696853201004792
+      },
+      "severity_mae": {
+        "mean": 0.3394871794871795,
+        "std": 0.05107651117123582
+      },
+      "underestimation_rate": {
+        "mean": 0.10512820512820513,
+        "std": 0.066740590178566
+      }
+    },
+    "rect_up_0.55": {
+      "accuracy": {
+        "mean": 0.6810256410256411,
+        "std": 0.07251470639117302
+      },
+      "macro_f1": {
+        "mean": 0.6750700355060734,
+        "std": 0.08202464536550419
+      },
+      "severity_mae": {
+        "mean": 0.3517948717948718,
+        "std": 0.0823591978794425
+      },
+      "underestimation_rate": {
+        "mean": 0.11384615384615385,
+        "std": 0.07678620301228634
+      }
+    },
+    "rect_down_0.55": {
+      "accuracy": {
+        "mean": 0.6805128205128206,
+        "std": 0.06182093290225138
+      },
+      "macro_f1": {
+        "mean": 0.672774268374677,
+        "std": 0.0799340896736868
+      },
+      "severity_mae": {
+        "mean": 0.35948717948717945,
+        "std": 0.08052261903465303
+      },
+      "underestimation_rate": {
+        "mean": 0.158974358974359,
+        "std": 0.09932381511921315
+      }
+    },
+    "circle_center_0.35": {
+      "accuracy": {
+        "mean": 0.6138461538461538,
+        "std": 0.07269581233355177
+      },
+      "macro_f1": {
+        "mean": 0.5836816744963789,
+        "std": 0.11397816610347367
+      },
+      "severity_mae": {
+        "mean": 0.4471794871794872,
+        "std": 0.12163417198662468
+      },
+      "underestimation_rate": {
+        "mean": 0.28564102564102567,
+        "std": 0.10966747899916762
+      }
+    },
+    "circle_center_0.45": {
+      "accuracy": {
+        "mean": 0.6810256410256411,
+        "std": 0.097648216714295
+      },
+      "macro_f1": {
+        "mean": 0.664809149333219,
+        "std": 0.1356217527445118
+      },
+      "severity_mae": {
+        "mean": 0.35025641025641024,
+        "std": 0.11319285875956014
+      },
+      "underestimation_rate": {
+        "mean": 0.1758974358974359,
+        "std": 0.10380024309604559
+      }
+    },
+    "circle_center_0.55": {
+      "accuracy": {
+        "mean": 0.7482051282051282,
+        "std": 0.045014425330519886
+      },
+      "macro_f1": {
+        "mean": 0.7500053832159189,
+        "std": 0.04579853089780694
+      },
+      "severity_mae": {
+        "mean": 0.27384615384615385,
+        "std": 0.06120099778743412
+      },
+      "underestimation_rate": {
+        "mean": 0.06256410256410257,
+        "std": 0.010192106109923993
+      }
+    },
+    "circle_center_0.65": {
+      "accuracy": {
+        "mean": 0.7287179487179488,
+        "std": 0.06919277209880112
+      },
+      "macro_f1": {
+        "mean": 0.724922866263609,
+        "std": 0.07709780388797766
+      },
+      "severity_mae": {
+        "mean": 0.3015384615384616,
+        "std": 0.09855297570536026
+      },
+      "underestimation_rate": {
+        "mean": 0.062051282051282054,
+        "std": 0.012998760877575975
+      }
+    },
+    "circle_center_0.75": {
+      "accuracy": {
+        "mean": 0.7748717948717948,
+        "std": 0.035869952849463656
+      },
+      "macro_f1": {
+        "mean": 0.7771720854654679,
+        "std": 0.03611493555968532
+      },
+      "severity_mae": {
+        "mean": 0.24512820512820516,
+        "std": 0.05046138211357892
+      },
+      "underestimation_rate": {
+        "mean": 0.06923076923076923,
+        "std": 0.007022084070579051
+      }
+    },
+    "circle_center_0.90": {
+      "accuracy": {
+        "mean": 0.8174358974358975,
+        "std": 0.017522409808481965
+      },
+      "macro_f1": {
+        "mean": 0.8185078346823899,
+        "std": 0.018005581289378843
+      },
+      "severity_mae": {
+        "mean": 0.19230769230769232,
+        "std": 0.01767185737447465
+      },
+      "underestimation_rate": {
+        "mean": 0.0835897435897436,
+        "std": 0.006686361441233487
+      }
+    }
+  },
+  "notes": [
+    "Apertures are drawn in the original retinal bounding box, while feature-grid coordinates stay fixed to that full bbox.",
+    "Unlike Exp48, this experiment re-extracts CNN embeddings after pixel-space masking, so continuous apertures change the observed image content.",
+    "Apertures are geometric proxies, not real paired camera acquisitions."
+  ]
+}

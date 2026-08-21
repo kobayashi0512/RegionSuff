@@ -1,0 +1,188 @@
+{
+  "dataset": {
+    "n": 1300,
+    "sources": {
+      "DR-XJU": 233,
+      "DR-ZJU": 187,
+      "Glaucoma": 52,
+      "Healthy": 26,
+      "Local1": 199,
+      "Local2": 103,
+      "UWF-mosaic": 500
+    },
+    "labels": [
+      "clarity",
+      "illumination",
+      "contrast",
+      "overall"
+    ],
+    "patient_id_available": false
+  },
+  "leave_one_source_out": {
+    "DR-XJU": {
+      "n_test": 233,
+      "metrics": {
+        "clarity": {
+          "auroc": 0.8955938697318008,
+          "average_precision": 0.9087322481279867,
+          "positive_rate": 0.5021459227467812
+        },
+        "illumination": {
+          "auroc": 0.8380662609871535,
+          "average_precision": 0.9708923988819056,
+          "positive_rate": 0.8755364806866953
+        },
+        "contrast": {
+          "auroc": 0.8097059705970597,
+          "average_precision": 0.8524985460368157,
+          "positive_rate": 0.5665236051502146
+        },
+        "overall": {
+          "auroc": 0.9110669024462129,
+          "average_precision": 0.9260004358220794,
+          "positive_rate": 0.4978540772532189
+        }
+      }
+    },
+    "DR-ZJU": {
+      "n_test": 187,
+      "metrics": {
+        "clarity": {
+          "auroc": 0.923963963963964,
+          "average_precision": 0.9824578508880838,
+          "positive_rate": 0.8021390374331551
+        },
+        "illumination": {
+          "auroc": 0.9099537037037038,
+          "average_precision": 0.9811046579420678,
+          "positive_rate": 0.8556149732620321
+        },
+        "contrast": {
+          "auroc": 0.8972318339100346,
+          "average_precision": 0.9882999058252057,
+          "positive_rate": 0.9090909090909091
+        },
+        "overall": {
+          "auroc": 0.9440360841964583,
+          "average_precision": 0.9838091137933725,
+          "positive_rate": 0.7807486631016043
+        }
+      }
+    },
+    "Glaucoma": {
+      "n_test": 52,
+      "metrics": {
+        "clarity": {
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "positive_rate": 0.019230769230769232
+        },
+        "illumination": {
+          "auroc": 0.9079365079365079,
+          "average_precision": 0.6403929403929404,
+          "positive_rate": 0.1346153846153846
+        },
+        "contrast": {
+          "auroc": 0.92,
+          "average_precision": 0.26785714285714285,
+          "positive_rate": 0.038461538461538464
+        },
+        "overall": {
+          "auroc": 1.0,
+          "average_precision": 1.0,
+          "positive_rate": 0.019230769230769232
+        }
+      }
+    },
+    "Healthy": {
+      "n_test": 26,
+      "metrics": {
+        "illumination": {
+          "auroc": 0.8125,
+          "average_precision": 0.9834955620910997,
+          "positive_rate": 0.9230769230769231
+        }
+      }
+    },
+    "Local1": {
+      "n_test": 199,
+      "metrics": {
+        "clarity": {
+          "auroc": 0.9035301278149726,
+          "average_precision": 0.883302058187752,
+          "positive_rate": 0.46733668341708545
+        },
+        "illumination": {
+          "auroc": 0.8674403399803857,
+          "average_precision": 0.7008527988901212,
+          "positive_rate": 0.19095477386934673
+        },
+        "contrast": {
+          "auroc": 0.9519230769230769,
+          "average_precision": 0.9617415514864561,
+          "positive_rate": 0.542713567839196
+        },
+        "overall": {
+          "auroc": 0.9427500646161799,
+          "average_precision": 0.8755595169737503,
+          "positive_rate": 0.2663316582914573
+        }
+      }
+    },
+    "Local2": {
+      "n_test": 103,
+      "metrics": {
+        "clarity": {
+          "auroc": 0.9498239436619719,
+          "average_precision": 0.8977549934476821,
+          "positive_rate": 0.3106796116504854
+        },
+        "illumination": {
+          "auroc": 0.9193548387096774,
+          "average_precision": 0.8681832630481388,
+          "positive_rate": 0.30097087378640774
+        },
+        "contrast": {
+          "auroc": 0.9730354391371341,
+          "average_precision": 0.9662525259108945,
+          "positive_rate": 0.42718446601941745
+        },
+        "overall": {
+          "auroc": 0.9887179487179487,
+          "average_precision": 0.9623839543121413,
+          "positive_rate": 0.24271844660194175
+        }
+      }
+    },
+    "UWF-mosaic": {
+      "n_test": 500,
+      "metrics": {
+        "clarity": {
+          "auroc": 0.6890737297079962,
+          "average_precision": 0.7759383161169944,
+          "positive_rate": 0.606
+        },
+        "illumination": {
+          "auroc": 0.5926159009859451,
+          "average_precision": 0.6108216889989526,
+          "positive_rate": 0.546
+        },
+        "contrast": {
+          "auroc": 0.6040719696969696,
+          "average_precision": 0.909321364599492,
+          "positive_rate": 0.88
+        },
+        "overall": {
+          "auroc": 0.6049968094157686,
+          "average_precision": 0.7726353181983798,
+          "positive_rate": 0.656
+        }
+      }
+    }
+  },
+  "notes": [
+    "The released MSHF package contains quality spreadsheets but no patient identifier field; patient-level grouping cannot be verified from the release.",
+    "Therefore this audit uses leave-one-source-out evaluation as a conservative domain-shift check.",
+    "These are frozen RetinaRadar features with source-held-out linear probes, not a clinical validation study."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "sourcePptx": "/Users/tongyue/Documents/ppf/第四论文/图1.pptx",
+  "workspace": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization",
+  "outDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-inspect",
+  "generatedAt": "2026-08-14T06:25:29.477Z",
+  "slideCount": 1,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "29atsn",
+    "target": {
+      "id": "pr/i19blc"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-inspect/assets/ppt/media/media",
+      "relativePath": "template-inspect/assets/ppt/media/media",
+      "bytes": 0
+    },
+    {
+      "entry": "ppt/media/image1.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-inspect/assets/ppt/media/image1.png",
+      "relativePath": "template-inspect/assets/ppt/media/image1.png",
+      "bytes": 224676
+    }
+  ],
+  "fonts": [
+    "+mj-lt",
+    "+mn-lt",
+    "Calibri",
+    "Calibri Light"
+  ],
+  "packageParts": {
+    "mediaCount": 2,
+    "slideXmlCount": 1,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

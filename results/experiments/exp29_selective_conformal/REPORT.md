@@ -1,0 +1,295 @@
+# Exp29：选择性预测与风险—覆盖率控制
+
+对Exp27的低估风险分数进行验证集校准：只自动接受低风险图像，对高风险图像转人工复核。使用Clopper–Pearson上置信界做有限样本审计。
+
+```json
+{
+  "source": "Exp27 multi-view risk scores",
+  "models": {
+    "central_uncertainty": {
+      "uncalibrated_test": {
+        "coverage": 1.0,
+        "risk": 0.15128205128205127,
+        "n": 390
+      },
+      "alphas": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.24898179044927413,
+            "validation_n": 101,
+            "validation_coverage": 0.2774725274725275,
+            "validation_risk": 0.009900990099009901,
+            "validation_cp_upper": 0.0461073499248891,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.26153846153846155,
+            "accepted_n": 102,
+            "accepted_underestimation_risk": 0.0,
+            "accepted_accuracy": 1.0,
+            "rejected_n": 288,
+            "accepted_pdr_n": 82,
+            "accepted_pdr_underestimation_risk": 0.0
+          }
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.256405107943136,
+            "validation_n": 105,
+            "validation_coverage": 0.28846153846153844,
+            "validation_risk": 0.02857142857142857,
+            "validation_cp_upper": 0.07218758634871095,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.26666666666666666,
+            "accepted_n": 104,
+            "accepted_underestimation_risk": 0.009615384615384616,
+            "accepted_accuracy": 0.9903846153846154,
+            "rejected_n": 286,
+            "accepted_pdr_n": 83,
+            "accepted_pdr_underestimation_risk": 0.012048192771084338
+          }
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.6035153890227377,
+            "validation_n": 282,
+            "validation_coverage": 0.7747252747252747,
+            "validation_risk": 0.1595744680851064,
+            "validation_cp_upper": 0.19987109154231614,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.7461538461538462,
+            "accepted_n": 291,
+            "accepted_underestimation_risk": 0.08247422680412371,
+            "accepted_accuracy": 0.9175257731958762,
+            "rejected_n": 99,
+            "accepted_pdr_n": 117,
+            "accepted_pdr_underestimation_risk": 0.19658119658119658
+          }
+        }
+      },
+      "test_risk_coverage_curve": [
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "threshold": 0.1318421077239893
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.05128205128205128,
+          "threshold": 0.3752010459049889
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.07264957264957266,
+          "threshold": 0.5219917279634694
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.09294871794871795,
+          "threshold": 0.6311004421288243
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.15128205128205127,
+          "threshold": 0.9228888694360782
+        }
+      ]
+    },
+    "multiview_disagreement": {
+      "uncalibrated_test": {
+        "coverage": 1.0,
+        "risk": 0.15128205128205127,
+        "n": 390
+      },
+      "alphas": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.29262601457560733,
+            "validation_n": 97,
+            "validation_coverage": 0.2664835164835165,
+            "validation_risk": 0.010309278350515464,
+            "validation_cp_upper": 0.047972084083441155,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.28205128205128205,
+            "accepted_n": 110,
+            "accepted_underestimation_risk": 0.01818181818181818,
+            "accepted_accuracy": 0.9818181818181818,
+            "rejected_n": 280,
+            "accepted_pdr_n": 84,
+            "accepted_pdr_underestimation_risk": 0.023809523809523808
+          }
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.37863733241738173,
+            "validation_n": 126,
+            "validation_coverage": 0.34615384615384615,
+            "validation_risk": 0.047619047619047616,
+            "validation_cp_upper": 0.09181867651585418,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.3871794871794872,
+            "accepted_n": 151,
+            "accepted_underestimation_risk": 0.052980132450331126,
+            "accepted_accuracy": 0.9470198675496688,
+            "rejected_n": 239,
+            "accepted_pdr_n": 96,
+            "accepted_pdr_underestimation_risk": 0.08333333333333333
+          }
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.6319022422740949,
+            "validation_n": 278,
+            "validation_coverage": 0.7637362637362637,
+            "validation_risk": 0.15827338129496402,
+            "validation_cp_upper": 0.1987835523302443,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.7769230769230769,
+            "accepted_n": 303,
+            "accepted_underestimation_risk": 0.10561056105610561,
+            "accepted_accuracy": 0.8943894389438944,
+            "rejected_n": 87,
+            "accepted_pdr_n": 118,
+            "accepted_pdr_underestimation_risk": 0.211864406779661
+          }
+        }
+      },
+      "test_risk_coverage_curve": [
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "threshold": 0.15895744620415383
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.05128205128205128,
+          "threshold": 0.3816092456472699
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.06837606837606838,
+          "threshold": 0.520077671393884
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.10897435897435898,
+          "threshold": 0.6420314066222301
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.15128205128205127,
+          "threshold": 0.9149615851073798
+        }
+      ]
+    },
+    "multiview_plus_quality": {
+      "uncalibrated_test": {
+        "coverage": 1.0,
+        "risk": 0.15128205128205127,
+        "n": 390
+      },
+      "alphas": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.16325957632765983,
+            "validation_n": 70,
+            "validation_coverage": 0.19230769230769232,
+            "validation_risk": 0.0,
+            "validation_cp_upper": 0.04189334406688858,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.2153846153846154,
+            "accepted_n": 84,
+            "accepted_underestimation_risk": 0.0,
+            "accepted_accuracy": 1.0,
+            "rejected_n": 306,
+            "accepted_pdr_n": 73,
+            "accepted_pdr_underestimation_risk": 0.0
+          }
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.26080893786226744,
+            "validation_n": 96,
+            "validation_coverage": 0.26373626373626374,
+            "validation_risk": 0.041666666666666664,
+            "validation_cp_upper": 0.09281212153015525,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.27692307692307694,
+            "accepted_n": 108,
+            "accepted_underestimation_risk": 0.009259259259259259,
+            "accepted_accuracy": 0.9907407407407407,
+            "rejected_n": 282,
+            "accepted_pdr_n": 80,
+            "accepted_pdr_underestimation_risk": 0.0125
+          }
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.6049778204263591,
+            "validation_n": 262,
+            "validation_coverage": 0.7197802197802198,
+            "validation_risk": 0.15648854961832062,
+            "validation_cp_upper": 0.19820548800398063,
+            "feasible": true
+          },
+          "test": {
+            "coverage": 0.7692307692307693,
+            "accepted_n": 300,
+            "accepted_underestimation_risk": 0.09,
+            "accepted_accuracy": 0.91,
+            "rejected_n": 90,
+            "accepted_pdr_n": 116,
+            "accepted_pdr_underestimation_risk": 0.19827586206896552
+          }
+        }
+      },
+      "test_risk_coverage_curve": [
+        {
+          "coverage": 0.2,
+          "risk": 0.0,
+          "threshold": 0.094850578865313
+        },
+        {
+          "coverage": 0.4,
+          "risk": 0.057692307692307696,
+          "threshold": 0.35263117076582035
+        },
+        {
+          "coverage": 0.6,
+          "risk": 0.0641025641025641,
+          "threshold": 0.4823563132080893
+        },
+        {
+          "coverage": 0.8,
+          "risk": 0.10256410256410256,
+          "threshold": 0.6167795582287534
+        },
+        {
+          "coverage": 1.0,
+          "risk": 0.15128205128205127,
+          "threshold": 0.9828487721155109
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Thresholds are selected only on validation risk labels.",
+    "The one-sided Clopper-Pearson upper bound is used as a finite-sample calibration audit; test results are independent of threshold selection.",
+    "Geometric views and synthetic masks are proxies, so this is algorithmic risk control rather than clinical certification."
+  ]
+}
+```

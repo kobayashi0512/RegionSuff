@@ -1,0 +1,215 @@
+{
+  "fractions": [
+    0.35,
+    0.45,
+    0.55,
+    0.65,
+    0.75,
+    0.9
+  ],
+  "rows": [
+    {
+      "fraction": 0.35,
+      "split": "train",
+      "n": 876,
+      "accuracy": 0.6735159817351598,
+      "macro_f1": 0.6733456865264533,
+      "severity_mae": 0.3573059360730594,
+      "underestimate_rate": 0.15182648401826485,
+      "underestimate_count": 133,
+      "mean_entropy": 0.735537842600256
+    },
+    {
+      "fraction": 0.35,
+      "split": "val",
+      "n": 364,
+      "accuracy": 0.49725274725274726,
+      "macro_f1": 0.49962072225061926,
+      "severity_mae": 0.5879120879120879,
+      "underestimate_rate": 0.27197802197802196,
+      "underestimate_count": 99,
+      "mean_entropy": 0.7128640049980403
+    },
+    {
+      "fraction": 0.35,
+      "split": "test",
+      "n": 390,
+      "accuracy": 0.6384615384615384,
+      "macro_f1": 0.6390773227307484,
+      "severity_mae": 0.43333333333333335,
+      "underestimate_rate": 0.17435897435897435,
+      "underestimate_count": 68,
+      "mean_entropy": 0.6981156115464547
+    },
+    {
+      "fraction": 0.45,
+      "split": "train",
+      "n": 876,
+      "accuracy": 0.702054794520548,
+      "macro_f1": 0.703526775127386,
+      "severity_mae": 0.3287671232876712,
+      "underestimate_rate": 0.1461187214611872,
+      "underestimate_count": 128,
+      "mean_entropy": 0.7351617268469817
+    },
+    {
+      "fraction": 0.45,
+      "split": "val",
+      "n": 364,
+      "accuracy": 0.5412087912087912,
+      "macro_f1": 0.5414062302071309,
+      "severity_mae": 0.5357142857142857,
+      "underestimate_rate": 0.21703296703296704,
+      "underestimate_count": 79,
+      "mean_entropy": 0.7275480277036251
+    },
+    {
+      "fraction": 0.45,
+      "split": "test",
+      "n": 390,
+      "accuracy": 0.6307692307692307,
+      "macro_f1": 0.629069919215763,
+      "severity_mae": 0.441025641025641,
+      "underestimate_rate": 0.15897435897435896,
+      "underestimate_count": 62,
+      "mean_entropy": 0.7097020697373783
+    },
+    {
+      "fraction": 0.55,
+      "split": "train",
+      "n": 876,
+      "accuracy": 0.6974885844748858,
+      "macro_f1": 0.6966732695946102,
+      "severity_mae": 0.3264840182648402,
+      "underestimate_rate": 0.13470319634703196,
+      "underestimate_count": 118,
+      "mean_entropy": 0.7483734419585245
+    },
+    {
+      "fraction": 0.55,
+      "split": "val",
+      "n": 364,
+      "accuracy": 0.5192307692307693,
+      "macro_f1": 0.5186104996613132,
+      "severity_mae": 0.5494505494505495,
+      "underestimate_rate": 0.2032967032967033,
+      "underestimate_count": 74,
+      "mean_entropy": 0.7515386701671262
+    },
+    {
+      "fraction": 0.55,
+      "split": "test",
+      "n": 390,
+      "accuracy": 0.6230769230769231,
+      "macro_f1": 0.6190483747423837,
+      "severity_mae": 0.441025641025641,
+      "underestimate_rate": 0.15128205128205127,
+      "underestimate_count": 59,
+      "mean_entropy": 0.7270069710679227
+    },
+    {
+      "fraction": 0.65,
+      "split": "train",
+      "n": 876,
+      "accuracy": 0.6872146118721462,
+      "macro_f1": 0.6867886853167984,
+      "severity_mae": 0.3401826484018265,
+      "underestimate_rate": 0.1415525114155251,
+      "underestimate_count": 124,
+      "mean_entropy": 0.7569553595984553
+    },
+    {
+      "fraction": 0.65,
+      "split": "val",
+      "n": 364,
+      "accuracy": 0.49725274725274726,
+      "macro_f1": 0.489638015463764,
+      "severity_mae": 0.5879120879120879,
+      "underestimate_rate": 0.2087912087912088,
+      "underestimate_count": 76,
+      "mean_entropy": 0.7481814510050783
+    },
+    {
+      "fraction": 0.65,
+      "split": "test",
+      "n": 390,
+      "accuracy": 0.6153846153846154,
+      "macro_f1": 0.6090031992664547,
+      "severity_mae": 0.4564102564102564,
+      "underestimate_rate": 0.14615384615384616,
+      "underestimate_count": 57,
+      "mean_entropy": 0.7348061237616845
+    },
+    {
+      "fraction": 0.75,
+      "split": "train",
+      "n": 876,
+      "accuracy": 0.6872146118721462,
+      "macro_f1": 0.6831696091431834,
+      "severity_mae": 0.3436073059360731,
+      "underestimate_rate": 0.1358447488584475,
+      "underestimate_count": 119,
+      "mean_entropy": 0.7707192683414742
+    },
+    {
+      "fraction": 0.75,
+      "split": "val",
+      "n": 364,
+      "accuracy": 0.49175824175824173,
+      "macro_f1": 0.48567464589596215,
+      "severity_mae": 0.6098901098901099,
+      "underestimate_rate": 0.23626373626373626,
+      "underestimate_count": 86,
+      "mean_entropy": 0.7218547210671451
+    },
+    {
+      "fraction": 0.75,
+      "split": "test",
+      "n": 390,
+      "accuracy": 0.6102564102564103,
+      "macro_f1": 0.5983878380429003,
+      "severity_mae": 0.4666666666666667,
+      "underestimate_rate": 0.13846153846153847,
+      "underestimate_count": 54,
+      "mean_entropy": 0.7501930765121662
+    },
+    {
+      "fraction": 0.9,
+      "split": "train",
+      "n": 876,
+      "accuracy": 0.6678082191780822,
+      "macro_f1": 0.6601099856331398,
+      "severity_mae": 0.3789954337899543,
+      "underestimate_rate": 0.14726027397260275,
+      "underestimate_count": 129,
+      "mean_entropy": 0.8003086248784789
+    },
+    {
+      "fraction": 0.9,
+      "split": "val",
+      "n": 364,
+      "accuracy": 0.4697802197802198,
+      "macro_f1": 0.4696589314957032,
+      "severity_mae": 0.6373626373626373,
+      "underestimate_rate": 0.25,
+      "underestimate_count": 91,
+      "mean_entropy": 0.7583285528338077
+    },
+    {
+      "fraction": 0.9,
+      "split": "test",
+      "n": 390,
+      "accuracy": 0.6051282051282051,
+      "macro_f1": 0.59788840005121,
+      "severity_mae": 0.45897435897435895,
+      "underestimate_rate": 0.15128205128205127,
+      "underestimate_count": 59,
+      "mean_entropy": 0.7812358760601604
+    }
+  ],
+  "split_strategy": "patient-level grouped split, seed=42",
+  "notes": [
+    "Central views are geometric crops from UWF, not paired 45-degree acquisitions.",
+    "The experiment measures field-of-view sensitivity, not clinical image quality ground truth."
+  ]
+}

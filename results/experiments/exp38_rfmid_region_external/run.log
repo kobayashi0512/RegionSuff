@@ -1,0 +1,31 @@
+device=mps; train=684 test=170
+regions: 32/6156
+regions: 544/6156
+regions: 1056/6156
+regions: 1568/6156
+regions: 2080/6156
+regions: 2592/6156
+regions: 3104/6156
+regions: 3616/6156
+regions: 4128/6156
+regions: 4640/6156
+regions: 5152/6156
+regions: 5664/6156
+regions: 6156/6156
+regions: 32/1530
+regions: 544/1530
+regions: 1056/1530
+global 0.7314050004914072
+region_mean 0.7666607612250276
+{
+  "global": {
+    "n_labels": 45,
+    "mean_auroc": 0.7314050004914072,
+    "mean_average_precision": 0.37505512403301444
+  },
+  "region_mean": {
+    "n_labels": 45,
+    "mean_auroc": 0.7666607612250276,
+    "mean_average_precision": 0.3772107569148991
+  }
+}

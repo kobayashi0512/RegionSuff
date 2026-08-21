@@ -1,0 +1,77 @@
+{
+  "dataset": {
+    "n": 1630,
+    "risk_definition": "baseline 67-feature central-view severity probe prediction < UWF clinical grade",
+    "train_positive_oof": 152
+  },
+  "ablations": {
+    "baseline": {
+      "dimension": 67,
+      "val_auroc": 0.5953401677539609,
+      "val_average_precision": 0.27257605490981107,
+      "test_auroc": 0.6932254595729428,
+      "test_average_precision": 0.34288329635890163
+    },
+    "content": {
+      "dimension": 514,
+      "val_auroc": 0.5144920782851818,
+      "val_average_precision": 0.21171953961529388,
+      "test_auroc": 0.6189257002406677,
+      "test_average_precision": 0.22366866636505567
+    },
+    "quality": {
+      "dimension": 7,
+      "val_auroc": 0.5557781919850885,
+      "val_average_precision": 0.21001024823711115,
+      "test_auroc": 0.5259869937016743,
+      "test_average_precision": 0.16986368053623327
+    },
+    "fov": {
+      "dimension": 5,
+      "val_auroc": 0.5126747437092265,
+      "val_average_precision": 0.22076255350166768,
+      "test_auroc": 0.5281888473552153,
+      "test_average_precision": 0.17937221964148053
+    },
+    "content_quality": {
+      "dimension": 521,
+      "val_auroc": 0.5532152842497671,
+      "val_average_precision": 0.2288418791149328,
+      "test_auroc": 0.6474473859388602,
+      "test_average_precision": 0.2870832793644836
+    },
+    "content_fov": {
+      "dimension": 519,
+      "val_auroc": 0.5117893755824791,
+      "val_average_precision": 0.21115277412153333,
+      "test_auroc": 0.630754262891085,
+      "test_average_precision": 0.2577041113211068
+    },
+    "quality_fov": {
+      "dimension": 12,
+      "val_auroc": 0.5551724137931034,
+      "val_average_precision": 0.21047165308738186,
+      "test_auroc": 0.525577346510318,
+      "test_average_precision": 0.16998637860698224
+    },
+    "all": {
+      "dimension": 526,
+      "val_auroc": 0.5543336439888165,
+      "val_average_precision": 0.22867934147943425,
+      "test_auroc": 0.6517998873470223,
+      "test_average_precision": 0.2828079868285527
+    },
+    "baseline_plus_uncertainty_quality": {
+      "dimension": 75,
+      "val_auroc": 0.6711556383970178,
+      "val_average_precision": 0.3252418292229786,
+      "test_auroc": 0.7572840391213067,
+      "test_average_precision": 0.40614940673719546
+    }
+  },
+  "notes": [
+    "Content uses a 16x16 central grayscale/red spatial descriptor; quality uses brightness/contrast/sharpness/dark-light statistics; FOV uses nonblack coverage and retinal bounding-box geometry.",
+    "Risk labels use patient-grouped out-of-fold central severity predictions for the training split.",
+    "This ablation identifies predictive signal sources; it does not establish causal importance."
+  ]
+}

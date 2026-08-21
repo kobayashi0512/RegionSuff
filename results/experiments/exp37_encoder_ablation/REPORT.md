@@ -1,0 +1,78 @@
+# Exp37：区域编码器消融
+
+比较RetinaRadar、ImageNet ResNet50、随机ResNet50和手工区域特征在同一注意力聚合器下的表现。
+
+```json
+{
+  "representations": {
+    "retinaradar_region": {
+      "best_val_macro_f1": 0.7558871666336615,
+      "epochs": 54,
+      "full": {
+        "accuracy": 0.8384615384615385,
+        "macro_f1": 0.839725633843281,
+        "severity_mae": 0.1717948717948718,
+        "underestimation_rate": 0.07435897435897436
+      },
+      "cross": {
+        "accuracy": 0.8358974358974359,
+        "macro_f1": 0.8372226470293626,
+        "severity_mae": 0.17435897435897435,
+        "underestimation_rate": 0.07692307692307693
+      }
+    },
+    "handcrafted_region": {
+      "best_val_macro_f1": 0.5437997193217052,
+      "epochs": 180,
+      "full": {
+        "accuracy": 0.6051282051282051,
+        "macro_f1": 0.6054957829151376,
+        "severity_mae": 0.45897435897435895,
+        "underestimation_rate": 0.18205128205128204
+      },
+      "cross": {
+        "accuracy": 0.6025641025641025,
+        "macro_f1": 0.6039541369480741,
+        "severity_mae": 0.45897435897435895,
+        "underestimation_rate": 0.18461538461538463
+      }
+    },
+    "imagenet_resnet50_region": {
+      "best_val_macro_f1": 0.7944192259981735,
+      "epochs": 57,
+      "full": {
+        "accuracy": 0.7769230769230769,
+        "macro_f1": 0.7795559085760875,
+        "severity_mae": 0.23333333333333334,
+        "underestimation_rate": 0.08717948717948718
+      },
+      "cross": {
+        "accuracy": 0.7692307692307693,
+        "macro_f1": 0.7724959447102018,
+        "severity_mae": 0.23846153846153847,
+        "underestimation_rate": 0.08974358974358974
+      }
+    },
+    "random_resnet50_region": {
+      "best_val_macro_f1": 0.15578947368421053,
+      "epochs": 27,
+      "full": {
+        "accuracy": 0.31794871794871793,
+        "macro_f1": 0.16083009079118027,
+        "severity_mae": 1.0128205128205128,
+        "underestimation_rate": 0.0
+      },
+      "cross": {
+        "accuracy": 0.31794871794871793,
+        "macro_f1": 0.16083009079118027,
+        "severity_mae": 1.0128205128205128,
+        "underestimation_rate": 0.0
+      }
+    }
+  },
+  "notes": [
+    "RetinaRadar is the primary frozen retinal-quality encoder; ImageNet uses cached torchvision ResNet50 weights; random is an untrained ResNet50 control; handcrafted is the 67-dimensional regional-statistics control.",
+    "All representations use the same 3x3 region masks and attention aggregator."
+  ]
+}
+```

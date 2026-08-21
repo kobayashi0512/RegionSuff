@@ -1,0 +1,787 @@
+device=mps; n_train=876; n_val=364; n_test=390
+START variant=baseline seed=0
+DONE variant=baseline seed=0 epochs=62 val_full=0.7419 val_cross=0.7395
+START variant=baseline seed=1
+DONE variant=baseline seed=1 epochs=49 val_full=0.7469 val_cross=0.7526
+START variant=baseline seed=2
+DONE variant=baseline seed=2 epochs=46 val_full=0.7375 val_cross=0.7249
+START variant=baseline seed=3
+DONE variant=baseline seed=3 epochs=58 val_full=0.7494 val_cross=0.7523
+START variant=baseline seed=4
+DONE variant=baseline seed=4 epochs=53 val_full=0.7466 val_cross=0.7570
+START variant=coord seed=0
+DONE variant=coord seed=0 epochs=69 val_full=0.7365 val_cross=0.7323
+START variant=coord seed=1
+DONE variant=coord seed=1 epochs=50 val_full=0.7496 val_cross=0.7461
+START variant=coord seed=2
+DONE variant=coord seed=2 epochs=48 val_full=0.7272 val_cross=0.7261
+START variant=coord seed=3
+DONE variant=coord seed=3 epochs=67 val_full=0.7562 val_cross=0.7424
+START variant=coord seed=4
+DONE variant=coord seed=4 epochs=92 val_full=0.7543 val_cross=0.7451
+START variant=coord_connected seed=0
+DONE variant=coord_connected seed=0 epochs=72 val_full=0.7412 val_cross=0.7387
+START variant=coord_connected seed=1
+DONE variant=coord_connected seed=1 epochs=61 val_full=0.7487 val_cross=0.7531
+START variant=coord_connected seed=2
+DONE variant=coord_connected seed=2 epochs=63 val_full=0.7336 val_cross=0.7257
+START variant=coord_connected seed=3
+DONE variant=coord_connected seed=3 epochs=88 val_full=0.7605 val_cross=0.7672
+START variant=coord_connected seed=4
+DONE variant=coord_connected seed=4 epochs=90 val_full=0.7710 val_cross=0.7540
+START variant=coord_connected_under seed=0
+DONE variant=coord_connected_under seed=0 epochs=65 val_full=0.7472 val_cross=0.7359
+START variant=coord_connected_under seed=1
+DONE variant=coord_connected_under seed=1 epochs=97 val_full=0.7492 val_cross=0.7452
+START variant=coord_connected_under seed=2
+DONE variant=coord_connected_under seed=2 epochs=59 val_full=0.7416 val_cross=0.7213
+START variant=coord_connected_under seed=3
+DONE variant=coord_connected_under seed=3 epochs=76 val_full=0.7638 val_cross=0.7554
+START variant=coord_connected_under seed=4
+DONE variant=coord_connected_under seed=4 epochs=47 val_full=0.7349 val_cross=0.7121
+{
+  "baseline": {
+    "full": {
+      "full": {
+        "accuracy": {
+          "mean": 0.824102564102564,
+          "std": 0.024298169724065927
+        },
+        "macro_f1": {
+          "mean": 0.8256709229725271,
+          "std": 0.02388535942188655
+        },
+        "severity_mae": {
+          "mean": 0.18512820512820513,
+          "std": 0.0266099001315274
+        },
+        "underestimation_rate": {
+          "mean": 0.07846153846153846,
+          "std": 0.0056176672564632445
+        },
+        "normal_recall": {
+          "mean": 0.875968992248062,
+          "std": 0.031488520948201405
+        },
+        "npdr_recall": {
+          "mean": 0.7620437956204379,
+          "std": 0.04575891392308753
+        },
+        "pdr_recall": {
+          "mean": 0.8387096774193548,
+          "std": 0.019753949538574
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.783076923076923,
+          "std": 0.00692782363390064
+        },
+        "macro_f1": {
+          "mean": 0.7838592585286162,
+          "std": 0.006623547108624138
+        },
+        "severity_mae": {
+          "mean": 0.23487179487179488,
+          "std": 0.008026910688460783
+        },
+        "underestimation_rate": {
+          "mean": 0.10205128205128204,
+          "std": 0.005847053462046861
+        },
+        "normal_recall": {
+          "mean": 0.8325581395348836,
+          "std": 0.038213201686406906
+        },
+        "npdr_recall": {
+          "mean": 0.6905109489051094,
+          "std": 0.02946953173457862
+        },
+        "pdr_recall": {
+          "mean": 0.8338709677419356,
+          "std": 0.009194963105638202
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.826153846153846,
+          "std": 0.02604805148553907
+        },
+        "macro_f1": {
+          "mean": 0.8278977462396986,
+          "std": 0.025701011599989866
+        },
+        "severity_mae": {
+          "mean": 0.18051282051282053,
+          "std": 0.0271722293163876
+        },
+        "underestimation_rate": {
+          "mean": 0.07794871794871794,
+          "std": 0.008807981557598807
+        },
+        "normal_recall": {
+          "mean": 0.8790697674418604,
+          "std": 0.02547546779093796
+        },
+        "npdr_recall": {
+          "mean": 0.7635036496350365,
+          "std": 0.04517298816573957
+        },
+        "pdr_recall": {
+          "mean": 0.8403225806451614,
+          "std": 0.01925376836502147
+        }
+      }
+    },
+    "cross": {
+      "full": {
+        "accuracy": {
+          "mean": 0.8333333333333334,
+          "std": 0.0031403714651066276
+        },
+        "macro_f1": {
+          "mean": 0.8345776727870374,
+          "std": 0.003250222861517128
+        },
+        "severity_mae": {
+          "mean": 0.17487179487179488,
+          "std": 0.0063845638964044795
+        },
+        "underestimation_rate": {
+          "mean": 0.07487179487179488,
+          "std": 0.0066370149259204056
+        },
+        "normal_recall": {
+          "mean": 0.889922480620155,
+          "std": 0.010107290550701798
+        },
+        "npdr_recall": {
+          "mean": 0.7664233576642335,
+          "std": 0.02731136778667113
+        },
+        "pdr_recall": {
+          "mean": 0.8483870967741935,
+          "std": 0.02984960568277703
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7892307692307692,
+          "std": 0.009137707528823329
+        },
+        "macro_f1": {
+          "mean": 0.7895667570538827,
+          "std": 0.009061636375254195
+        },
+        "severity_mae": {
+          "mean": 0.23025641025641028,
+          "std": 0.010159801413414852
+        },
+        "underestimation_rate": {
+          "mean": 0.0994871794871795,
+          "std": 0.006880209161537815
+        },
+        "normal_recall": {
+          "mean": 0.8480620155038758,
+          "std": 0.03316162734295728
+        },
+        "npdr_recall": {
+          "mean": 0.6890510948905109,
+          "std": 0.024536841334265157
+        },
+        "pdr_recall": {
+          "mean": 0.8387096774193548,
+          "std": 0.008064516129032251
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.8374358974358975,
+          "std": 0.0029235267310234203
+        },
+        "macro_f1": {
+          "mean": 0.8388177683468181,
+          "std": 0.0031423776565344622
+        },
+        "severity_mae": {
+          "mean": 0.16923076923076924,
+          "std": 0.004054202128420998
+        },
+        "underestimation_rate": {
+          "mean": 0.07333333333333333,
+          "std": 0.008619351955882879
+        },
+        "normal_recall": {
+          "mean": 0.8930232558139535,
+          "std": 0.011497982150535898
+        },
+        "npdr_recall": {
+          "mean": 0.7722627737226276,
+          "std": 0.015824440429692593
+        },
+        "pdr_recall": {
+          "mean": 0.8516129032258064,
+          "std": 0.021789122719526266
+        }
+      }
+    }
+  },
+  "coord": {
+    "full": {
+      "full": {
+        "accuracy": {
+          "mean": 0.8215384615384614,
+          "std": 0.01845441457994524
+        },
+        "macro_f1": {
+          "mean": 0.8224751784007539,
+          "std": 0.018626016843716415
+        },
+        "severity_mae": {
+          "mean": 0.19128205128205125,
+          "std": 0.022543697067008487
+        },
+        "underestimation_rate": {
+          "mean": 0.0794871794871795,
+          "std": 0.007903094875601252
+        },
+        "normal_recall": {
+          "mean": 0.8666666666666666,
+          "std": 0.030222618123438624
+        },
+        "npdr_recall": {
+          "mean": 0.7445255474452555,
+          "std": 0.040967051680006666
+        },
+        "pdr_recall": {
+          "mean": 0.8596774193548388,
+          "std": 0.025881946025614836
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7933333333333332,
+          "std": 0.007387107841481009
+        },
+        "macro_f1": {
+          "mean": 0.793896388726665,
+          "std": 0.006800783692929612
+        },
+        "severity_mae": {
+          "mean": 0.22102564102564104,
+          "std": 0.007115095859236721
+        },
+        "underestimation_rate": {
+          "mean": 0.10769230769230771,
+          "std": 0.009065471553673689
+        },
+        "normal_recall": {
+          "mean": 0.8666666666666666,
+          "std": 0.02414327364712782
+        },
+        "npdr_recall": {
+          "mean": 0.6963503649635037,
+          "std": 0.015136088579071356
+        },
+        "pdr_recall": {
+          "mean": 0.8241935483870968,
+          "std": 0.010514842589036521
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.826153846153846,
+          "std": 0.014662542005636714
+        },
+        "macro_f1": {
+          "mean": 0.8269881874089832,
+          "std": 0.014968071301110863
+        },
+        "severity_mae": {
+          "mean": 0.18461538461538463,
+          "std": 0.017856908047671947
+        },
+        "underestimation_rate": {
+          "mean": 0.08205128205128205,
+          "std": 0.009065471553673685
+        },
+        "normal_recall": {
+          "mean": 0.8790697674418604,
+          "std": 0.016074760739013764
+        },
+        "npdr_recall": {
+          "mean": 0.7459854014598541,
+          "std": 0.036276711357048706
+        },
+        "pdr_recall": {
+          "mean": 0.8596774193548388,
+          "std": 0.02252296781253053
+        }
+      }
+    },
+    "cross": {
+      "full": {
+        "accuracy": {
+          "mean": 0.8451282051282052,
+          "std": 0.00429056423863627
+        },
+        "macro_f1": {
+          "mean": 0.846596343102676,
+          "std": 0.00436198025729176
+        },
+        "severity_mae": {
+          "mean": 0.1651282051282051,
+          "std": 0.006175176707072972
+        },
+        "underestimation_rate": {
+          "mean": 0.06820512820512821,
+          "std": 0.005903007401651968
+        },
+        "normal_recall": {
+          "mean": 0.8806201550387597,
+          "std": 0.010400316174417645
+        },
+        "npdr_recall": {
+          "mean": 0.7985401459854015,
+          "std": 0.02102899312538382
+        },
+        "pdr_recall": {
+          "mean": 0.8596774193548388,
+          "std": 0.013494516557001207
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7887179487179486,
+          "std": 0.008026910688460785
+        },
+        "macro_f1": {
+          "mean": 0.7900435390905352,
+          "std": 0.007795886887333501
+        },
+        "severity_mae": {
+          "mean": 0.2282051282051282,
+          "std": 0.008308641921035718
+        },
+        "underestimation_rate": {
+          "mean": 0.09794871794871794,
+          "std": 0.004586806107691874
+        },
+        "normal_recall": {
+          "mean": 0.8356589147286823,
+          "std": 0.01850749827335397
+        },
+        "npdr_recall": {
+          "mean": 0.708029197080292,
+          "std": 0.01264270662459033
+        },
+        "pdr_recall": {
+          "mean": 0.8290322580645162,
+          "std": 0.010514842589036521
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.8466666666666667,
+          "std": 0.007985852052511478
+        },
+        "macro_f1": {
+          "mean": 0.8482819710258187,
+          "std": 0.008123546902322348
+        },
+        "severity_mae": {
+          "mean": 0.15999999999999998,
+          "std": 0.009351067963492546
+        },
+        "underestimation_rate": {
+          "mean": 0.06871794871794872,
+          "std": 0.004932149759402906
+        },
+        "normal_recall": {
+          "mean": 0.8852713178294573,
+          "std": 0.006485736639799047
+        },
+        "npdr_recall": {
+          "mean": 0.7970802919708029,
+          "std": 0.023876536107731543
+        },
+        "pdr_recall": {
+          "mean": 0.8612903225806452,
+          "std": 0.008834234798470413
+        }
+      }
+    }
+  },
+  "coord_connected": {
+    "full": {
+      "full": {
+        "accuracy": {
+          "mean": 0.82,
+          "std": 0.015104283564126289
+        },
+        "macro_f1": {
+          "mean": 0.8203512971713828,
+          "std": 0.015389344079929031
+        },
+        "severity_mae": {
+          "mean": 0.19589743589743588,
+          "std": 0.01974525467505483
+        },
+        "underestimation_rate": {
+          "mean": 0.0794871794871795,
+          "std": 0.013446267284232713
+        },
+        "normal_recall": {
+          "mean": 0.8775193798449612,
+          "std": 0.02707635534352402
+        },
+        "npdr_recall": {
+          "mean": 0.7284671532846716,
+          "std": 0.03700377184127463
+        },
+        "pdr_recall": {
+          "mean": 0.8612903225806452,
+          "std": 0.03344587315052855
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7892307692307692,
+          "std": 0.009490643858113722
+        },
+        "macro_f1": {
+          "mean": 0.7886011651863581,
+          "std": 0.00981441077419243
+        },
+        "severity_mae": {
+          "mean": 0.2266666666666667,
+          "std": 0.008992655341923173
+        },
+        "underestimation_rate": {
+          "mean": 0.10974358974358973,
+          "std": 0.014550011240113962
+        },
+        "normal_recall": {
+          "mean": 0.8837209302325582,
+          "std": 0.021229556492448294
+        },
+        "npdr_recall": {
+          "mean": 0.6656934306569344,
+          "std": 0.02601245208935106
+        },
+        "pdr_recall": {
+          "mean": 0.8274193548387098,
+          "std": 0.010819683762095748
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.8179487179487179,
+          "std": 0.012162606385263001
+        },
+        "macro_f1": {
+          "mean": 0.8182388219177306,
+          "std": 0.012915595962492019
+        },
+        "severity_mae": {
+          "mean": 0.19384615384615383,
+          "std": 0.01544858495527392
+        },
+        "underestimation_rate": {
+          "mean": 0.08564102564102564,
+          "std": 0.011833826419706999
+        },
+        "normal_recall": {
+          "mean": 0.8930232558139535,
+          "std": 0.006485736639799047
+        },
+        "npdr_recall": {
+          "mean": 0.7226277372262773,
+          "std": 0.04224757993719059
+        },
+        "pdr_recall": {
+          "mean": 0.8451612903225806,
+          "std": 0.028739564001944315
+        }
+      }
+    },
+    "cross": {
+      "full": {
+        "accuracy": {
+          "mean": 0.8087179487179487,
+          "std": 0.019067684556490473
+        },
+        "macro_f1": {
+          "mean": 0.8097062768321657,
+          "std": 0.01926191062881594
+        },
+        "severity_mae": {
+          "mean": 0.20615384615384613,
+          "std": 0.018981287716227428
+        },
+        "underestimation_rate": {
+          "mean": 0.08051282051282052,
+          "std": 0.018275415057646623
+        },
+        "normal_recall": {
+          "mean": 0.8635658914728681,
+          "std": 0.02299596430107183
+        },
+        "npdr_recall": {
+          "mean": 0.7255474452554744,
+          "std": 0.0411616705981655
+        },
+        "pdr_recall": {
+          "mean": 0.8435483870967742,
+          "std": 0.04056379464502997
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7866666666666666,
+          "std": 0.0058470534620468405
+        },
+        "macro_f1": {
+          "mean": 0.7868127377609734,
+          "std": 0.005850373429163641
+        },
+        "severity_mae": {
+          "mean": 0.22820512820512823,
+          "std": 0.008695294850160601
+        },
+        "underestimation_rate": {
+          "mean": 0.10358974358974357,
+          "std": 0.004657923621688448
+        },
+        "normal_recall": {
+          "mean": 0.8682170542635659,
+          "std": 0.012256890155691416
+        },
+        "npdr_recall": {
+          "mean": 0.6744525547445256,
+          "std": 0.015991899489201957
+        },
+        "pdr_recall": {
+          "mean": 0.8258064516129033,
+          "std": 0.013494516557001207
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.8138461538461538,
+          "std": 0.013760418323075658
+        },
+        "macro_f1": {
+          "mean": 0.8150586971183659,
+          "std": 0.013732483356052575
+        },
+        "severity_mae": {
+          "mean": 0.2,
+          "std": 0.013688561861578605
+        },
+        "underestimation_rate": {
+          "mean": 0.08,
+          "std": 0.016656801814268426
+        },
+        "normal_recall": {
+          "mean": 0.8744186046511627,
+          "std": 0.0158867453735808
+        },
+        "npdr_recall": {
+          "mean": 0.7357664233576642,
+          "std": 0.03027217715814262
+        },
+        "pdr_recall": {
+          "mean": 0.8370967741935484,
+          "std": 0.03195421412283702
+        }
+      }
+    }
+  },
+  "coord_connected_under": {
+    "full": {
+      "full": {
+        "accuracy": {
+          "mean": 0.82,
+          "std": 0.01922222032204235
+        },
+        "macro_f1": {
+          "mean": 0.8212076477282826,
+          "std": 0.019164846161716823
+        },
+        "severity_mae": {
+          "mean": 0.19384615384615383,
+          "std": 0.02276137540633041
+        },
+        "underestimation_rate": {
+          "mean": 0.07487179487179488,
+          "std": 0.01455001124011396
+        },
+        "normal_recall": {
+          "mean": 0.8713178294573642,
+          "std": 0.026058505913134328
+        },
+        "npdr_recall": {
+          "mean": 0.7430656934306569,
+          "std": 0.03771681951171915
+        },
+        "pdr_recall": {
+          "mean": 0.8516129032258064,
+          "std": 0.030496242582562984
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7876923076923077,
+          "std": 0.012216542820073421
+        },
+        "macro_f1": {
+          "mean": 0.7875305718567472,
+          "std": 0.012432258738792019
+        },
+        "severity_mae": {
+          "mean": 0.2287179487179487,
+          "std": 0.014322297480788657
+        },
+        "underestimation_rate": {
+          "mean": 0.10512820512820513,
+          "std": 0.006537204504606137
+        },
+        "normal_recall": {
+          "mean": 0.8713178294573642,
+          "std": 0.011756396037289247
+        },
+        "npdr_recall": {
+          "mean": 0.6715328467153284,
+          "std": 0.024753029135493692
+        },
+        "pdr_recall": {
+          "mean": 0.8290322580645162,
+          "std": 0.008834234798470415
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.8246153846153845,
+          "std": 0.016774797162867807
+        },
+        "macro_f1": {
+          "mean": 0.8255565918922614,
+          "std": 0.01679470002486412
+        },
+        "severity_mae": {
+          "mean": 0.18615384615384617,
+          "std": 0.0183651329020205
+        },
+        "underestimation_rate": {
+          "mean": 0.07589743589743589,
+          "std": 0.01637817376684237
+        },
+        "normal_recall": {
+          "mean": 0.8883720930232558,
+          "std": 0.010400316174417645
+        },
+        "npdr_recall": {
+          "mean": 0.7372262773722628,
+          "std": 0.03538452450668857
+        },
+        "pdr_recall": {
+          "mean": 0.8548387096774194,
+          "std": 0.028512370209135
+        }
+      }
+    },
+    "cross": {
+      "full": {
+        "accuracy": {
+          "mean": 0.8169230769230769,
+          "std": 0.027532778862658713
+        },
+        "macro_f1": {
+          "mean": 0.8183703772638189,
+          "std": 0.027495644884062635
+        },
+        "severity_mae": {
+          "mean": 0.1964102564102564,
+          "std": 0.034142063109495614
+        },
+        "underestimation_rate": {
+          "mean": 0.08461538461538462,
+          "std": 0.02122172481698314
+        },
+        "normal_recall": {
+          "mean": 0.8682170542635659,
+          "std": 0.02848243886957185
+        },
+        "npdr_recall": {
+          "mean": 0.7562043795620437,
+          "std": 0.02760243854188182
+        },
+        "pdr_recall": {
+          "mean": 0.8306451612903226,
+          "std": 0.04380153423871056
+        }
+      },
+      "center": {
+        "accuracy": {
+          "mean": 0.7897435897435898,
+          "std": 0.013074409009212282
+        },
+        "macro_f1": {
+          "mean": 0.789277635847813,
+          "std": 0.01357637718193509
+        },
+        "severity_mae": {
+          "mean": 0.22717948717948716,
+          "std": 0.016478224628779112
+        },
+        "underestimation_rate": {
+          "mean": 0.10666666666666666,
+          "std": 0.005903007401651968
+        },
+        "normal_recall": {
+          "mean": 0.8775193798449612,
+          "std": 0.012737733895469002
+        },
+        "npdr_recall": {
+          "mean": 0.67007299270073,
+          "std": 0.028457793707471438
+        },
+        "pdr_recall": {
+          "mean": 0.8306451612903226,
+          "std": 0.008064516129032251
+        }
+      },
+      "cross": {
+        "accuracy": {
+          "mean": 0.8235897435897435,
+          "std": 0.023875085839968755
+        },
+        "macro_f1": {
+          "mean": 0.8248108930432732,
+          "std": 0.023905211975396905
+        },
+        "severity_mae": {
+          "mean": 0.18717948717948718,
+          "std": 0.027556647769493178
+        },
+        "underestimation_rate": {
+          "mean": 0.08102564102564103,
+          "std": 0.015126032003848846
+        },
+        "normal_recall": {
+          "mean": 0.8837209302325582,
+          "std": 0.014502548010751737
+        },
+        "npdr_recall": {
+          "mean": 0.7532846715328467,
+          "std": 0.03841663464800225
+        },
+        "pdr_recall": {
+          "mean": 0.8387096774193548,
+          "std": 0.0307087625236448
+        }
+      }
+    }
+  }
+}

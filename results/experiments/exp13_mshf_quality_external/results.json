@@ -1,0 +1,112 @@
+{
+  "dataset": {
+    "name": "MSHF",
+    "train": 1040,
+    "test": 260,
+    "labels": [
+      "clarity",
+      "illumination",
+      "contrast",
+      "overall"
+    ]
+  },
+  "zero_shot": {
+    "clarity": {
+      "auroc": 0.5241773200757576,
+      "average_precision": 0.5557049327262371,
+      "accuracy": 0.5384615384615384,
+      "f1": 0.25
+    },
+    "illumination": {
+      "auroc": 0.6425889504738066,
+      "average_precision": 0.651348820294718,
+      "accuracy": 0.6461538461538462,
+      "f1": 0.5053763440860215
+    },
+    "contrast": {
+      "auroc": 0.860217077608382,
+      "average_precision": 0.8921599752311633,
+      "accuracy": 0.7807692307692308,
+      "f1": 0.8093645484949833
+    },
+    "overall": {
+      "auroc": 0.7364285714285714,
+      "average_precision": 0.782190503348746,
+      "accuracy": 0.6884615384615385,
+      "f1": 0.509090909090909
+    }
+  },
+  "calibrated": {
+    "clarity": {
+      "auroc": 0.5241773200757576,
+      "average_precision": 0.5557049327262371,
+      "accuracy": 0.5076923076923077,
+      "f1": 0.673469387755102,
+      "threshold": 0.01
+    },
+    "illumination": {
+      "auroc": 0.6425889504738066,
+      "average_precision": 0.651348820294718,
+      "accuracy": 0.5115384615384615,
+      "f1": 0.6186186186186187,
+      "threshold": 0.385
+    },
+    "contrast": {
+      "auroc": 0.860217077608382,
+      "average_precision": 0.8921599752311633,
+      "accuracy": 0.7961538461538461,
+      "f1": 0.8515406162464986,
+      "threshold": 0.405
+    },
+    "overall": {
+      "auroc": 0.7364285714285714,
+      "average_precision": 0.782190503348746,
+      "accuracy": 0.573076923076923,
+      "f1": 0.621160409556314,
+      "threshold": 0.33
+    }
+  },
+  "by_source": {
+    "DR": {
+      "n": 84,
+      "overall_positive_rate": 0.5357142857142857,
+      "retinaradar_usable_mean": 0.3791707456111908,
+      "retinaradar_usable_std": 0.29486408829689026
+    },
+    "Glaucoma": {
+      "n": 11,
+      "overall_positive_rate": 0.0,
+      "retinaradar_usable_mean": 0.018640315160155296,
+      "retinaradar_usable_std": 0.03334904834628105
+    },
+    "Healthy": {
+      "n": 5,
+      "overall_positive_rate": 1.0,
+      "retinaradar_usable_mean": 0.8773377537727356,
+      "retinaradar_usable_std": 0.11244131624698639
+    },
+    "Local1": {
+      "n": 40,
+      "overall_positive_rate": 0.3,
+      "retinaradar_usable_mean": 0.23599839210510254,
+      "retinaradar_usable_std": 0.23005154728889465
+    },
+    "Local2": {
+      "n": 20,
+      "overall_positive_rate": 0.0,
+      "retinaradar_usable_mean": 0.08619576692581177,
+      "retinaradar_usable_std": 0.06644396483898163
+    },
+    "UWF": {
+      "n": 100,
+      "overall_positive_rate": 0.58,
+      "retinaradar_usable_mean": 0.07147184014320374,
+      "retinaradar_usable_std": 0.12022111564874649
+    }
+  },
+  "notes": [
+    "Quality labels are derived from the MSHF spreadsheet aggregated from multiple annotators; they are not UWF/45-degree paired labels.",
+    "RetinaRadar is evaluated zero-shot and with a one-dimensional logistic calibration trained only on the MSHF training split.",
+    "The RetinaRadar usable-positive logit is used as a proxy for MSHF overall quality because the label semantics are not identical."
+  ]
+}

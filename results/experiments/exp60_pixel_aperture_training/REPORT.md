@@ -1,0 +1,808 @@
+# Exp60：连续像素视野增强训练
+
+{
+  "experiment": "Exp60 pixel-space continuous aperture training",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "variants": {
+    "baseline": {
+      "rows": [
+        {
+          "seed": 0,
+          "best_val_full_macro_f1": 0.7384079920699311,
+          "epochs": 50,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8282051282051283,
+              "macro_f1": 0.8303177672284333,
+              "severity_mae": 0.18461538461538463,
+              "underestimation_rate": 0.0641025641025641
+            },
+            "center": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.798374296234765,
+              "severity_mae": 0.21794871794871795,
+              "underestimation_rate": 0.09487179487179487
+            },
+            "cross": {
+              "accuracy": 0.8358974358974359,
+              "macro_f1": 0.8375403556771546,
+              "severity_mae": 0.17435897435897435,
+              "underestimation_rate": 0.0641025641025641
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.5384615384615384,
+              "macro_f1": 0.4366461028452613,
+              "severity_mae": 0.5,
+              "underestimation_rate": 0.3641025641025641
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.6538461538461539,
+              "macro_f1": 0.6391918426401185,
+              "severity_mae": 0.37948717948717947,
+              "underestimation_rate": 0.038461538461538464
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.7102564102564103,
+              "macro_f1": 0.7092172457425535,
+              "severity_mae": 0.33076923076923076,
+              "underestimation_rate": 0.06153846153846154
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.7923076923076923,
+              "macro_f1": 0.7944552344202366,
+              "severity_mae": 0.22564102564102564,
+              "underestimation_rate": 0.05897435897435897
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "best_val_full_macro_f1": 0.7478966585256869,
+          "epochs": 49,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8333333333333334,
+              "macro_f1": 0.834651221599751,
+              "severity_mae": 0.17435897435897435,
+              "underestimation_rate": 0.07692307692307693
+            },
+            "center": {
+              "accuracy": 0.8,
+              "macro_f1": 0.8004172711043345,
+              "severity_mae": 0.2128205128205128,
+              "underestimation_rate": 0.09230769230769231
+            },
+            "cross": {
+              "accuracy": 0.8333333333333334,
+              "macro_f1": 0.8347825425790755,
+              "severity_mae": 0.17435897435897435,
+              "underestimation_rate": 0.07948717948717948
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.4641025641025641,
+              "macro_f1": 0.393028159360758,
+              "severity_mae": 0.5384615384615384,
+              "underestimation_rate": 0.3
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.6717948717948717,
+              "macro_f1": 0.6668021915677803,
+              "severity_mae": 0.36666666666666664,
+              "underestimation_rate": 0.041025641025641026
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.7615384615384615,
+              "macro_f1": 0.7643035373138334,
+              "severity_mae": 0.2564102564102564,
+              "underestimation_rate": 0.05641025641025641
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.7999214503642792,
+              "severity_mae": 0.21794871794871795,
+              "underestimation_rate": 0.05641025641025641
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "best_val_full_macro_f1": 0.7336739926366032,
+          "epochs": 68,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8102564102564103,
+              "macro_f1": 0.8119518870354897,
+              "severity_mae": 0.20256410256410257,
+              "underestimation_rate": 0.08974358974358974
+            },
+            "center": {
+              "accuracy": 0.782051282051282,
+              "macro_f1": 0.7824825158479062,
+              "severity_mae": 0.23076923076923078,
+              "underestimation_rate": 0.1076923076923077
+            },
+            "cross": {
+              "accuracy": 0.8076923076923077,
+              "macro_f1": 0.808835531379216,
+              "severity_mae": 0.2076923076923077,
+              "underestimation_rate": 0.09230769230769231
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.5666666666666667,
+              "macro_f1": 0.5492821267863676,
+              "severity_mae": 0.43846153846153846,
+              "underestimation_rate": 0.25384615384615383
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.7,
+              "macro_f1": 0.6995441719662344,
+              "severity_mae": 0.3282051282051282,
+              "underestimation_rate": 0.06153846153846154
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.7051282051282052,
+              "macro_f1": 0.7046492962751794,
+              "severity_mae": 0.3487179487179487,
+              "underestimation_rate": 0.06666666666666667
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.7,
+              "macro_f1": 0.7009862485093747,
+              "severity_mae": 0.3153846153846154,
+              "underestimation_rate": 0.06923076923076923
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "best_val_full_macro_f1": 0.7520988459124052,
+          "epochs": 62,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8153846153846154,
+              "macro_f1": 0.8162373081256923,
+              "severity_mae": 0.19487179487179487,
+              "underestimation_rate": 0.08974358974358974
+            },
+            "center": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.7979087150127228,
+              "severity_mae": 0.2153846153846154,
+              "underestimation_rate": 0.08461538461538462
+            },
+            "cross": {
+              "accuracy": 0.8128205128205128,
+              "macro_f1": 0.8134725557783691,
+              "severity_mae": 0.19743589743589743,
+              "underestimation_rate": 0.09230769230769231
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.48717948717948717,
+              "macro_f1": 0.42917071331679285,
+              "severity_mae": 0.517948717948718,
+              "underestimation_rate": 0.32051282051282054
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.6641025641025641,
+              "macro_f1": 0.6559349793858366,
+              "severity_mae": 0.36153846153846153,
+              "underestimation_rate": 0.07948717948717948
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.7205128205128205,
+              "macro_f1": 0.7203112566178875,
+              "severity_mae": 0.32564102564102565,
+              "underestimation_rate": 0.05897435897435897
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.6923076923076923,
+              "macro_f1": 0.6952308861078885,
+              "severity_mae": 0.32051282051282054,
+              "underestimation_rate": 0.08717948717948718
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "best_val_full_macro_f1": 0.7575559167247117,
+          "epochs": 69,
+          "geometric": {
+            "full": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.7996014329831466,
+              "severity_mae": 0.2128205128205128,
+              "underestimation_rate": 0.07179487179487179
+            },
+            "center": {
+              "accuracy": 0.7923076923076923,
+              "macro_f1": 0.793654310729508,
+              "severity_mae": 0.2153846153846154,
+              "underestimation_rate": 0.1076923076923077
+            },
+            "cross": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.7990681144201904,
+              "severity_mae": 0.21025641025641026,
+              "underestimation_rate": 0.07692307692307693
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.7846153846153846,
+              "macro_f1": 0.7854066813602839,
+              "severity_mae": 0.2358974358974359,
+              "underestimation_rate": 0.12307692307692308
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.7769230769230769,
+              "macro_f1": 0.778743961352657,
+              "severity_mae": 0.2358974358974359,
+              "underestimation_rate": 0.07435897435897436
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.7512820512820513,
+              "macro_f1": 0.7545791429746993,
+              "severity_mae": 0.2692307692307692,
+              "underestimation_rate": 0.06923076923076923
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.7666666666666667,
+              "macro_f1": 0.7698967677614338,
+              "severity_mae": 0.24102564102564103,
+              "underestimation_rate": 0.07948717948717948
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "geometric": {
+          "full": {
+            "accuracy": {
+              "mean": 0.8169230769230769,
+              "std": 0.014345231518666016
+            },
+            "macro_f1": {
+              "mean": 0.8185519233945024,
+              "std": 0.014192088416083796
+            },
+            "severity_mae": {
+              "mean": 0.19384615384615383,
+              "std": 0.015016974835226998
+            },
+            "underestimation_rate": {
+              "mean": 0.07846153846153847,
+              "std": 0.011264555198199385
+            }
+          },
+          "center": {
+            "accuracy": {
+              "mean": 0.7938461538461539,
+              "std": 0.007161148740394354
+            },
+            "macro_f1": {
+              "mean": 0.7945674217858473,
+              "std": 0.007189506135279469
+            },
+            "severity_mae": {
+              "mean": 0.21846153846153848,
+              "std": 0.007115095859236726
+            },
+            "underestimation_rate": {
+              "mean": 0.09743589743589744,
+              "std": 0.010094881889758734
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.8174358974358974,
+              "std": 0.016656801814268422
+            },
+            "macro_f1": {
+              "mean": 0.8187398199668012,
+              "std": 0.01676040046791927
+            },
+            "severity_mae": {
+              "mean": 0.19282051282051282,
+              "std": 0.017522409808481944
+            },
+            "underestimation_rate": {
+              "mean": 0.08102564102564103,
+              "std": 0.011833826419707006
+            }
+          }
+        },
+        "pixel": {
+          "rect_center_0.35": {
+            "accuracy": {
+              "mean": 0.5682051282051281,
+              "std": 0.12759598879925432
+            },
+            "macro_f1": {
+              "mean": 0.5187067567338927,
+              "std": 0.1601635623937804
+            },
+            "severity_mae": {
+              "mean": 0.4461538461538462,
+              "std": 0.12333040137247424
+            },
+            "underestimation_rate": {
+              "mean": 0.2723076923076923,
+              "std": 0.09236821377780507
+            }
+          },
+          "rect_center_0.55": {
+            "accuracy": {
+              "mean": 0.6933333333333332,
+              "std": 0.04977265870174741
+            },
+            "macro_f1": {
+              "mean": 0.6880434293825254,
+              "std": 0.05528895425847945
+            },
+            "severity_mae": {
+              "mean": 0.3343589743589744,
+              "std": 0.05820569298268858
+            },
+            "underestimation_rate": {
+              "mean": 0.05897435897435897,
+              "std": 0.01875479338247153
+            }
+          },
+          "rect_center_0.75": {
+            "accuracy": {
+              "mean": 0.7297435897435898,
+              "std": 0.02522743359230529
+            },
+            "macro_f1": {
+              "mean": 0.7306120957848307,
+              "std": 0.02714519495949838
+            },
+            "severity_mae": {
+              "mean": 0.3061538461538461,
+              "std": 0.04072808760935851
+            },
+            "underestimation_rate": {
+              "mean": 0.06256410256410257,
+              "std": 0.0053170362444430064
+            }
+          },
+          "circle_center_0.55": {
+            "accuracy": {
+              "mean": 0.7497435897435898,
+              "std": 0.05036356968954613
+            },
+            "macro_f1": {
+              "mean": 0.7520981174326425,
+              "std": 0.05060704898798651
+            },
+            "severity_mae": {
+              "mean": 0.2641025641025641,
+              "std": 0.04988481143165057
+            },
+            "underestimation_rate": {
+              "mean": 0.07025641025641026,
+              "std": 0.013149621953803163
+            }
+          }
+        }
+      }
+    },
+    "pixel_augmented": {
+      "rows": [
+        {
+          "seed": 0,
+          "best_val_full_macro_f1": 0.7604522002620263,
+          "epochs": 99,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8128205128205128,
+              "macro_f1": 0.8146706076971731,
+              "severity_mae": 0.19487179487179487,
+              "underestimation_rate": 0.06923076923076923
+            },
+            "center": {
+              "accuracy": 0.7871794871794872,
+              "macro_f1": 0.7901092336576206,
+              "severity_mae": 0.2205128205128205,
+              "underestimation_rate": 0.1
+            },
+            "cross": {
+              "accuracy": 0.8025641025641026,
+              "macro_f1": 0.8049320872842901,
+              "severity_mae": 0.20256410256410257,
+              "underestimation_rate": 0.07692307692307693
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.7871794871794872,
+              "macro_f1": 0.7901092336576206,
+              "severity_mae": 0.2205128205128205,
+              "underestimation_rate": 0.1
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.7923076923076923,
+              "macro_f1": 0.7946737424478635,
+              "severity_mae": 0.2153846153846154,
+              "underestimation_rate": 0.09487179487179487
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.799819672817037,
+              "severity_mae": 0.2076923076923077,
+              "underestimation_rate": 0.07948717948717948
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.7948717948717948,
+              "macro_f1": 0.7970813259048214,
+              "severity_mae": 0.21025641025641026,
+              "underestimation_rate": 0.08974358974358974
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "best_val_full_macro_f1": 0.7410996083167308,
+          "epochs": 58,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8205128205128205,
+              "macro_f1": 0.8222212190031429,
+              "severity_mae": 0.18717948717948718,
+              "underestimation_rate": 0.07948717948717948
+            },
+            "center": {
+              "accuracy": 0.8076923076923077,
+              "macro_f1": 0.8096459418198548,
+              "severity_mae": 0.20256410256410257,
+              "underestimation_rate": 0.08717948717948718
+            },
+            "cross": {
+              "accuracy": 0.8205128205128205,
+              "macro_f1": 0.8219269102990033,
+              "severity_mae": 0.18974358974358974,
+              "underestimation_rate": 0.07435897435897436
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.8051282051282052,
+              "macro_f1": 0.8072233724407637,
+              "severity_mae": 0.20512820512820512,
+              "underestimation_rate": 0.08717948717948718
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.8153846153846154,
+              "macro_f1": 0.8171514759750055,
+              "severity_mae": 0.19230769230769232,
+              "underestimation_rate": 0.07948717948717948
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.8076923076923077,
+              "macro_f1": 0.8096250287554635,
+              "severity_mae": 0.20256410256410257,
+              "underestimation_rate": 0.08717948717948718
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.8076923076923077,
+              "macro_f1": 0.80945282417381,
+              "severity_mae": 0.20256410256410257,
+              "underestimation_rate": 0.08461538461538462
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "best_val_full_macro_f1": 0.7407748328674076,
+          "epochs": 68,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8051282051282052,
+              "macro_f1": 0.8071768745912893,
+              "severity_mae": 0.20512820512820512,
+              "underestimation_rate": 0.08205128205128205
+            },
+            "center": {
+              "accuracy": 0.7769230769230769,
+              "macro_f1": 0.7799965173479605,
+              "severity_mae": 0.23846153846153847,
+              "underestimation_rate": 0.1
+            },
+            "cross": {
+              "accuracy": 0.7974358974358975,
+              "macro_f1": 0.79972915814077,
+              "severity_mae": 0.2128205128205128,
+              "underestimation_rate": 0.08205128205128205
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.7769230769230769,
+              "macro_f1": 0.7799965173479605,
+              "severity_mae": 0.23846153846153847,
+              "underestimation_rate": 0.1
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.7794871794871795,
+              "macro_f1": 0.7822356514576194,
+              "severity_mae": 0.23076923076923078,
+              "underestimation_rate": 0.09487179487179487
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.8025641025641026,
+              "macro_f1": 0.8055581317974717,
+              "severity_mae": 0.21025641025641026,
+              "underestimation_rate": 0.07948717948717948
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.7897435897435897,
+              "macro_f1": 0.7926238023185062,
+              "severity_mae": 0.2205128205128205,
+              "underestimation_rate": 0.09230769230769231
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "best_val_full_macro_f1": 0.7586394241931739,
+          "epochs": 67,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8179487179487179,
+              "macro_f1": 0.8190469032726048,
+              "severity_mae": 0.18974358974358974,
+              "underestimation_rate": 0.08205128205128205
+            },
+            "center": {
+              "accuracy": 0.7846153846153846,
+              "macro_f1": 0.7870341962755182,
+              "severity_mae": 0.22564102564102564,
+              "underestimation_rate": 0.10512820512820513
+            },
+            "cross": {
+              "accuracy": 0.8128205128205128,
+              "macro_f1": 0.8139769900497512,
+              "severity_mae": 0.19487179487179487,
+              "underestimation_rate": 0.08205128205128205
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.782051282051282,
+              "macro_f1": 0.7843801463312756,
+              "severity_mae": 0.23076923076923078,
+              "underestimation_rate": 0.10512820512820513
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.7897435897435897,
+              "macro_f1": 0.7920044622678707,
+              "severity_mae": 0.2153846153846154,
+              "underestimation_rate": 0.09487179487179487
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.8025641025641026,
+              "macro_f1": 0.8040668119099492,
+              "severity_mae": 0.20512820512820512,
+              "underestimation_rate": 0.08974358974358974
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.8,
+              "macro_f1": 0.8020634124087591,
+              "severity_mae": 0.20512820512820512,
+              "underestimation_rate": 0.09743589743589744
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "best_val_full_macro_f1": 0.7536085016327195,
+          "epochs": 57,
+          "geometric": {
+            "full": {
+              "accuracy": 0.8333333333333334,
+              "macro_f1": 0.8344605099502488,
+              "severity_mae": 0.16923076923076924,
+              "underestimation_rate": 0.07179487179487179
+            },
+            "center": {
+              "accuracy": 0.8076923076923077,
+              "macro_f1": 0.8099726863410366,
+              "severity_mae": 0.20512820512820512,
+              "underestimation_rate": 0.09487179487179487
+            },
+            "cross": {
+              "accuracy": 0.8333333333333334,
+              "macro_f1": 0.8347731332801981,
+              "severity_mae": 0.1717948717948718,
+              "underestimation_rate": 0.07179487179487179
+            }
+          },
+          "pixel": {
+            "rect_center_0.35": {
+              "accuracy": 0.8051282051282052,
+              "macro_f1": 0.807557999623151,
+              "severity_mae": 0.2076923076923077,
+              "underestimation_rate": 0.09487179487179487
+            },
+            "rect_center_0.55": {
+              "accuracy": 0.8205128205128205,
+              "macro_f1": 0.8228154240862119,
+              "severity_mae": 0.18717948717948718,
+              "underestimation_rate": 0.08205128205128205
+            },
+            "rect_center_0.75": {
+              "accuracy": 0.8358974358974359,
+              "macro_f1": 0.8377105940352169,
+              "severity_mae": 0.1717948717948718,
+              "underestimation_rate": 0.06923076923076923
+            },
+            "circle_center_0.55": {
+              "accuracy": 0.8179487179487179,
+              "macro_f1": 0.8201795135320314,
+              "severity_mae": 0.18974358974358974,
+              "underestimation_rate": 0.08461538461538462
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "geometric": {
+          "full": {
+            "accuracy": {
+              "mean": 0.8179487179487179,
+              "std": 0.01041543385209739
+            },
+            "macro_f1": {
+              "mean": 0.8195152229028919,
+              "std": 0.01008226758532633
+            },
+            "severity_mae": {
+              "mean": 0.18923076923076923,
+              "std": 0.013124598863661253
+            },
+            "underestimation_rate": {
+              "mean": 0.07692307692307691,
+              "std": 0.0060133535382351656
+            }
+          },
+          "center": {
+            "accuracy": {
+              "mean": 0.7928205128205128,
+              "std": 0.0140909042708042
+            },
+            "macro_f1": {
+              "mean": 0.7953517150883982,
+              "std": 0.01369803404346196
+            },
+            "severity_mae": {
+              "mean": 0.21846153846153843,
+              "std": 0.014885051562769229
+            },
+            "underestimation_rate": {
+              "mean": 0.09743589743589744,
+              "std": 0.006783977720678441
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.8133333333333332,
+              "std": 0.014322297480788646
+            },
+            "macro_f1": {
+              "mean": 0.8150676558108026,
+              "std": 0.013915315540460379
+            },
+            "severity_mae": {
+              "mean": 0.19435897435897434,
+              "std": 0.015320378714143235
+            },
+            "underestimation_rate": {
+              "mean": 0.07743589743589743,
+              "std": 0.004586806107691878
+            }
+          }
+        },
+        "pixel": {
+          "rect_center_0.35": {
+            "accuracy": {
+              "mean": 0.7912820512820513,
+              "std": 0.013149621953803176
+            },
+            "macro_f1": {
+              "mean": 0.7938534538801543,
+              "std": 0.012868048874896844
+            },
+            "severity_mae": {
+              "mean": 0.22051282051282048,
+              "std": 0.01439098994913055
+            },
+            "underestimation_rate": {
+              "mean": 0.09743589743589744,
+              "std": 0.006783977720678441
+            }
+          },
+          "rect_center_0.55": {
+            "accuracy": {
+              "mean": 0.7994871794871795,
+              "std": 0.017615963115197603
+            },
+            "macro_f1": {
+              "mean": 0.8017761512469141,
+              "std": 0.017369606071872264
+            },
+            "severity_mae": {
+              "mean": 0.20820512820512818,
+              "std": 0.018076468443091867
+            },
+            "underestimation_rate": {
+              "mean": 0.08923076923076922,
+              "std": 0.00777730814774518
+            }
+          },
+          "rect_center_0.75": {
+            "accuracy": {
+              "mean": 0.8092307692307692,
+              "std": 0.015341820822206755
+            },
+            "macro_f1": {
+              "mean": 0.8113560478630276,
+              "std": 0.015144266834164035
+            },
+            "severity_mae": {
+              "mean": 0.19948717948717948,
+              "std": 0.01574367326462436
+            },
+            "underestimation_rate": {
+              "mean": 0.08102564102564103,
+              "std": 0.008026910688460781
+            }
+          },
+          "circle_center_0.55": {
+            "accuracy": {
+              "mean": 0.8020512820512821,
+              "std": 0.011088076056635728
+            },
+            "macro_f1": {
+              "mean": 0.8042801756675857,
+              "std": 0.01086454962253855
+            },
+            "severity_mae": {
+              "mean": 0.20564102564102563,
+              "std": 0.011235334512926486
+            },
+            "underestimation_rate": {
+              "mean": 0.08974358974358973,
+              "std": 0.005439282932204211
+            }
+          }
+        }
+      }
+    }
+  },
+  "pixel_scenarios": [
+    "rect_center_0.35",
+    "rect_center_0.55",
+    "rect_center_0.75",
+    "circle_center_0.55"
+  ],
+  "notes": [
+    "Pixel augmentation uses one unlabeled geometric aperture per training image and re-extracts frozen RetinaRadar features.",
+    "All apertures are geometric proxies; no real paired 45-degree acquisition is implied.",
+    "The augmentation is promoted only if it improves the held-out pixel-space stress endpoints without worsening geometric underestimation."
+  ],
+  "elapsed_seconds": 123.87548208236694
+}

@@ -1,0 +1,39 @@
+{
+  "source": "/Users/tongyue/Documents/ppf/第四论文/图1_放大新罗马版.pptx",
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "Revised editable Figure 1 showing exact pixel apertures, the visibility-conditioned attention equations, the primary DR output, and the downstream paired-view risk audit.",
+      "editTargets": [
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": ["sh/547294r6"],
+          "reason": "Update the subtitle to reflect visibility-conditioned inference and the downstream paired-view audit."
+        },
+        {
+          "action": "replace",
+          "shapeIds": ["sh/tgfyd032", "sh/6d4z25kb", "sh/7edgbalw", "sh/8j2xsbmd", "sh/9kby1g3i", "sh/yhkza1wv"],
+          "reason": "Replace abstract aperture icons with three masked views derived from the same embedded UWF source image."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": ["sh/jitg36dg", "sh/kj2hcbel", "sh/l4by5wv6", "sh/654ze1wr", "sh/76dg76dc", "sh/87mhgbex"],
+          "reason": "Use method-consistent aperture names, fractions, purposes, area-matching equations, and the unchanged-label statement."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": ["sh/sryl4zqx", "sh/fu94fe98", "sh/utg3698n", "sh/wn6dc7eh", "sh/t8vy9gvi", "sh/na9gvmd8", "sh/pgzax4jm", "sh/ofqtoj2h", "sh/3ehsve1w", "sh/2d8rm9kb", "sh/dkja1ojy", "sh/cjatsj2d", "sh/bi1sze1s", "sh/qhsbq9k7", "sh/tofapkju", "sh/sn69gf29", "sh/kratwza5", "sh/lsja54ra", "sh/ypsbupsz", "sh/jq1s3u9k", "sh/svut0za1", "sh/tw3a94rm"],
+          "reason": "Rebuild Panel C within inherited objects so it presents z_i, e_i, a_i(m), h(m), p(m), and the primary DR severity prediction in causal order."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": ["sh/hofulsf2", "sh/ul4vaxgb", "sh/vmdcj2xw", "sh/6tsbypsv", "sh/7u1s7u9g", "sh/gzut4jax", "sh/hk3adori", "sh/repw3it0", "sh/qtwvadcf", "sh/dg7e5sbq", "sh/cfydcnu5", "sh/3q5czyto", "sh/2pwv6tc3", "sh/psne18bu", "sh/4red83u9", "sh/nm9wb2ts", "sh/ml0v2xcn"],
+          "reason": "Move paired-view underestimation risk downstream of full and limited predictions and preserve the evidence-chain boundary."
+        }
+      ]
+    }
+  ],
+  "omittedSourceSlides": []
+}

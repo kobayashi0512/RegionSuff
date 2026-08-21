@@ -1,0 +1,89 @@
+# Exp27：多视野分歧低估风险
+
+使用完整、中心、圆形和四个偏移视野的预测概率、熵、严重度跨度、完整-局部差异和KL分歧预测中心视野低估风险。
+
+```json
+{
+  "dataset": {
+    "n": 1630,
+    "views": [
+      "full",
+      "center",
+      "circle45",
+      "left",
+      "right",
+      "up",
+      "down"
+    ],
+    "split_counts": {
+      "train": [
+        260,
+        351,
+        265
+      ],
+      "val": [
+        107,
+        146,
+        111
+      ],
+      "test": [
+        129,
+        137,
+        124
+      ]
+    }
+  },
+  "models": {
+    "central_uncertainty": {
+      "n_features": 9,
+      "val": {
+        "auroc": 0.6982525629077353,
+        "average_precision": 0.31225951801915763,
+        "brier": 0.20380122548197727,
+        "positive_rate": 0.2032967032967033
+      },
+      "test": {
+        "auroc": 0.7663986891289876,
+        "average_precision": 0.3535598059791839,
+        "brier": 0.19878046353953588,
+        "positive_rate": 0.15128205128205127
+      }
+    },
+    "multiview_disagreement": {
+      "n_features": 42,
+      "val": {
+        "auroc": 0.7007688723205965,
+        "average_precision": 0.3240557145459449,
+        "brier": 0.2182458296473774,
+        "positive_rate": 0.2032967032967033
+      },
+      "test": {
+        "auroc": 0.742383122535716,
+        "average_precision": 0.31556844110331833,
+        "brier": 0.20600765409122238,
+        "positive_rate": 0.15128205128205127
+      }
+    },
+    "multiview_plus_quality": {
+      "n_features": 51,
+      "val": {
+        "auroc": 0.6671714818266542,
+        "average_precision": 0.27869810965504427,
+        "brier": 0.22602110335382677,
+        "positive_rate": 0.2032967032967033
+      },
+      "test": {
+        "auroc": 0.7634287469916535,
+        "average_precision": 0.32671260487539094,
+        "brier": 0.19228788390733004,
+        "positive_rate": 0.15128205128205127
+      }
+    }
+  },
+  "notes": [
+    "Training risk labels use patient-grouped out-of-fold view probes; validation/test view probes are fit only on the training split.",
+    "Multi-view disagreement features include probability spread, expected severity spread, entropy, full-vs-restricted gaps and symmetric KL divergence.",
+    "Views are geometric UWF proxies, not real same-eye camera pairs."
+  ]
+}
+```

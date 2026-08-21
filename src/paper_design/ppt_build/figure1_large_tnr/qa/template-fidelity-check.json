@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-08-14T08:18:21.880Z",
+  "workspace": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr",
+  "finalPptx": "/Users/tongyue/Documents/ppf/第四论文/图1_放大新罗马版.pptx",
+  "starterPptx": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter.pptx",
+  "mapPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-frame-map.json",
+  "starterLayoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter-layout",
+  "finalLayoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/final-inspect/layouts",
+  "editDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr",
+  "issueCount": 0,
+  "issues": []
+}

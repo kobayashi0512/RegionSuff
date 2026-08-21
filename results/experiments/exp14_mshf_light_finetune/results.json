@@ -1,0 +1,72 @@
+{
+  "dataset": {
+    "train": 1040,
+    "test": 260,
+    "device": "mps",
+    "labels": [
+      "clarity",
+      "illumination",
+      "contrast",
+      "overall"
+    ]
+  },
+  "models": {
+    "frozen_backbone_head": {
+      "clarity": {
+        "auroc": 0.9235949699028547,
+        "average_precision": 0.9140659677668139,
+        "f1": 0.8387096774193549,
+        "threshold": 0.42500000000000004
+      },
+      "illumination": {
+        "auroc": 0.9265802556818182,
+        "average_precision": 0.9369079879158024,
+        "f1": 0.8644688644688645,
+        "threshold": 0.42000000000000004
+      },
+      "contrast": {
+        "auroc": 0.9364451973147625,
+        "average_precision": 0.9511665636324553,
+        "f1": 0.9053254437869822,
+        "threshold": 0.29000000000000004
+      },
+      "overall": {
+        "auroc": 0.9657142857142856,
+        "average_precision": 0.961295554649176,
+        "f1": 0.8870967741935484,
+        "threshold": 0.41500000000000004
+      }
+    },
+    "last_block_head": {
+      "clarity": {
+        "auroc": 0.8274629000536385,
+        "average_precision": 0.8079368335004561,
+        "f1": 0.7153284671532847,
+        "threshold": 0.47000000000000003
+      },
+      "illumination": {
+        "auroc": 0.7409741950757577,
+        "average_precision": 0.7252750502181735,
+        "f1": 0.7391304347826086,
+        "threshold": 0.43000000000000005
+      },
+      "contrast": {
+        "auroc": 0.8294748729531338,
+        "average_precision": 0.8801385289471606,
+        "f1": 0.8539325842696629,
+        "threshold": 0.44
+      },
+      "overall": {
+        "auroc": 0.8469047619047619,
+        "average_precision": 0.7897345301215445,
+        "f1": 0.757679180887372,
+        "threshold": 0.47000000000000003
+      }
+    }
+  },
+  "notes": [
+    "This is lightweight supervised adaptation on MSHF doctor quality labels, not full foundation-model fine-tuning.",
+    "The frozen model head and last-block model are trained only on MSHF train images and evaluated on the held-out MSHF test images.",
+    "Thresholds are selected on training data to avoid fixed 0.5 threshold bias under class imbalance."
+  ]
+}

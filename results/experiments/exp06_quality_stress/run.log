@@ -1,0 +1,72 @@
+[
+  {
+    "condition": "clean",
+    "accuracy": 0.5743589743589743,
+    "macro_f1": 0.5606467229720841,
+    "severity_mae": 0.5128205128205128,
+    "underestimate_rate": 0.1641025641025641
+  },
+  {
+    "condition": "blur_L1",
+    "accuracy": 0.5897435897435898,
+    "macro_f1": 0.5805004220098559,
+    "severity_mae": 0.49230769230769234,
+    "underestimate_rate": 0.16923076923076924
+  },
+  {
+    "condition": "blur_L2",
+    "accuracy": 0.5820512820512821,
+    "macro_f1": 0.5770098299730083,
+    "severity_mae": 0.4897435897435897,
+    "underestimate_rate": 0.18205128205128204
+  },
+  {
+    "condition": "blur_L3",
+    "accuracy": 0.5794871794871795,
+    "macro_f1": 0.5791285170784731,
+    "severity_mae": 0.4846153846153846,
+    "underestimate_rate": 0.2
+  },
+  {
+    "condition": "brightness_L1",
+    "accuracy": 0.49743589743589745,
+    "macro_f1": 0.4456275703010399,
+    "severity_mae": 0.6435897435897436,
+    "underestimate_rate": 0.48205128205128206
+  },
+  {
+    "condition": "brightness_L2",
+    "accuracy": 0.38461538461538464,
+    "macro_f1": 0.2728471933951386,
+    "severity_mae": 0.8743589743589744,
+    "underestimate_rate": 0.6128205128205129
+  },
+  {
+    "condition": "brightness_L3",
+    "accuracy": 0.33076923076923076,
+    "macro_f1": 0.16570327552986513,
+    "severity_mae": 0.9871794871794872,
+    "underestimate_rate": 0.6692307692307692
+  },
+  {
+    "condition": "contrast_L1",
+    "accuracy": 0.33076923076923076,
+    "macro_f1": 0.16570327552986513,
+    "severity_mae": 0.9871794871794872,
+    "underestimate_rate": 0.6692307692307692
+  },
+  {
+    "condition": "contrast_L2",
+    "accuracy": 0.33076923076923076,
+    "macro_f1": 0.16570327552986513,
+    "severity_mae": 0.9871794871794872,
+    "underestimate_rate": 0.6692307692307692
+  },
+  {
+    "condition": "contrast_L3",
+    "accuracy": 0.33076923076923076,
+    "macro_f1": 0.16570327552986513,
+    "severity_mae": 0.9871794871794872,
+    "underestimate_rate": 0.6692307692307692
+  }
+]

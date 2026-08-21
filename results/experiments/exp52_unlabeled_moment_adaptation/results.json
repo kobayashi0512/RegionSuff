@@ -1,0 +1,393 @@
+{
+  "protocol": "Source-free region-wise target-moment normalization. Target images but no target labels are used to estimate feature mean/std; all labels are held out until evaluation. Source heads and early stopping remain exactly as in Exp50/51.",
+  "adaptation": "For each embedding dimension, x_target=(raw-target_mean)/target_std, thereby mapping unlabeled target features into source-standardized coordinates.",
+  "targets": {
+    "IDRiD_test": {
+      "n_images": 103,
+      "original_grade_counts": {
+        "0": 34,
+        "1": 5,
+        "2": 32,
+        "3": 19,
+        "4": 13
+      },
+      "records": [
+        {
+          "seed": 0,
+          "best_source_val_macro_f1": 0.7578849652516272,
+          "epochs": 47,
+          "source_normalization": {
+            "accuracy": 0.1262135922330097,
+            "macro_f1": 0.10056390977443609,
+            "severity_mae": 1.203883495145631,
+            "underestimation_rate": 0.019417475728155338,
+            "binary_dr_auroc": 0.676470588235294,
+            "binary_dr_ap": 0.843770623616618
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.3592233009708738,
+            "macro_f1": 0.34958403178742165,
+            "severity_mae": 0.7475728155339806,
+            "underestimation_rate": 0.1553398058252427,
+            "binary_dr_auroc": 0.7182438192668372,
+            "binary_dr_ap": 0.8445841874200553
+          },
+          "delta_macro_f1": 0.24902012201298557,
+          "delta_auroc": 0.04177323103154318
+        },
+        {
+          "seed": 1,
+          "best_source_val_macro_f1": 0.7608917234678296,
+          "epochs": 68,
+          "source_normalization": {
+            "accuracy": 0.14563106796116504,
+            "macro_f1": 0.11246867167919801,
+            "severity_mae": 1.1650485436893203,
+            "underestimation_rate": 0.019417475728155338,
+            "binary_dr_auroc": 0.6909633418584825,
+            "binary_dr_ap": 0.8300248718788122
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.3786407766990291,
+            "macro_f1": 0.33278854783046474,
+            "severity_mae": 0.7475728155339806,
+            "underestimation_rate": 0.17475728155339806,
+            "binary_dr_auroc": 0.6687979539641944,
+            "binary_dr_ap": 0.815176148482696
+          },
+          "delta_macro_f1": 0.22031987615126675,
+          "delta_auroc": -0.022165387894288124
+        },
+        {
+          "seed": 2,
+          "best_source_val_macro_f1": 0.7386532460424086,
+          "epochs": 49,
+          "source_normalization": {
+            "accuracy": 0.1262135922330097,
+            "macro_f1": 0.10056390977443609,
+            "severity_mae": 1.203883495145631,
+            "underestimation_rate": 0.019417475728155338,
+            "binary_dr_auroc": 0.6781756180733163,
+            "binary_dr_ap": 0.846081996308782
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.36893203883495146,
+            "macro_f1": 0.3330717486098812,
+            "severity_mae": 0.7475728155339806,
+            "underestimation_rate": 0.18446601941747573,
+            "binary_dr_auroc": 0.6624040920716113,
+            "binary_dr_ap": 0.8201561083957041
+          },
+          "delta_macro_f1": 0.23250783883544512,
+          "delta_auroc": -0.01577152600170495
+        },
+        {
+          "seed": 3,
+          "best_source_val_macro_f1": 0.7592964047848154,
+          "epochs": 52,
+          "source_normalization": {
+            "accuracy": 0.1262135922330097,
+            "macro_f1": 0.10025410025410025,
+            "severity_mae": 1.203883495145631,
+            "underestimation_rate": 0.02912621359223301,
+            "binary_dr_auroc": 0.727621483375959,
+            "binary_dr_ap": 0.8697015629364908
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.3786407766990291,
+            "macro_f1": 0.3478970847904463,
+            "severity_mae": 0.6893203883495146,
+            "underestimation_rate": 0.1941747572815534,
+            "binary_dr_auroc": 0.7011935208866156,
+            "binary_dr_ap": 0.8414632882743577
+          },
+          "delta_macro_f1": 0.24764298453634603,
+          "delta_auroc": -0.026427962489343426
+        },
+        {
+          "seed": 4,
+          "best_source_val_macro_f1": 0.76846533495698,
+          "epochs": 81,
+          "source_normalization": {
+            "accuracy": 0.20388349514563106,
+            "macro_f1": 0.20473394630922048,
+            "severity_mae": 1.058252427184466,
+            "underestimation_rate": 0.038834951456310676,
+            "binary_dr_auroc": 0.7271952259164536,
+            "binary_dr_ap": 0.8650502088733549
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.3592233009708738,
+            "macro_f1": 0.3434744268077601,
+            "severity_mae": 0.7378640776699029,
+            "underestimation_rate": 0.14563106796116504,
+            "binary_dr_auroc": 0.7395566922421142,
+            "binary_dr_ap": 0.8715447647026417
+          },
+          "delta_macro_f1": 0.1387404804985396,
+          "delta_auroc": 0.012361466325660597
+        }
+      ],
+      "summary": {
+        "source_normalization": {
+          "accuracy": {
+            "mean": 0.14563106796116504,
+            "std": 0.033632054515900525
+          },
+          "macro_f1": {
+            "mean": 0.1237169075582782,
+            "std": 0.045587578674769764
+          },
+          "severity_mae": {
+            "mean": 1.166990291262136,
+            "std": 0.06306944376276391
+          },
+          "underestimation_rate": {
+            "mean": 0.02524271844660194,
+            "std": 0.008683759135921513
+          },
+          "binary_dr_auroc": {
+            "mean": 0.700085251491901,
+            "std": 0.02556407817765227
+          },
+          "binary_dr_ap": {
+            "mean": 0.8509258527228116,
+            "std": 0.016305949676870497
+          }
+        },
+        "unlabeled_target_moment_normalization": {
+          "accuracy": {
+            "mean": 0.36893203883495146,
+            "std": 0.009708737864077666
+          },
+          "macro_f1": {
+            "mean": 0.34136316796519484,
+            "std": 0.00801566950328854
+          },
+          "severity_mae": {
+            "mean": 0.7339805825242719,
+            "std": 0.025317290893990856
+          },
+          "underestimation_rate": {
+            "mean": 0.17087378640776701,
+            "std": 0.020132467333327887
+          },
+          "binary_dr_auroc": {
+            "mean": 0.6980392156862745,
+            "std": 0.032660334998438074
+          },
+          "binary_dr_ap": {
+            "mean": 0.8385848994550908,
+            "std": 0.022462297619657533
+          }
+        }
+      },
+      "paired_delta": {
+        "delta_macro_f1": {
+          "mean": 0.21764626040691662,
+          "std": 0.04565703529593998
+        },
+        "delta_auroc": {
+          "mean": -0.002046035805626545,
+          "std": 0.028789581545284947
+        }
+      }
+    },
+    "SUSTech_SYSU": {
+      "n_images": 1219,
+      "original_grade_counts": {
+        "0": 631,
+        "1": 24,
+        "2": 365,
+        "3": 73,
+        "4": 58,
+        "5": 68
+      },
+      "records": [
+        {
+          "seed": 0,
+          "best_source_val_macro_f1": 0.7578849652516272,
+          "epochs": 47,
+          "source_normalization": {
+            "accuracy": 0.10336341263330599,
+            "macro_f1": 0.062453531598513,
+            "severity_mae": 1.4142739950779328,
+            "underestimation_rate": 0.0,
+            "binary_dr_auroc": 0.8081357741194736,
+            "binary_dr_ap": 0.8171331899112465
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.44626743232157506,
+            "macro_f1": 0.4279597376120991,
+            "severity_mae": 0.6127973748974569,
+            "underestimation_rate": 0.062346185397867106,
+            "binary_dr_auroc": 0.8436236618260617,
+            "binary_dr_ap": 0.8499560969153017
+          },
+          "delta_macro_f1": 0.3655062060135861,
+          "delta_auroc": 0.03548788770658817
+        },
+        {
+          "seed": 1,
+          "best_source_val_macro_f1": 0.7608917234678296,
+          "epochs": 68,
+          "source_normalization": {
+            "accuracy": 0.11894995898277276,
+            "macro_f1": 0.08308226141588694,
+            "severity_mae": 1.379819524200164,
+            "underestimation_rate": 0.002461033634126333,
+            "binary_dr_auroc": 0.8160098429229061,
+            "binary_dr_ap": 0.8167856604603121
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.45775225594749797,
+            "macro_f1": 0.4354628434273102,
+            "severity_mae": 0.5898277276456112,
+            "underestimation_rate": 0.08531583264971287,
+            "binary_dr_auroc": 0.7931476869670213,
+            "binary_dr_ap": 0.7754610093345227
+          },
+          "delta_macro_f1": 0.35238058201142325,
+          "delta_auroc": -0.02286215595588481
+        },
+        {
+          "seed": 2,
+          "best_source_val_macro_f1": 0.7386532460424086,
+          "epochs": 49,
+          "source_normalization": {
+            "accuracy": 0.10336341263330599,
+            "macro_f1": 0.062453531598513,
+            "severity_mae": 1.4142739950779328,
+            "underestimation_rate": 0.0,
+            "binary_dr_auroc": 0.8082543635520769,
+            "binary_dr_ap": 0.8264819777095869
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.44380639868744876,
+            "macro_f1": 0.4284318447838527,
+            "severity_mae": 0.5980311730926989,
+            "underestimation_rate": 0.06562756357670221,
+            "binary_dr_auroc": 0.8224069342475501,
+            "binary_dr_ap": 0.835110011933943
+          },
+          "delta_macro_f1": 0.3659783131853397,
+          "delta_auroc": 0.014152570695473154
+        },
+        {
+          "seed": 3,
+          "best_source_val_macro_f1": 0.7592964047848154,
+          "epochs": 52,
+          "source_normalization": {
+            "accuracy": 0.10418375717801477,
+            "macro_f1": 0.0635548523206751,
+            "severity_mae": 1.4126333059885152,
+            "underestimation_rate": 0.0,
+            "binary_dr_auroc": 0.8289172245760428,
+            "binary_dr_ap": 0.8370743147249908
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.4913863822805578,
+            "macro_f1": 0.4612697605645093,
+            "severity_mae": 0.5561936013125512,
+            "underestimation_rate": 0.06808859721082855,
+            "binary_dr_auroc": 0.8656947723621936,
+            "binary_dr_ap": 0.8579948190456188
+          },
+          "delta_macro_f1": 0.3977149082438342,
+          "delta_auroc": 0.03677754778615083
+        },
+        {
+          "seed": 4,
+          "best_source_val_macro_f1": 0.76846533495698,
+          "epochs": 81,
+          "source_normalization": {
+            "accuracy": 0.1542247744052502,
+            "macro_f1": 0.129284709996903,
+            "severity_mae": 1.3002461033634127,
+            "underestimation_rate": 0.006562756357670222,
+            "binary_dr_auroc": 0.7827023836475955,
+            "binary_dr_ap": 0.7937235710212301
+          },
+          "unlabeled_target_moment_normalization": {
+            "accuracy": 0.4446267432321575,
+            "macro_f1": 0.40932275160378423,
+            "severity_mae": 0.6300246103363413,
+            "underestimation_rate": 0.09598031173092698,
+            "binary_dr_auroc": 0.8042843127742381,
+            "binary_dr_ap": 0.8073246922816542
+          },
+          "delta_macro_f1": 0.2800380416068812,
+          "delta_auroc": 0.021581929126642585
+        }
+      ],
+      "summary": {
+        "source_normalization": {
+          "accuracy": {
+            "mean": 0.11681706316652993,
+            "std": 0.021940191146740905
+          },
+          "macro_f1": {
+            "mean": 0.08016577738609822,
+            "std": 0.02882943614229021
+          },
+          "severity_mae": {
+            "mean": 1.3842493847415915,
+            "std": 0.04920563073411367
+          },
+          "underestimation_rate": {
+            "mean": 0.0018047579983593112,
+            "std": 0.0028653403111686595
+          },
+          "binary_dr_auroc": {
+            "mean": 0.808803917763619,
+            "std": 0.016870899333634493
+          },
+          "binary_dr_ap": {
+            "mean": 0.8182397427654733,
+            "std": 0.016023865243245915
+          }
+        },
+        "unlabeled_target_moment_normalization": {
+          "accuracy": {
+            "mean": 0.4567678424938474,
+            "std": 0.020156117541743852
+          },
+          "macro_f1": {
+            "mean": 0.4324893875983111,
+            "std": 0.01878047998343055
+          },
+          "severity_mae": {
+            "mean": 0.597374897456932,
+            "std": 0.02764573286925835
+          },
+          "underestimation_rate": {
+            "mean": 0.07547169811320754,
+            "std": 0.014501779761824188
+          },
+          "binary_dr_auroc": {
+            "mean": 0.825831473635413,
+            "std": 0.029367848355698962
+          },
+          "binary_dr_ap": {
+            "mean": 0.8251693259022079,
+            "std": 0.03383807744682831
+          }
+        }
+      },
+      "paired_delta": {
+        "delta_macro_f1": {
+          "mean": 0.35232361021221287,
+          "std": 0.04372015655485518
+        },
+        "delta_auroc": {
+          "mean": 0.017027555871793987,
+          "std": 0.0242437775381214
+        }
+      }
+    }
+  },
+  "notes": [
+    "This is a transductive, source-free adaptation audit, not a zero-shot result and not a deployable pre-specified calibration procedure.",
+    "A favorable result would motivate future target-domain calibration; an unfavorable result means simple first/second-moment alignment is insufficient."
+  ]
+}

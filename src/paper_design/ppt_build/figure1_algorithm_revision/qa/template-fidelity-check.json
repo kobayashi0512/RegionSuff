@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-08-17T01:20:09.432Z",
+  "workspace": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision",
+  "finalPptx": "/Users/tongyue/Documents/ppf/第四论文/图1_算法公式修订版.pptx",
+  "starterPptx": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter.pptx",
+  "mapPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-frame-map.json",
+  "starterLayoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter-layout",
+  "finalLayoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/final-inspect-qa3/template-inspect/layouts",
+  "editDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision",
+  "issueCount": 0,
+  "issues": []
+}

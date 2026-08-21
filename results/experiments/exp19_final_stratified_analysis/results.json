@@ -1,0 +1,81 @@
+{
+  "dataset": {
+    "n_test": 390,
+    "risk_positive": 59
+  },
+  "by_severity": {
+    "0": {
+      "n": 129,
+      "positive": 21,
+      "positive_rate": 0.16279069767441862,
+      "mean_score": 0.16667490656342543,
+      "score_std": 0.13666148377029724,
+      "auroc": 0.798941798941799,
+      "average_precision": 0.5393069982438683
+    },
+    "1": {
+      "n": 137,
+      "positive": 21,
+      "positive_rate": 0.15328467153284672,
+      "mean_score": 0.16915911459627925,
+      "score_std": 0.14885095375424118,
+      "auroc": 0.8103448275862069,
+      "average_precision": 0.5176287819004801
+    },
+    "2": {
+      "n": 124,
+      "positive": 17,
+      "positive_rate": 0.13709677419354838,
+      "mean_score": 0.1943231934919671,
+      "score_std": 0.12065723600262777,
+      "auroc": 0.6173721825178671,
+      "average_precision": 0.2193383530862566
+    }
+  },
+  "by_quality_tertile": {
+    "low": {
+      "n": 130,
+      "positive": 17,
+      "positive_rate": 0.13076923076923078,
+      "mean_score": 0.15198265829242213,
+      "score_std": 0.12025773421701066,
+      "auroc": 0.754294638209266,
+      "average_precision": 0.36624685572489574,
+      "quality_proxy_range": [
+        0.27489589210187676,
+        0.3085959042239031
+      ]
+    },
+    "middle": {
+      "n": 130,
+      "positive": 23,
+      "positive_rate": 0.17692307692307693,
+      "mean_score": 0.1960279380364195,
+      "score_std": 0.16153789039554495,
+      "auroc": 0.807801706623324,
+      "average_precision": 0.59313711329916,
+      "quality_proxy_range": [
+        0.3085959042239031,
+        0.34417998205207173
+      ]
+    },
+    "high": {
+      "n": 130,
+      "positive": 19,
+      "positive_rate": 0.14615384615384616,
+      "mean_score": 0.18100430858943573,
+      "score_std": 0.12109932888080066,
+      "auroc": 0.6804172593646278,
+      "average_precision": 0.2845033303778691,
+      "quality_proxy_range": [
+        0.34417998205207173,
+        0.47887530798948963
+      ]
+    }
+  },
+  "notes": [
+    "Severity strata use the UWF clinical grade; quality strata use the descriptive central-view quality proxy from the existing baseline.",
+    "The final score is the baseline_plus_uncertainty_quality model selected in Exp17.",
+    "Stratum-level AUROC is omitted when a stratum contains only one risk class."
+  ]
+}

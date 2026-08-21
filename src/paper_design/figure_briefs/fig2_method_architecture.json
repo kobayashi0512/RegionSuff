@@ -1,0 +1,33 @@
+{
+  "figure_goal": "Explain the complete current RegionSufficiency computation and the separation of severity learning, paired-view risk estimation, and threshold calibration.",
+  "paper_claim": "A shared regional representation can be conditioned on visible regions, while paired full-versus-limited predictions expose underestimation risk under the current evaluation protocol.",
+  "figure_type": "algorithm-workflow",
+  "mode": "mixed",
+  "panels": [
+    {"name": "A", "content": "Retinal foreground and 3x3 region bank with full, center, and center-plus-cross masks."},
+    {"name": "B", "content": "Frozen RetinaRadar EfficientNet-B0 encoder and trainable regional projection."},
+    {"name": "C", "content": "Shared masked-attention model evaluated under full and limited masks."},
+    {"name": "D", "content": "Severity probabilities, 18-dimensional evidence-gap vector, logistic underestimation risk, and calibrated accept/defer decision."},
+    {"name": "E", "content": "Leakage-control strip: train severity model on train, fit risk and threshold on validation, freeze for test/external audit."}
+  ],
+  "must_keep_labels": ["Frozen encoder", "Trainable projection", "Random region masking 30%", "Masked attention", "Full view", "Limited view", "Underestimation risk", "Clopper-Pearson calibration"],
+  "data": {"region_grid": "3x3", "mask_ratio": 0.30, "severity_classes": ["Normal", "NPDR", "PDR"], "risk_features": 18},
+  "style_constraints": [
+    "2019 RMB 20 inspired palette",
+    "four aligned panels plus one bottom protocol strip",
+    "horizontal or vertical single-segment arrows only",
+    "no curved, diagonal, crossing, or text-overlapping connectors",
+    "frozen and trainable components visually distinct",
+    "current paired-view risk audit must not be misdrawn as a single-view deployment head",
+    "editable SVG"
+  ],
+  "output_formats": ["svg", "pdf", "png"],
+  "verification_checklist": [
+    "Every formula is adjacent to the module it defines.",
+    "Full-view and limited-view branches share weights.",
+    "Risk target is underestimation of the limited-view prediction.",
+    "Training, validation calibration, and final evaluation are separated.",
+    "No connector crosses a module boundary or label."
+  ]
+}
+

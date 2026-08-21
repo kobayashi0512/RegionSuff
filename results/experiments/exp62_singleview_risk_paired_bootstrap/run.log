@@ -1,0 +1,126 @@
+{
+  "experiment": "Exp62 fair single-view versus paired-view risk head",
+  "protocol": "five-seed probability ensemble; same validation/test event target; test labels used only for final evaluation; one-sided Clopper-Pearson calibration on validation",
+  "event_definition": "center-plus-cross predicted severity is lower than the UWF clinical severity label",
+  "models": {
+    "paired_full_plus_cross": {
+      "test": {
+        "auroc": 0.7723954222573007,
+        "average_precision": 0.1891010142955669,
+        "brier": 0.15683304780043136,
+        "positive_rate": 0.07179487179487179
+      },
+      "validation": {
+        "auroc": 0.830496273712737,
+        "average_precision": 0.3244844360361468,
+        "brier": 0.19367304456341078,
+        "positive_rate": 0.0989010989010989
+      },
+      "selective": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.5512024545090407,
+            "validation_coverage": 0.6153846153846154,
+            "validation_risk": 0.022321428571428572,
+            "validation_cp_upper": 0.046357524667127246,
+            "feasible": true
+          },
+          "test_coverage": 0.735897435897436,
+          "test_accepted_n": 287,
+          "test_accepted_risk": 0.03832752613240418
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.7782816787353128,
+            "validation_coverage": 0.9203296703296703,
+            "validation_risk": 0.06567164179104477,
+            "validation_cp_upper": 0.09244966373524012,
+            "feasible": true
+          },
+          "test_coverage": 0.9769230769230769,
+          "test_accepted_n": 381,
+          "test_accepted_risk": 0.06824146981627296
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.9493577923080129,
+            "validation_coverage": 1.0,
+            "validation_risk": 0.0989010989010989,
+            "validation_cp_upper": 0.1285079215928169,
+            "feasible": true
+          },
+          "test_coverage": 1.0,
+          "test_accepted_n": 390,
+          "test_accepted_risk": 0.07179487179487179
+        }
+      }
+    },
+    "single_cross_only": {
+      "test": {
+        "auroc": 0.7670678768745067,
+        "average_precision": 0.14160342939975976,
+        "brier": 0.16799451025143325,
+        "positive_rate": 0.07179487179487179
+      },
+      "validation": {
+        "auroc": 0.7850186314363143,
+        "average_precision": 0.20679273623661626,
+        "brier": 0.2113426830090224,
+        "positive_rate": 0.0989010989010989
+      },
+      "selective": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.6184488199453508,
+            "validation_coverage": 0.6428571428571429,
+            "validation_risk": 0.02564102564102564,
+            "validation_cp_upper": 0.04997839123291399,
+            "feasible": true
+          },
+          "test_coverage": 0.764102564102564,
+          "test_accepted_n": 298,
+          "test_accepted_risk": 0.050335570469798654
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.6789750167248093,
+            "validation_coverage": 0.8186813186813187,
+            "validation_risk": 0.07046979865771812,
+            "validation_cp_upper": 0.09989467079518917,
+            "feasible": true
+          },
+          "test_coverage": 0.9,
+          "test_accepted_n": 351,
+          "test_accepted_risk": 0.07122507122507123
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.7433567126734942,
+            "validation_coverage": 1.0,
+            "validation_risk": 0.0989010989010989,
+            "validation_cp_upper": 0.1285079215928169,
+            "feasible": true
+          },
+          "test_coverage": 1.0,
+          "test_accepted_n": 390,
+          "test_accepted_risk": 0.07179487179487179
+        }
+      }
+    }
+  },
+  "paired_bootstrap": {
+    "single_minus_paired_auroc": -0.005327545382794008,
+    "bootstrap_replicates": 5000,
+    "95ci": [
+      -0.061677244409015106,
+      0.046999137030744625
+    ],
+    "probability_single_better": 0.4222
+  },
+  "notes": [
+    "The paired-view head receives full-view and center-plus-cross probabilities.",
+    "The single-view head receives only center-plus-cross probabilities and derived uncertainty features.",
+    "Center-plus-cross is a geometric proxy and not a real same-eye paired acquisition."
+  ],
+  "elapsed_seconds": 7.384264945983887
+}

@@ -1,0 +1,126 @@
+{
+  "full_metrics": {
+    "accuracy": 0.8384615384615385,
+    "macro_f1": 0.839725633843281,
+    "severity_mae": 0.1717948717948718,
+    "underestimation_rate": 0.07435897435897436
+  },
+  "rows": [
+    {
+      "region": 0,
+      "mean_attention": 0.05280868709087372,
+      "performance_drop_macro_f1": -7.947607947589308e-05,
+      "performance_drop_accuracy": 0.0,
+      "occluded_metrics": {
+        "accuracy": 0.8384615384615385,
+        "macro_f1": 0.8398051099227569,
+        "severity_mae": 0.1717948717948718,
+        "underestimation_rate": 0.07692307692307693
+      }
+    },
+    {
+      "region": 1,
+      "mean_attention": 0.10486842691898346,
+      "performance_drop_macro_f1": 0.002572501239874736,
+      "performance_drop_accuracy": 0.002564102564102555,
+      "occluded_metrics": {
+        "accuracy": 0.8358974358974359,
+        "macro_f1": 0.8371531326034063,
+        "severity_mae": 0.17435897435897435,
+        "underestimation_rate": 0.07948717948717948
+      }
+    },
+    {
+      "region": 2,
+      "mean_attention": 0.042450446635484695,
+      "performance_drop_macro_f1": 0.0025882756061785805,
+      "performance_drop_accuracy": 0.002564102564102555,
+      "occluded_metrics": {
+        "accuracy": 0.8358974358974359,
+        "macro_f1": 0.8371373582371024,
+        "severity_mae": 0.17435897435897435,
+        "underestimation_rate": 0.07435897435897436
+      }
+    },
+    {
+      "region": 3,
+      "mean_attention": 0.10933719575405121,
+      "performance_drop_macro_f1": 0.018365717415226968,
+      "performance_drop_accuracy": 0.017948717948717996,
+      "occluded_metrics": {
+        "accuracy": 0.8205128205128205,
+        "macro_f1": 0.8213599164280541,
+        "severity_mae": 0.18974358974358974,
+        "underestimation_rate": 0.08717948717948718
+      }
+    },
+    {
+      "region": 4,
+      "mean_attention": 0.3982432782649994,
+      "performance_drop_macro_f1": 0.06501287289988322,
+      "performance_drop_accuracy": 0.06666666666666665,
+      "occluded_metrics": {
+        "accuracy": 0.7717948717948718,
+        "macro_f1": 0.7747127609433978,
+        "severity_mae": 0.24615384615384617,
+        "underestimation_rate": 0.11025641025641025
+      }
+    },
+    {
+      "region": 5,
+      "mean_attention": 0.1344730108976364,
+      "performance_drop_macro_f1": 0.010584089197860358,
+      "performance_drop_accuracy": 0.01025641025641022,
+      "occluded_metrics": {
+        "accuracy": 0.8282051282051283,
+        "macro_f1": 0.8291415446454207,
+        "severity_mae": 0.18461538461538463,
+        "underestimation_rate": 0.08205128205128205
+      }
+    },
+    {
+      "region": 6,
+      "mean_attention": 0.04975293576717377,
+      "performance_drop_macro_f1": 0.004888434550859078,
+      "performance_drop_accuracy": 0.00512820512820511,
+      "occluded_metrics": {
+        "accuracy": 0.8333333333333334,
+        "macro_f1": 0.834837199292422,
+        "severity_mae": 0.1794871794871795,
+        "underestimation_rate": 0.07692307692307693
+      }
+    },
+    {
+      "region": 7,
+      "mean_attention": 0.08301688730716705,
+      "performance_drop_macro_f1": -0.002355523420352834,
+      "performance_drop_accuracy": -0.002564102564102555,
+      "occluded_metrics": {
+        "accuracy": 0.841025641025641,
+        "macro_f1": 0.8420811572636339,
+        "severity_mae": 0.1717948717948718,
+        "underestimation_rate": 0.07179487179487179
+      }
+    },
+    {
+      "region": 8,
+      "mean_attention": 0.02504909783601761,
+      "performance_drop_macro_f1": 0.0,
+      "performance_drop_accuracy": 0.0,
+      "occluded_metrics": {
+        "accuracy": 0.8384615384615385,
+        "macro_f1": 0.839725633843281,
+        "severity_mae": 0.1717948717948718,
+        "underestimation_rate": 0.07435897435897436
+      }
+    }
+  ],
+  "attention_occlusion_spearman": {
+    "rho": 0.6,
+    "p_value": 0.08762282904140249
+  },
+  "notes": [
+    "Each test image is evaluated with one region masked at a time; the model and test labels are unchanged.",
+    "Attention is considered mechanistically supported only if its regional ranking aligns with performance loss, not merely because a heatmap looks plausible."
+  ]
+}

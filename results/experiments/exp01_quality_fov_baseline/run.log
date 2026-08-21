@@ -1,0 +1,103 @@
+workspace=/Users/tongyue/Documents/77f 
+official image-level counts={'train': [347, 444, 350], 'val': [50, 63, 50], 'test': [99, 127, 100]}
+patient-level train: n=876, patients=602, counts=[260, 351, 265]
+patient-level val: n=364, patients=54, counts=[107, 146, 111]
+patient-level test: n=390, patients=127, counts=[129, 137, 124]
+Extracting full-view features
+  extracted 250/876
+  extracted 500/876
+  extracted 750/876
+  extracted 250/364
+  extracted 250/390
+Extracting central-view features
+  extracted 250/876
+  extracted 500/876
+  extracted 750/876
+  extracted 250/364
+  extracted 250/390
+Fitting full-view classifier
+Fitting central-view classifier
+{
+  "dataset": {
+    "full_images": 1630,
+    "feature_dimension": 67,
+    "central_crop_fraction": 0.55,
+    "split_counts": {
+      "train": [
+        260,
+        351,
+        265
+      ],
+      "val": [
+        107,
+        146,
+        111
+      ],
+      "test": [
+        129,
+        137,
+        124
+      ]
+    },
+    "patient_counts": {
+      "train": 602,
+      "val": 54,
+      "test": 127
+    },
+    "split_strategy": "patient-level grouped split, seed=42, target patient ratio 70/15/15"
+  },
+  "models": {
+    "train": {
+      "full_accuracy": 0.634703196347032,
+      "full_macro_f1": 0.6264912576904983,
+      "central_accuracy": 0.6974885844748858,
+      "central_macro_f1": 0.6966732695946102,
+      "full_severity_mae": 0.4132420091324201,
+      "central_severity_mae": 0.3264840182648402,
+      "central_underestimation_rate": 0.13470319634703196
+    },
+    "val": {
+      "full_accuracy": 0.49725274725274726,
+      "full_macro_f1": 0.48479473845898974,
+      "central_accuracy": 0.5192307692307693,
+      "central_macro_f1": 0.5186104996613132,
+      "full_severity_mae": 0.5796703296703297,
+      "central_severity_mae": 0.5494505494505495,
+      "central_underestimation_rate": 0.2032967032967033
+    },
+    "test": {
+      "full_accuracy": 0.5743589743589743,
+      "full_macro_f1": 0.5606467229720841,
+      "central_accuracy": 0.6230769230769231,
+      "central_macro_f1": 0.6190483747423837,
+      "full_severity_mae": 0.5128205128205128,
+      "central_severity_mae": 0.441025641025641,
+      "central_underestimation_rate": 0.15128205128205127
+    },
+    "risk_head": {
+      "train_underestimation_count": 118,
+      "val_underestimation_count": 74,
+      "test_underestimation_count": 59,
+      "val_auroc": 0.6964119291705498,
+      "val_average_precision": 0.44206336434866544,
+      "test_auroc": 0.7488862716984996,
+      "test_average_precision": 0.36102323217538157,
+      "quality_proxy_val_auroc": 0.6849487418452935,
+      "quality_proxy_val_average_precision": 0.30841625583633614,
+      "quality_proxy_test_auroc": 0.5617799170464437,
+      "quality_proxy_test_average_precision": 0.16486071607546565,
+      "entropy_val_auroc": 0.6814072693383039,
+      "entropy_val_average_precision": 0.30660575333479945,
+      "entropy_test_auroc": 0.6533872702135286,
+      "entropy_test_average_precision": 0.23003552091224086
+    }
+  },
+  "notes": [
+    "This is a lightweight feature baseline, not the final neural architecture.",
+    "Central view is a geometric crop from UWF and is not a real paired 45-degree acquisition.",
+    "All reported train/val/test results use a patient-level grouped split to prevent patient leakage.",
+    "quality_proxy is descriptive only because the downloaded UWF-DR dataset has disease labels but no ophthalmologist quality labels.",
+    "The main feasibility signal is whether central-view severity error and underestimation are non-trivial and predictable."
+  ]
+}
+saved=/Users/tongyue/Documents/77f /7hao/experiments/exp01_quality_fov_baseline

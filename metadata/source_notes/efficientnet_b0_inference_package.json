@@ -1,0 +1,95 @@
+{
+  "model_checkpoint": "/N/project/retinal_images/scripts/retinaradar/retinaradar/output/runs/run_Dp7rFiLrGVRESMaLdgoN5H-2025-11-15_224224/models/efficientnet_b0_final.ckpt",
+  "metadata": {
+    "num_labels": 17,
+    "feature_names": [
+      "laterality",
+      "fundus_image_type",
+      "artifacts",
+      "clarity",
+      "illumination",
+      "contrast",
+      "field",
+      "usable"
+    ],
+    "onehot_feature_names": [
+      "x0_left",
+      "x0_right",
+      "x1_standard",
+      "x1_ultrawidefield",
+      "x1_widefield",
+      "x2_False",
+      "x2_True",
+      "x3_False",
+      "x3_True",
+      "x4_False",
+      "x4_True",
+      "x5_False",
+      "x5_True",
+      "x6_False",
+      "x6_True",
+      "x7_False",
+      "x7_True"
+    ],
+    "label_categories": [
+      [
+        "left",
+        "right"
+      ],
+      [
+        "standard",
+        "ultrawidefield",
+        "widefield"
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        true
+      ]
+    ]
+  },
+  "config": {
+    "model_name": "efficientnet_b0",
+    "num_labels": 17,
+    "label_names": [
+      "x0_left",
+      "x0_right",
+      "x1_standard",
+      "x1_ultrawidefield",
+      "x1_widefield",
+      "x2_False",
+      "x2_True",
+      "x3_False",
+      "x3_True",
+      "x4_False",
+      "x4_True",
+      "x5_False",
+      "x5_True",
+      "x6_False",
+      "x6_True",
+      "x7_False",
+      "x7_True"
+    ],
+    "learning_rate": 0.0001,
+    "input_size": 512
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "dataset": {
+    "n": 1630,
+    "device": "mps",
+    "split_counts": {
+      "train": [
+        260,
+        351,
+        265
+      ],
+      "val": [
+        107,
+        146,
+        111
+      ],
+      "test": [
+        129,
+        137,
+        124
+      ]
+    },
+    "patient_counts": {
+      "train": 602,
+      "val": 54,
+      "test": 127
+    },
+    "central_crop_fraction": 0.55
+  },
+  "models": {
+    "full": {
+      "train": {
+        "accuracy": 0.9988584474885844,
+        "macro_f1": 0.9988835808732371,
+        "severity_mae": 0.001141552511415525,
+        "underestimation_rate": 0.0
+      },
+      "val": {
+        "accuracy": 0.7005494505494505,
+        "macro_f1": 0.7060131280313945,
+        "severity_mae": 0.31868131868131866,
+        "underestimation_rate": 0.14285714285714285
+      },
+      "test": {
+        "accuracy": 0.7743589743589744,
+        "macro_f1": 0.775690344291372,
+        "severity_mae": 0.24358974358974358,
+        "underestimation_rate": 0.10512820512820513
+      }
+    },
+    "central": {
+      "train": {
+        "accuracy": 0.9988584474885844,
+        "macro_f1": 0.9988846935599723,
+        "severity_mae": 0.001141552511415525,
+        "underestimation_rate": 0.001141552511415525
+      },
+      "val": {
+        "accuracy": 0.7142857142857143,
+        "macro_f1": 0.718262302619966,
+        "severity_mae": 0.30494505494505497,
+        "underestimation_rate": 0.14835164835164835
+      },
+      "test": {
+        "accuracy": 0.8384615384615385,
+        "macro_f1": 0.8397762530916942,
+        "severity_mae": 0.1717948717948718,
+        "underestimation_rate": 0.10256410256410256
+      }
+    },
+    "quality_logits_only": {
+      "full": {
+        "train": {
+          "accuracy": 0.6518264840182648,
+          "macro_f1": 0.6574601676621595,
+          "severity_mae": 0.3744292237442922,
+          "underestimation_rate": 0.19292237442922375
+        },
+        "val": {
+          "accuracy": 0.6346153846153846,
+          "macro_f1": 0.6370292998235206,
+          "severity_mae": 0.4340659340659341,
+          "underestimation_rate": 0.12087912087912088
+        },
+        "test": {
+          "accuracy": 0.6102564102564103,
+          "macro_f1": 0.6139421706161904,
+          "severity_mae": 0.43333333333333335,
+          "underestimation_rate": 0.16153846153846155
+        }
+      },
+      "central": {
+        "train": {
+          "accuracy": 0.6883561643835616,
+          "macro_f1": 0.6899375505520756,
+          "severity_mae": 0.3447488584474886,
+          "underestimation_rate": 0.14383561643835616
+        },
+        "val": {
+          "accuracy": 0.5714285714285714,
+          "macro_f1": 0.5698989898989898,
+          "severity_mae": 0.5054945054945055,
+          "underestimation_rate": 0.21153846153846154
+        },
+        "test": {
+          "accuracy": 0.6897435897435897,
+          "macro_f1": 0.6906370730319248,
+          "severity_mae": 0.36666666666666664,
+          "underestimation_rate": 0.11025641025641025
+        }
+      }
+    },
+    "risk_head": {
+      "train_positive": 78,
+      "val_positive": 54,
+      "test_positive": 40,
+      "val": {
+        "auroc": 0.5000597371565114,
+        "average_precision": 0.1679802761872281
+      },
+      "test": {
+        "auroc": 0.6160714285714286,
+        "average_precision": 0.14163790797373516
+      }
+    }
+  },
+  "notes": [
+    "RetinaRadar EfficientNet-B0 weights are used frozen; this is a quality-assessment model, not a disease foundation model.",
+    "Central view is a geometric 55% crop of UWF and is not a real paired 45-degree acquisition.",
+    "Disease classifiers are linear probes trained on frozen representations under patient-level splits.",
+    "The underestimation target is defined relative to the UWF dataset's clinical severity label and the central-view linear probe prediction."
+  ]
+}

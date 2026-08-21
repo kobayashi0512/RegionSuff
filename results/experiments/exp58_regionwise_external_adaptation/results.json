@@ -1,0 +1,369 @@
+{
+  "experiment": "Exp58 region-wise external normalization",
+  "targets": {
+    "IDRiD_test": {
+      "n": 103,
+      "methods": {
+        "global_source": {
+          "full": {
+            "accuracy": {
+              "mean": 0.14563106796116504,
+              "std": 0.033632054515900525
+            },
+            "macro_f1": {
+              "mean": 0.1237169075582782,
+              "std": 0.045587578674769764
+            },
+            "severity_mae": {
+              "mean": 1.166990291262136,
+              "std": 0.06306944376276391
+            },
+            "underestimation_rate": {
+              "mean": 0.02524271844660194,
+              "std": 0.008683759135921513
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.16116504854368932,
+              "std": 0.020132467333327887
+            },
+            "macro_f1": {
+              "mean": 0.14694346395070865,
+              "std": 0.031962939589203807
+            },
+            "severity_mae": {
+              "mean": 1.1359223300970873,
+              "std": 0.03760178006026617
+            },
+            "underestimation_rate": {
+              "mean": 0.03689320388349514,
+              "std": 0.02605127740776454
+            }
+          }
+        },
+        "region_source": {
+          "full": {
+            "accuracy": {
+              "mean": 0.13009708737864076,
+              "std": 0.011069664321350849
+            },
+            "macro_f1": {
+              "mean": 0.10316647028065404,
+              "std": 0.023565709158695988
+            },
+            "severity_mae": {
+              "mean": 1.192233009708738,
+              "std": 0.02317929395400644
+            },
+            "underestimation_rate": {
+              "mean": 0.023300970873786405,
+              "std": 0.016245825757943214
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.14368932038834953,
+              "std": 0.01265864544699544
+            },
+            "macro_f1": {
+              "mean": 0.1264524787086937,
+              "std": 0.02138578840523863
+            },
+            "severity_mae": {
+              "mean": 1.1669902912621357,
+              "std": 0.024174562326191702
+            },
+            "underestimation_rate": {
+              "mean": 0.040776699029126215,
+              "std": 0.027801594297623987
+            }
+          }
+        },
+        "region_target": {
+          "full": {
+            "accuracy": {
+              "mean": 0.3825242718446602,
+              "std": 0.03473503654368604
+            },
+            "macro_f1": {
+              "mean": 0.33696318174452367,
+              "std": 0.032164622517914666
+            },
+            "severity_mae": {
+              "mean": 0.6854368932038836,
+              "std": 0.045330553514286435
+            },
+            "underestimation_rate": {
+              "mean": 0.15339805825242717,
+              "std": 0.025130444865135503
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.36893203883495146,
+              "std": 0.0343255719022596
+            },
+            "macro_f1": {
+              "mean": 0.34161378718270224,
+              "std": 0.02903842004786079
+            },
+            "severity_mae": {
+              "mean": 0.7242718446601942,
+              "std": 0.043743224567257495
+            },
+            "underestimation_rate": {
+              "mean": 0.1883495145631068,
+              "std": 0.02338173704619863
+            }
+          }
+        }
+      }
+    },
+    "SUSTech_SYSU": {
+      "n": 1219,
+      "methods": {
+        "global_source": {
+          "full": {
+            "accuracy": {
+              "mean": 0.11681706316652993,
+              "std": 0.021940191146740905
+            },
+            "macro_f1": {
+              "mean": 0.08016577738609822,
+              "std": 0.02882943614229021
+            },
+            "severity_mae": {
+              "mean": 1.3842493847415915,
+              "std": 0.04920563073411367
+            },
+            "underestimation_rate": {
+              "mean": 0.0018047579983593112,
+              "std": 0.0028653403111686595
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.12420016406890895,
+              "std": 0.03045567100908641
+            },
+            "macro_f1": {
+              "mean": 0.08905822658148332,
+              "std": 0.03854214373759702
+            },
+            "severity_mae": {
+              "mean": 1.3716160787530762,
+              "std": 0.06215970990303987
+            },
+            "underestimation_rate": {
+              "mean": 0.0037735849056603774,
+              "std": 0.006396583655329919
+            }
+          }
+        },
+        "region_source": {
+          "full": {
+            "accuracy": {
+              "mean": 0.10648072190319935,
+              "std": 0.003594569696506419
+            },
+            "macro_f1": {
+              "mean": 0.06745078861817348,
+              "std": 0.00575879996032077
+            },
+            "severity_mae": {
+              "mean": 1.4063986874487284,
+              "std": 0.009453558845537634
+            },
+            "underestimation_rate": {
+              "mean": 0.00016406890894175554,
+              "std": 0.0003668692333879885
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.10795734208367516,
+              "std": 0.004942533332696331
+            },
+            "macro_f1": {
+              "mean": 0.0686195690185361,
+              "std": 0.006619960873673489
+            },
+            "severity_mae": {
+              "mean": 1.404101722723544,
+              "std": 0.011106507823511953
+            },
+            "underestimation_rate": {
+              "mean": 0.0008203445447087776,
+              "std": 0.0011601423809459352
+            }
+          }
+        },
+        "region_target": {
+          "full": {
+            "accuracy": {
+              "mean": 0.3914684167350287,
+              "std": 0.03356101620083021
+            },
+            "macro_f1": {
+              "mean": 0.379498034501088,
+              "std": 0.026759788519054716
+            },
+            "severity_mae": {
+              "mean": 0.666447908121411,
+              "std": 0.03788535493977778
+            },
+            "underestimation_rate": {
+              "mean": 0.06858080393765381,
+              "std": 0.006902603434934416
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.43921246923707963,
+              "std": 0.021770837619695754
+            },
+            "macro_f1": {
+              "mean": 0.4226678905968456,
+              "std": 0.015403760017168306
+            },
+            "severity_mae": {
+              "mean": 0.6091878589007382,
+              "std": 0.020676914029730164
+            },
+            "underestimation_rate": {
+              "mean": 0.07514356029532404,
+              "std": 0.00634376207684371
+            }
+          }
+        }
+      }
+    },
+    "MMRDR_UWF": {
+      "n": 2597,
+      "methods": {
+        "global_source": {
+          "full": {
+            "accuracy": {
+              "mean": 0.6274932614555255,
+              "std": 0.01032721171668679
+            },
+            "macro_f1": {
+              "mean": 0.6250688320811616,
+              "std": 0.009863398837103627
+            },
+            "severity_mae": {
+              "mean": 0.40030804774740086,
+              "std": 0.01310504687028889
+            },
+            "underestimation_rate": {
+              "mean": 0.2718521370812476,
+              "std": 0.013308255416854415
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.6441278398151713,
+              "std": 0.00433427395156108
+            },
+            "macro_f1": {
+              "mean": 0.642452418986693,
+              "std": 0.004688008613764187
+            },
+            "severity_mae": {
+              "mean": 0.3780515979976896,
+              "std": 0.005992597651893898
+            },
+            "underestimation_rate": {
+              "mean": 0.26045437042741626,
+              "std": 0.00502499199622944
+            }
+          }
+        },
+        "region_source": {
+          "full": {
+            "accuracy": {
+              "mean": 0.5999229880631498,
+              "std": 0.013148533753533993
+            },
+            "macro_f1": {
+              "mean": 0.595018480570862,
+              "std": 0.013908364134250003
+            },
+            "severity_mae": {
+              "mean": 0.43442433577204465,
+              "std": 0.017347782809223347
+            },
+            "underestimation_rate": {
+              "mean": 0.2907970735463997,
+              "std": 0.019563154221039537
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.6118598382749326,
+              "std": 0.012213131711323598
+            },
+            "macro_f1": {
+              "mean": 0.609625493192085,
+              "std": 0.011695781680856849
+            },
+            "severity_mae": {
+              "mean": 0.41732768579129764,
+              "std": 0.012999400509576108
+            },
+            "underestimation_rate": {
+              "mean": 0.3004235656526762,
+              "std": 0.01625800237324411
+            }
+          }
+        },
+        "region_target": {
+          "full": {
+            "accuracy": {
+              "mean": 0.6073161340007701,
+              "std": 0.018521731051920468
+            },
+            "macro_f1": {
+              "mean": 0.5888972649083045,
+              "std": 0.01905492356822661
+            },
+            "severity_mae": {
+              "mean": 0.4361956103195996,
+              "std": 0.025783764374209678
+            },
+            "underestimation_rate": {
+              "mean": 0.1640354254909511,
+              "std": 0.0080633005742672
+            }
+          },
+          "cross": {
+            "accuracy": {
+              "mean": 0.6325760492876396,
+              "std": 0.014539254048709937
+            },
+            "macro_f1": {
+              "mean": 0.6193218011523326,
+              "std": 0.014231267919392956
+            },
+            "severity_mae": {
+              "mean": 0.4042356565267616,
+              "std": 0.019515727403064776
+            },
+            "underestimation_rate": {
+              "mean": 0.16680785521755875,
+              "std": 0.01007576928131069
+            }
+          }
+        }
+      }
+    }
+  },
+  "protocol": "source labels only train the source head; target moments are estimated without target labels",
+  "notes": [
+    "All geometric views are the same 3x3 masks used in the source model.",
+    "Region-wise target normalization is transductive and unlabeled; it is not a clinical calibration procedure.",
+    "A method is not promoted solely because macro-F1 improves if underestimation or MAE worsens materially."
+  ],
+  "elapsed_seconds": 10.219990015029907
+}

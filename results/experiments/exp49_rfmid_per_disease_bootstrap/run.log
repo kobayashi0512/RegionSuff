@@ -1,0 +1,33 @@
+device=mps; train=684 test=170
+regions: 32/6156
+regions: 544/6156
+regions: 1056/6156
+regions: 1568/6156
+regions: 2080/6156
+regions: 2592/6156
+regions: 3104/6156
+regions: 3616/6156
+regions: 4128/6156
+regions: 4640/6156
+regions: 5152/6156
+regions: 5664/6156
+regions: 6156/6156
+regions: 32/1530
+regions: 544/1530
+regions: 1056/1530
+0:WNL done
+4:BRVO done
+8:CME done
+11:CRS done
+14:CWS done
+17:DR done
+18:EDN done
+22:HR done
+26:MH done
+28:MS done
+29:MYA done
+30:ODC done
+42:RT done
+46:TSLN done
+47:TV done
+{"eligible_labels": 15, "excluded_labels": 36}

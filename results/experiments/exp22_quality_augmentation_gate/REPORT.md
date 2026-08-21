@@ -1,0 +1,322 @@
+# Exp22：质量增强训练与拒识机制
+
+## 设计
+在原始训练图像上加入中等强度的模糊、亮度和对比度扰动，训练一个质量增强模型；测试阶段沿用Exp06的三档合成退化。另用验证集校准一个不依赖疾病标签的质量门控分数，低于阈值的图像进入拒识/人工复核。
+
+## 结果
+```json
+{
+  "models": {
+    "clean_only": {
+      "clean": {
+        "accuracy": 0.5743589743589743,
+        "macro_f1": 0.5606467229720841,
+        "severity_mae": 0.5128205128205128,
+        "underestimation_rate": 0.1641025641025641,
+        "predicted_class_counts": [
+          77,
+          191,
+          122
+        ]
+      },
+      "blur_L1": {
+        "accuracy": 0.5897435897435898,
+        "macro_f1": 0.5805004220098559,
+        "severity_mae": 0.49230769230769234,
+        "underestimation_rate": 0.16923076923076924,
+        "predicted_class_counts": [
+          83,
+          193,
+          114
+        ]
+      },
+      "blur_L2": {
+        "accuracy": 0.5820512820512821,
+        "macro_f1": 0.5770098299730083,
+        "severity_mae": 0.4897435897435897,
+        "underestimation_rate": 0.18205128205128204,
+        "predicted_class_counts": [
+          88,
+          194,
+          108
+        ]
+      },
+      "blur_L3": {
+        "accuracy": 0.5794871794871795,
+        "macro_f1": 0.5791285170784731,
+        "severity_mae": 0.4846153846153846,
+        "underestimation_rate": 0.2,
+        "predicted_class_counts": [
+          95,
+          198,
+          97
+        ]
+      },
+      "brightness_L1": {
+        "accuracy": 0.49743589743589745,
+        "macro_f1": 0.4456275703010399,
+        "severity_mae": 0.6435897435897436,
+        "underestimation_rate": 0.48205128205128206,
+        "predicted_class_counts": [
+          303,
+          20,
+          67
+        ]
+      },
+      "brightness_L2": {
+        "accuracy": 0.38461538461538464,
+        "macro_f1": 0.2728471933951386,
+        "severity_mae": 0.8743589743589744,
+        "underestimation_rate": 0.6128205128205129,
+        "predicted_class_counts": [
+          366,
+          2,
+          22
+        ]
+      },
+      "brightness_L3": {
+        "accuracy": 0.33076923076923076,
+        "macro_f1": 0.16570327552986513,
+        "severity_mae": 0.9871794871794872,
+        "underestimation_rate": 0.6692307692307692,
+        "predicted_class_counts": [
+          390,
+          0,
+          0
+        ]
+      },
+      "contrast_L1": {
+        "accuracy": 0.33076923076923076,
+        "macro_f1": 0.16570327552986513,
+        "severity_mae": 0.9871794871794872,
+        "underestimation_rate": 0.6692307692307692,
+        "predicted_class_counts": [
+          390,
+          0,
+          0
+        ]
+      },
+      "contrast_L2": {
+        "accuracy": 0.33076923076923076,
+        "macro_f1": 0.16570327552986513,
+        "severity_mae": 0.9871794871794872,
+        "underestimation_rate": 0.6692307692307692,
+        "predicted_class_counts": [
+          390,
+          0,
+          0
+        ]
+      },
+      "contrast_L3": {
+        "accuracy": 0.33076923076923076,
+        "macro_f1": 0.16570327552986513,
+        "severity_mae": 0.9871794871794872,
+        "underestimation_rate": 0.6692307692307692,
+        "predicted_class_counts": [
+          390,
+          0,
+          0
+        ]
+      }
+    },
+    "quality_augmented": {
+      "clean": {
+        "accuracy": 0.45897435897435895,
+        "macro_f1": 0.41346889407255566,
+        "severity_mae": 0.6,
+        "underestimation_rate": 0.2358974358974359,
+        "predicted_class_counts": [
+          43,
+          283,
+          64
+        ]
+      },
+      "blur_L1": {
+        "accuracy": 0.45384615384615384,
+        "macro_f1": 0.40599479978338504,
+        "severity_mae": 0.6076923076923076,
+        "underestimation_rate": 0.23846153846153847,
+        "predicted_class_counts": [
+          42,
+          284,
+          64
+        ]
+      },
+      "blur_L2": {
+        "accuracy": 0.4564102564102564,
+        "macro_f1": 0.4095408990741652,
+        "severity_mae": 0.6025641025641025,
+        "underestimation_rate": 0.2358974358974359,
+        "predicted_class_counts": [
+          42,
+          284,
+          64
+        ]
+      },
+      "blur_L3": {
+        "accuracy": 0.4564102564102564,
+        "macro_f1": 0.4054644808743169,
+        "severity_mae": 0.6025641025641025,
+        "underestimation_rate": 0.23846153846153847,
+        "predicted_class_counts": [
+          41,
+          290,
+          59
+        ]
+      },
+      "brightness_L1": {
+        "accuracy": 0.4307692307692308,
+        "macro_f1": 0.37189534061810825,
+        "severity_mae": 0.617948717948718,
+        "underestimation_rate": 0.2717948717948718,
+        "predicted_class_counts": [
+          43,
+          306,
+          41
+        ]
+      },
+      "brightness_L2": {
+        "accuracy": 0.4025641025641026,
+        "macro_f1": 0.3074816777283114,
+        "severity_mae": 0.6333333333333333,
+        "underestimation_rate": 0.3,
+        "predicted_class_counts": [
+          35,
+          338,
+          17
+        ]
+      },
+      "brightness_L3": {
+        "accuracy": 0.3717948717948718,
+        "macro_f1": 0.2234674023573936,
+        "severity_mae": 0.6512820512820513,
+        "underestimation_rate": 0.32051282051282054,
+        "predicted_class_counts": [
+          20,
+          369,
+          1
+        ]
+      },
+      "contrast_L1": {
+        "accuracy": 0.4512820512820513,
+        "macro_f1": 0.39133265897605013,
+        "severity_mae": 0.6076923076923076,
+        "underestimation_rate": 0.2282051282051282,
+        "predicted_class_counts": [
+          32,
+          294,
+          64
+        ]
+      },
+      "contrast_L2": {
+        "accuracy": 0.44358974358974357,
+        "macro_f1": 0.36671885146461425,
+        "severity_mae": 0.5974358974358974,
+        "underestimation_rate": 0.2358974358974359,
+        "predicted_class_counts": [
+          19,
+          318,
+          53
+        ]
+      },
+      "contrast_L3": {
+        "accuracy": 0.4307692307692308,
+        "macro_f1": 0.33592265232448376,
+        "severity_mae": 0.6,
+        "underestimation_rate": 0.24615384615384617,
+        "predicted_class_counts": [
+          12,
+          337,
+          41
+        ]
+      }
+    }
+  },
+  "quality_gate": {
+    "calibration": {
+      "n": 1092,
+      "threshold": -2.47260840700273,
+      "calibration_metrics": {
+        "threshold": -2.47260840700273,
+        "coverage": 0.9496336996336996,
+        "accepted_accuracy": 0.4069431051108968,
+        "accepted_underestimation_rate": 0.29990356798457085,
+        "rejected_n": 55
+      }
+    },
+    "clean": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.45897435897435895,
+      "accepted_underestimation_rate": 0.2358974358974359,
+      "rejected_n": 0
+    },
+    "blur_L1": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.45384615384615384,
+      "accepted_underestimation_rate": 0.23846153846153847,
+      "rejected_n": 0
+    },
+    "blur_L2": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.4564102564102564,
+      "accepted_underestimation_rate": 0.2358974358974359,
+      "rejected_n": 0
+    },
+    "blur_L3": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.4564102564102564,
+      "accepted_underestimation_rate": 0.23846153846153847,
+      "rejected_n": 0
+    },
+    "brightness_L1": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.4307692307692308,
+      "accepted_underestimation_rate": 0.2717948717948718,
+      "rejected_n": 0
+    },
+    "brightness_L2": {
+      "threshold": -2.47260840700273,
+      "coverage": 0.9794871794871794,
+      "accepted_accuracy": 0.39528795811518325,
+      "accepted_underestimation_rate": 0.306282722513089,
+      "rejected_n": 8
+    },
+    "brightness_L3": {
+      "threshold": -2.47260840700273,
+      "coverage": 0.09487179487179487,
+      "accepted_accuracy": 0.10810810810810811,
+      "accepted_underestimation_rate": 0.7027027027027027,
+      "rejected_n": 353
+    },
+    "contrast_L1": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.4512820512820513,
+      "accepted_underestimation_rate": 0.2282051282051282,
+      "rejected_n": 0
+    },
+    "contrast_L2": {
+      "threshold": -2.47260840700273,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.44358974358974357,
+      "accepted_underestimation_rate": 0.2358974358974359,
+      "rejected_n": 0
+    },
+    "contrast_L3": {
+      "threshold": -2.47260840700273,
+      "coverage": 0.9794871794871794,
+      "accepted_accuracy": 0.42670157068062825,
+      "accepted_underestimation_rate": 0.2513089005235602,
+      "rejected_n": 8
+    }
+  }
+}
+```
+
+## 注意
+门控的价值不是让模型‘强行给出答案’，而是在图像质量明显不足时降低自动判读覆盖率、提高保留样本的可靠性。该门控仍需真实低质量临床样本验证。

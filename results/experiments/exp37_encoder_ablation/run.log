@@ -1,0 +1,132 @@
+resnet: 32/7884
+resnet: 544/7884
+resnet: 1056/7884
+resnet: 1568/7884
+resnet: 2080/7884
+resnet: 2592/7884
+resnet: 3104/7884
+resnet: 3616/7884
+resnet: 4128/7884
+resnet: 4640/7884
+resnet: 5152/7884
+resnet: 5664/7884
+resnet: 6176/7884
+resnet: 6688/7884
+resnet: 7200/7884
+resnet: 7712/7884
+resnet: 32/3276
+resnet: 544/3276
+resnet: 1056/3276
+resnet: 1568/3276
+resnet: 2080/3276
+resnet: 2592/3276
+resnet: 3104/3276
+resnet: 32/3510
+resnet: 544/3510
+resnet: 1056/3510
+resnet: 1568/3510
+resnet: 2080/3510
+resnet: 2592/3510
+resnet: 3104/3510
+resnet: 32/7884
+resnet: 544/7884
+resnet: 1056/7884
+resnet: 1568/7884
+resnet: 2080/7884
+resnet: 2592/7884
+resnet: 3104/7884
+resnet: 3616/7884
+resnet: 4128/7884
+resnet: 4640/7884
+resnet: 5152/7884
+resnet: 5664/7884
+resnet: 6176/7884
+resnet: 6688/7884
+resnet: 7200/7884
+resnet: 7712/7884
+resnet: 32/3276
+resnet: 544/3276
+resnet: 1056/3276
+resnet: 1568/3276
+resnet: 2080/3276
+resnet: 2592/3276
+resnet: 3104/3276
+resnet: 32/3510
+resnet: 544/3510
+resnet: 1056/3510
+resnet: 1568/3510
+resnet: 2080/3510
+resnet: 2592/3510
+resnet: 3104/3510
+{
+  "representations": {
+    "retinaradar_region": {
+      "best_val_macro_f1": 0.7558871666336615,
+      "epochs": 54,
+      "full": {
+        "accuracy": 0.8384615384615385,
+        "macro_f1": 0.839725633843281,
+        "severity_mae": 0.1717948717948718,
+        "underestimation_rate": 0.07435897435897436
+      },
+      "cross": {
+        "accuracy": 0.8358974358974359,
+        "macro_f1": 0.8372226470293626,
+        "severity_mae": 0.17435897435897435,
+        "underestimation_rate": 0.07692307692307693
+      }
+    },
+    "handcrafted_region": {
+      "best_val_macro_f1": 0.5437997193217052,
+      "epochs": 180,
+      "full": {
+        "accuracy": 0.6051282051282051,
+        "macro_f1": 0.6054957829151376,
+        "severity_mae": 0.45897435897435895,
+        "underestimation_rate": 0.18205128205128204
+      },
+      "cross": {
+        "accuracy": 0.6025641025641025,
+        "macro_f1": 0.6039541369480741,
+        "severity_mae": 0.45897435897435895,
+        "underestimation_rate": 0.18461538461538463
+      }
+    },
+    "imagenet_resnet50_region": {
+      "best_val_macro_f1": 0.7944192259981735,
+      "epochs": 57,
+      "full": {
+        "accuracy": 0.7769230769230769,
+        "macro_f1": 0.7795559085760875,
+        "severity_mae": 0.23333333333333334,
+        "underestimation_rate": 0.08717948717948718
+      },
+      "cross": {
+        "accuracy": 0.7692307692307693,
+        "macro_f1": 0.7724959447102018,
+        "severity_mae": 0.23846153846153847,
+        "underestimation_rate": 0.08974358974358974
+      }
+    },
+    "random_resnet50_region": {
+      "best_val_macro_f1": 0.15578947368421053,
+      "epochs": 27,
+      "full": {
+        "accuracy": 0.31794871794871793,
+        "macro_f1": 0.16083009079118027,
+        "severity_mae": 1.0128205128205128,
+        "underestimation_rate": 0.0
+      },
+      "cross": {
+        "accuracy": 0.31794871794871793,
+        "macro_f1": 0.16083009079118027,
+        "severity_mae": 1.0128205128205128,
+        "underestimation_rate": 0.0
+      }
+    }
+  },
+  "notes": [
+    "RetinaRadar is the primary frozen retinal-quality encoder; ImageNet uses cached torchvision ResNet50 weights; random is an untrained ResNet50 control; handcrafted is the 67-dimensional regional-statistics control.",
+    "All representations use the same 3x3 region masks and attention aggregator."
+  ]
+}

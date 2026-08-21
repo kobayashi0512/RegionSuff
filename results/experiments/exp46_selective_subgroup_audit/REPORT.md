@@ -1,0 +1,408 @@
+# Exp46：选择性风险头严重度分层审计
+
+在五个随机种子下，分别统计目标风险5%和10%时Normal/NPDR/PDR的自动通过覆盖率与接受样本错误率。
+
+```json
+{
+  "n_seeds": 5,
+  "rows": [
+    {
+      "seed": 0,
+      "risk_auroc": {
+        "auroc": 0.7489633929629191,
+        "average_precision": 0.11628125895421652,
+        "positive_rate": 0.05897435897435897,
+        "brier": 0.1743644097233773
+      },
+      "strata": {
+        "0.05": {
+          "target": 0.05,
+          "overall": {
+            "coverage": 0.6794871794871795,
+            "risk": 0.033962264150943396,
+            "n": 265
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 116,
+              "coverage": 0.8992248062015504,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 38,
+              "coverage": 0.2773722627737226,
+              "accepted_risk": 0.18421052631578946
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 111,
+              "coverage": 0.8951612903225806,
+              "accepted_risk": 0.018018018018018018
+            }
+          }
+        },
+        "0.10": {
+          "target": 0.1,
+          "overall": {
+            "coverage": 0.9974358974358974,
+            "risk": 0.05912596401028278,
+            "n": 389
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 129,
+              "coverage": 1.0,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 136,
+              "coverage": 0.9927007299270073,
+              "accepted_risk": 0.058823529411764705
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 124,
+              "coverage": 1.0,
+              "accepted_risk": 0.12096774193548387
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "risk_auroc": {
+        "auroc": 0.7753722334004024,
+        "average_precision": 0.25917074840256665,
+        "positive_rate": 0.08974358974358974,
+        "brier": 0.17423448788203716
+      },
+      "strata": {
+        "0.05": {
+          "target": 0.05,
+          "overall": {
+            "coverage": 0.7025641025641025,
+            "risk": 0.05474452554744526,
+            "n": 274
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 106,
+              "coverage": 0.8217054263565892,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 57,
+              "coverage": 0.41605839416058393,
+              "accepted_risk": 0.12280701754385964
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 111,
+              "coverage": 0.8951612903225806,
+              "accepted_risk": 0.07207207207207207
+            }
+          }
+        },
+        "0.10": {
+          "target": 0.1,
+          "overall": {
+            "coverage": 0.8256410256410256,
+            "risk": 0.06832298136645963,
+            "n": 322
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 113,
+              "coverage": 0.875968992248062,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 91,
+              "coverage": 0.6642335766423357,
+              "accepted_risk": 0.07692307692307693
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 118,
+              "coverage": 0.9516129032258065,
+              "accepted_risk": 0.1271186440677966
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "risk_auroc": {
+        "auroc": 0.7725666252746203,
+        "average_precision": 0.1593254567247666,
+        "positive_rate": 0.07435897435897436,
+        "brier": 0.1670104838860803
+      },
+      "strata": {
+        "0.05": {
+          "target": 0.05,
+          "overall": {
+            "coverage": 0.5769230769230769,
+            "risk": 0.013333333333333334,
+            "n": 225
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 105,
+              "coverage": 0.813953488372093,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 17,
+              "coverage": 0.12408759124087591,
+              "accepted_risk": 0.17647058823529413
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 103,
+              "coverage": 0.8306451612903226,
+              "accepted_risk": 0.0
+            }
+          }
+        },
+        "0.10": {
+          "target": 0.1,
+          "overall": {
+            "coverage": 0.7897435897435897,
+            "risk": 0.05194805194805195,
+            "n": 308
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 116,
+              "coverage": 0.8992248062015504,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 79,
+              "coverage": 0.5766423357664233,
+              "accepted_risk": 0.10126582278481013
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 113,
+              "coverage": 0.9112903225806451,
+              "accepted_risk": 0.07079646017699115
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "risk_auroc": {
+        "auroc": 0.7438831886345698,
+        "average_precision": 0.1524098316632739,
+        "positive_rate": 0.07179487179487179,
+        "brier": 0.18636989983772595
+      },
+      "strata": {
+        "0.05": {
+          "target": 0.05,
+          "overall": {
+            "coverage": 0.6282051282051282,
+            "risk": 0.036734693877551024,
+            "n": 245
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 111,
+              "coverage": 0.8604651162790697,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 28,
+              "coverage": 0.20437956204379562,
+              "accepted_risk": 0.21428571428571427
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 106,
+              "coverage": 0.8548387096774194,
+              "accepted_risk": 0.02830188679245283
+            }
+          }
+        },
+        "0.10": {
+          "target": 0.1,
+          "overall": {
+            "coverage": 0.882051282051282,
+            "risk": 0.06686046511627906,
+            "n": 344
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 126,
+              "coverage": 0.9767441860465116,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 99,
+              "coverage": 0.7226277372262774,
+              "accepted_risk": 0.08080808080808081
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 119,
+              "coverage": 0.9596774193548387,
+              "accepted_risk": 0.12605042016806722
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "risk_auroc": {
+        "auroc": 0.7840432960893854,
+        "average_precision": 0.2171853237315813,
+        "positive_rate": 0.08205128205128205,
+        "brier": 0.16464949559751355
+      },
+      "strata": {
+        "0.05": {
+          "target": 0.05,
+          "overall": {
+            "coverage": 0.7153846153846154,
+            "risk": 0.03225806451612903,
+            "n": 279
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 97,
+              "coverage": 0.751937984496124,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 72,
+              "coverage": 0.5255474452554745,
+              "accepted_risk": 0.06944444444444445
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 110,
+              "coverage": 0.8870967741935484,
+              "accepted_risk": 0.03636363636363636
+            }
+          }
+        },
+        "0.10": {
+          "target": 0.1,
+          "overall": {
+            "coverage": 0.9153846153846154,
+            "risk": 0.0700280112044818,
+            "n": 357
+          },
+          "severity": {
+            "0": {
+              "available_n": 129,
+              "accepted_n": 111,
+              "coverage": 0.8604651162790697,
+              "accepted_risk": 0.0
+            },
+            "1": {
+              "available_n": 137,
+              "accepted_n": 124,
+              "coverage": 0.9051094890510949,
+              "accepted_risk": 0.08064516129032258
+            },
+            "2": {
+              "available_n": 124,
+              "accepted_n": 122,
+              "coverage": 0.9838709677419355,
+              "accepted_risk": 0.12295081967213115
+            }
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "0.05": {
+      "coverage_by_severity": {
+        "0": {
+          "mean": 0.8294573643410853,
+          "std": 0.05508786978120891
+        },
+        "1": {
+          "mean": 0.3094890510948905,
+          "std": 0.16162568535458127
+        },
+        "2": {
+          "mean": 0.8725806451612904,
+          "std": 0.028739564001944266
+        }
+      },
+      "accepted_risk_by_severity": {
+        "0": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "1": {
+          "mean": 0.1534436581650204,
+          "std": 0.0573869914080859
+        },
+        "2": {
+          "mean": 0.03095112264923585,
+          "std": 0.026704322802773718
+        }
+      }
+    },
+    "0.10": {
+      "coverage_by_severity": {
+        "0": {
+          "mean": 0.9224806201550388,
+          "std": 0.06225728063646903
+        },
+        "1": {
+          "mean": 0.7722627737226277,
+          "std": 0.17222256118545456
+        },
+        "2": {
+          "mean": 0.9612903225806452,
+          "std": 0.033928522528971994
+        }
+      },
+      "accepted_risk_by_severity": {
+        "0": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "1": {
+          "mean": 0.07969313424361103,
+          "std": 0.015089267507332357
+        },
+        "2": {
+          "mean": 0.113576817204094,
+          "std": 0.02403969885279121
+        }
+      }
+    }
+  }
+}
+```

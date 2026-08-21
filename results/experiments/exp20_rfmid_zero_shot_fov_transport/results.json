@@ -1,0 +1,423 @@
+{
+  "dataset": {
+    "train": 684,
+    "test": 170,
+    "labels": 51
+  },
+  "aggregate": {
+    "mean_delta_positive_labels": 0.0016870417478364243,
+    "mean_delta_negative_labels": 0.0002300080856399761,
+    "positive_delta_fraction_positive_labels": 0.5486725663716814,
+    "positive_delta_fraction_negative_labels": 0.49135480814779725,
+    "positive_minus_negative_delta": 0.0014570336621964482
+  },
+  "per_label": {
+    "WNL": {
+      "test_positive": 52,
+      "mean_delta_positive": 0.003230145537458636,
+      "mean_delta_negative": 0.03291089902328755,
+      "positive_minus_negative_delta": -0.029680753485828916,
+      "full_vs_central_positive_score": 0.0032301455374585952,
+      "delta_pair_auroc": 0.37255541069100384
+    },
+    "AH": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.001889448566024396,
+      "mean_delta_negative": 0.00012451092561851818,
+      "positive_minus_negative_delta": 0.0017649376404058777,
+      "full_vs_central_positive_score": 0.001889448566024396,
+      "delta_pair_auroc": 0.6627218934911243
+    },
+    "AION": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.0011351709925440483,
+      "mean_delta_negative": 9.320443154008474e-05,
+      "positive_minus_negative_delta": 0.0010419665610039636,
+      "full_vs_central_positive_score": 0.0011351709925440483,
+      "delta_pair_auroc": 0.5621301775147929
+    },
+    "ARMD": {
+      "test_positive": 2,
+      "mean_delta_positive": -0.004389205919798321,
+      "mean_delta_negative": -0.0020535517473843005,
+      "positive_minus_negative_delta": -0.0023356541724140205,
+      "full_vs_central_positive_score": -0.004389205919798321,
+      "delta_pair_auroc": 0.33035714285714285
+    },
+    "BRVO": {
+      "test_positive": 5,
+      "mean_delta_positive": -0.019322090501654742,
+      "mean_delta_negative": -0.000509267805456156,
+      "positive_minus_negative_delta": -0.018812822696198585,
+      "full_vs_central_positive_score": -0.019322090501654746,
+      "delta_pair_auroc": 0.1915151515151515
+    },
+    "CB": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.022666617790672382,
+      "mean_delta_negative": 0.0007688030628783595,
+      "positive_minus_negative_delta": 0.02189781472779402,
+      "full_vs_central_positive_score": 0.022666617790672382,
+      "delta_pair_auroc": 0.9822485207100592
+    },
+    "CF": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.0011893904546543925,
+      "mean_delta_negative": 5.9636266003179454e-05,
+      "positive_minus_negative_delta": 0.001129754188651213,
+      "full_vs_central_positive_score": 0.0011893904546543925,
+      "delta_pair_auroc": 0.6035502958579881
+    },
+    "CL": {
+      "test_positive": 0,
+      "mean_delta_positive": null,
+      "mean_delta_negative": -0.0013070899215352758,
+      "positive_minus_negative_delta": null,
+      "full_vs_central_positive_score": null
+    },
+    "CME": {
+      "test_positive": 7,
+      "mean_delta_positive": 0.0004958004487440743,
+      "mean_delta_negative": -0.005005721691508585,
+      "positive_minus_negative_delta": 0.005501522140252659,
+      "full_vs_central_positive_score": 0.0004958004487440604,
+      "delta_pair_auroc": 0.6021034180543382
+    },
+    "CNV": {
+      "test_positive": 1,
+      "mean_delta_positive": -0.09149674294347246,
+      "mean_delta_negative": 0.001027662460883948,
+      "positive_minus_negative_delta": -0.09252440540435641,
+      "full_vs_central_positive_score": -0.09149674294347246,
+      "delta_pair_auroc": 0.0
+    },
+    "CRAO": {
+      "test_positive": 0,
+      "mean_delta_positive": null,
+      "mean_delta_negative": -0.0003500136036750472,
+      "positive_minus_negative_delta": null,
+      "full_vs_central_positive_score": null
+    },
+    "CRS": {
+      "test_positive": 9,
+      "mean_delta_positive": 0.007911749297506853,
+      "mean_delta_negative": -0.00612372012433616,
+      "positive_minus_negative_delta": 0.014035469421843014,
+      "full_vs_central_positive_score": 0.007911749297506848,
+      "delta_pair_auroc": 0.7087646652864044
+    },
+    "CRVO": {
+      "test_positive": 2,
+      "mean_delta_positive": 0.015661359848345803,
+      "mean_delta_negative": 0.00015314866179633378,
+      "positive_minus_negative_delta": 0.01550821118654947,
+      "full_vs_central_positive_score": 0.015661359848345803,
+      "delta_pair_auroc": 0.8333333333333333
+    },
+    "CSR": {
+      "test_positive": 3,
+      "mean_delta_positive": -0.019579461656427977,
+      "mean_delta_negative": -0.0036090929909677384,
+      "positive_minus_negative_delta": -0.015970368665460238,
+      "full_vs_central_positive_score": -0.019579461656427988,
+      "delta_pair_auroc": 0.36926147704590817
+    },
+    "CWS": {
+      "test_positive": 6,
+      "mean_delta_positive": 0.02330450928543133,
+      "mean_delta_negative": 0.0006037758608918052,
+      "positive_minus_negative_delta": 0.022700733424539522,
+      "full_vs_central_positive_score": 0.02330450928543131,
+      "delta_pair_auroc": 0.7896341463414634
+    },
+    "CSC": {
+      "test_positive": 0,
+      "mean_delta_positive": null,
+      "mean_delta_negative": -3.576111565606078e-05,
+      "positive_minus_negative_delta": null,
+      "full_vs_central_positive_score": null
+    },
+    "DN": {
+      "test_positive": 1,
+      "mean_delta_positive": -0.00020099292361663162,
+      "mean_delta_negative": -0.0007813480445833287,
+      "positive_minus_negative_delta": 0.0005803551209666971,
+      "full_vs_central_positive_score": -0.00020099292361663162,
+      "delta_pair_auroc": 0.5976331360946745
+    },
+    "DR": {
+      "test_positive": 14,
+      "mean_delta_positive": -0.05251776298167089,
+      "mean_delta_negative": 0.0006290482563325602,
+      "positive_minus_negative_delta": -0.05314681123800345,
+      "full_vs_central_positive_score": -0.052517762981670935,
+      "delta_pair_auroc": 0.3223443223443223
+    },
+    "EDN": {
+      "test_positive": 17,
+      "mean_delta_positive": 0.013767922786708837,
+      "mean_delta_negative": 0.0045147023993903634,
+      "positive_minus_negative_delta": 0.009253220387318474,
+      "full_vs_central_positive_score": 0.01376792278670888,
+      "delta_pair_auroc": 0.5601691657054979
+    },
+    "ERM": {
+      "test_positive": 1,
+      "mean_delta_positive": -0.006477494923224879,
+      "mean_delta_negative": -0.0010960107248686162,
+      "positive_minus_negative_delta": -0.005381484198356263,
+      "full_vs_central_positive_score": -0.006477494923224879,
+      "delta_pair_auroc": 0.1597633136094675
+    },
+    "GRT": {
+      "test_positive": 0,
+      "mean_delta_positive": null,
+      "mean_delta_negative": 0.0005931485051960715,
+      "positive_minus_negative_delta": null,
+      "full_vs_central_positive_score": null
+    },
+    "HPED": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.0017560127758842886,
+      "mean_delta_negative": -0.000184338759388557,
+      "positive_minus_negative_delta": 0.0019403515352728457,
+      "full_vs_central_positive_score": 0.0017560127758842886,
+      "delta_pair_auroc": 0.650887573964497
+    },
+    "HR": {
+      "test_positive": 16,
+      "mean_delta_positive": 0.04305443820196102,
+      "mean_delta_negative": -0.0018799711735241055,
+      "positive_minus_negative_delta": 0.044934409375485124,
+      "full_vs_central_positive_score": 0.04305443820196103,
+      "delta_pair_auroc": 0.747564935064935
+    },
+    "LS": {
+      "test_positive": 2,
+      "mean_delta_positive": 0.027980731465836732,
+      "mean_delta_negative": -0.0015385814443578155,
+      "positive_minus_negative_delta": 0.029519312910194547,
+      "full_vs_central_positive_score": 0.02798073146583674,
+      "delta_pair_auroc": 0.5119047619047619
+    },
+    "MCA": {
+      "test_positive": 2,
+      "mean_delta_positive": 0.00011188879917947009,
+      "mean_delta_negative": -0.00015638171394040853,
+      "positive_minus_negative_delta": 0.00026827051311987865,
+      "full_vs_central_positive_score": 0.00011188879917946315,
+      "delta_pair_auroc": 0.49107142857142855
+    },
+    "ME": {
+      "test_positive": 2,
+      "mean_delta_positive": 0.007631781761094294,
+      "mean_delta_negative": -0.00038545086064075573,
+      "positive_minus_negative_delta": 0.00801723262173505,
+      "full_vs_central_positive_score": 0.007631781761094296,
+      "delta_pair_auroc": 0.9136904761904763
+    },
+    "MH": {
+      "test_positive": 7,
+      "mean_delta_positive": -0.015264782150603149,
+      "mean_delta_negative": -0.00405412451205043,
+      "positive_minus_negative_delta": -0.01121065763855272,
+      "full_vs_central_positive_score": -0.015264782150603146,
+      "delta_pair_auroc": 0.45135845749342673
+    },
+    "MHL": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.00836242683791396,
+      "mean_delta_negative": 0.0007498126221533587,
+      "positive_minus_negative_delta": 0.0076126142157606005,
+      "full_vs_central_positive_score": 0.00836242683791396,
+      "delta_pair_auroc": 0.8816568047337279
+    },
+    "MS": {
+      "test_positive": 7,
+      "mean_delta_positive": -0.015002756921809158,
+      "mean_delta_negative": -0.004274959980161118,
+      "positive_minus_negative_delta": -0.010727796941648039,
+      "full_vs_central_positive_score": -0.015002756921809149,
+      "delta_pair_auroc": 0.5460122699386503
+    },
+    "MYA": {
+      "test_positive": 5,
+      "mean_delta_positive": -0.04624223527971953,
+      "mean_delta_negative": 0.0009751200552044047,
+      "positive_minus_negative_delta": -0.04721735533492394,
+      "full_vs_central_positive_score": -0.046242235279719546,
+      "delta_pair_auroc": 0.24000000000000002
+    },
+    "ODC": {
+      "test_positive": 7,
+      "mean_delta_positive": 0.019688502954442442,
+      "mean_delta_negative": 0.003021506633544796,
+      "positive_minus_negative_delta": 0.016666996320897645,
+      "full_vs_central_positive_score": 0.019688502954442466,
+      "delta_pair_auroc": 0.677475898334794
+    },
+    "ODE": {
+      "test_positive": 4,
+      "mean_delta_positive": 0.013362373550173539,
+      "mean_delta_negative": -0.00045762702187023734,
+      "positive_minus_negative_delta": 0.013820000572043776,
+      "full_vs_central_positive_score": 0.013362373550173542,
+      "delta_pair_auroc": 0.6867469879518072
+    },
+    "ODP": {
+      "test_positive": 4,
+      "mean_delta_positive": 0.0001509033219441458,
+      "mean_delta_negative": 0.007624081929813401,
+      "positive_minus_negative_delta": -0.007473178607869255,
+      "full_vs_central_positive_score": 0.0001509033219441458,
+      "delta_pair_auroc": 0.6114457831325301
+    },
+    "ON ": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.009431638548115795,
+      "mean_delta_negative": 0.002115118790577177,
+      "positive_minus_negative_delta": 0.007316519757538617,
+      "full_vs_central_positive_score": 0.009431638548115795,
+      "delta_pair_auroc": 0.8875739644970414
+    },
+    "OPDM": {
+      "test_positive": 0,
+      "mean_delta_positive": null,
+      "mean_delta_negative": -0.0003855023995288515,
+      "positive_minus_negative_delta": null,
+      "full_vs_central_positive_score": null
+    },
+    "PRH": {
+      "test_positive": 4,
+      "mean_delta_positive": 0.003897409418628429,
+      "mean_delta_negative": -0.0006761290009248706,
+      "positive_minus_negative_delta": 0.0045735384195532995,
+      "full_vs_central_positive_score": 0.0038974094186284246,
+      "delta_pair_auroc": 0.6460843373493976
+    },
+    "RD": {
+      "test_positive": 2,
+      "mean_delta_positive": 0.023244545770547388,
+      "mean_delta_negative": -0.000228467625406306,
+      "positive_minus_negative_delta": 0.023473013395953694,
+      "full_vs_central_positive_score": 0.023244545770547395,
+      "delta_pair_auroc": 0.9464285714285715
+    },
+    "RHL": {
+      "test_positive": 0,
+      "mean_delta_positive": null,
+      "mean_delta_negative": 0.0005178442569069559,
+      "positive_minus_negative_delta": null,
+      "full_vs_central_positive_score": null
+    },
+    "RTR": {
+      "test_positive": 1,
+      "mean_delta_positive": -0.0016054340949433407,
+      "mean_delta_negative": 5.478270541680731e-05,
+      "positive_minus_negative_delta": -0.0016602168003601481,
+      "full_vs_central_positive_score": -0.0016054340949433407,
+      "delta_pair_auroc": 0.20710059171597628
+    },
+    "RP": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.06667498544775649,
+      "mean_delta_negative": -0.0010304673593023678,
+      "positive_minus_negative_delta": 0.06770545280705886,
+      "full_vs_central_positive_score": 0.06667498544775649,
+      "delta_pair_auroc": 1.0
+    },
+    "RPEC": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.017480695854957762,
+      "mean_delta_negative": 0.0019945775737301077,
+      "positive_minus_negative_delta": 0.015486118281227654,
+      "full_vs_central_positive_score": 0.017480695854957762,
+      "delta_pair_auroc": 0.9230769230769231
+    },
+    "RS": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.015802867340166817,
+      "mean_delta_negative": 0.0021196521793707297,
+      "positive_minus_negative_delta": 0.013683215160796087,
+      "full_vs_central_positive_score": 0.015802867340166817,
+      "delta_pair_auroc": 0.8994082840236687
+    },
+    "RT": {
+      "test_positive": 8,
+      "mean_delta_positive": -0.013039842253210813,
+      "mean_delta_negative": -0.0038119574294503446,
+      "positive_minus_negative_delta": -0.009227884823760468,
+      "full_vs_central_positive_score": -0.01303984225321081,
+      "delta_pair_auroc": 0.4583333333333333
+    },
+    "SOFE": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.005072061029511674,
+      "mean_delta_negative": 0.00025739085144731394,
+      "positive_minus_negative_delta": 0.004814670178064359,
+      "full_vs_central_positive_score": 0.005072061029511674,
+      "delta_pair_auroc": 0.8579881656804733
+    },
+    "ST": {
+      "test_positive": 1,
+      "mean_delta_positive": -0.004029143079912319,
+      "mean_delta_negative": 0.00018887623623816812,
+      "positive_minus_negative_delta": -0.004218019316150487,
+      "full_vs_central_positive_score": -0.004029143079912319,
+      "delta_pair_auroc": 0.17159763313609466
+    },
+    "TD": {
+      "test_positive": 4,
+      "mean_delta_positive": 0.009996031701885025,
+      "mean_delta_negative": 0.0010416248107355329,
+      "positive_minus_negative_delta": 0.008954406891149493,
+      "full_vs_central_positive_score": 0.009996031701885025,
+      "delta_pair_auroc": 0.6716867469879518
+    },
+    "TSLN": {
+      "test_positive": 8,
+      "mean_delta_positive": -0.010144950845509088,
+      "mean_delta_negative": 0.0031834563939409136,
+      "positive_minus_negative_delta": -0.013328407239450002,
+      "full_vs_central_positive_score": -0.010144950845509093,
+      "delta_pair_auroc": 0.44212962962962965
+    },
+    "TV": {
+      "test_positive": 6,
+      "mean_delta_positive": 0.01904221058749382,
+      "mean_delta_negative": 0.0021851128613138747,
+      "positive_minus_negative_delta": 0.016857097726179947,
+      "full_vs_central_positive_score": 0.01904221058749382,
+      "delta_pair_auroc": 0.8008130081300813
+    },
+    "VS": {
+      "test_positive": 2,
+      "mean_delta_positive": -0.004194803949676532,
+      "mean_delta_negative": -0.00022361996641775362,
+      "positive_minus_negative_delta": -0.003971183983258779,
+      "full_vs_central_positive_score": -0.004194803949676529,
+      "delta_pair_auroc": 0.26785714285714285
+    },
+    "HTN": {
+      "test_positive": 2,
+      "mean_delta_positive": 0.01230186934652314,
+      "mean_delta_negative": 0.0029191053301515415,
+      "positive_minus_negative_delta": 0.009382764016371599,
+      "full_vs_central_positive_score": 0.012301869346523144,
+      "delta_pair_auroc": 0.7261904761904762
+    },
+    "IIH": {
+      "test_positive": 1,
+      "mean_delta_positive": 0.028987081748869742,
+      "mean_delta_negative": -0.00903533096920108,
+      "positive_minus_negative_delta": 0.038022412718070824,
+      "full_vs_central_positive_score": 0.028987081748869742,
+      "delta_pair_auroc": 0.9940828402366864
+    }
+  },
+  "notes": [
+    "No RFMiD test labels are used for fitting; probes are trained on RFMiD Training+Validation only.",
+    "This is a zero-shot transport diagnostic for FOV evidence loss, not a paired UWF/45-degree clinical validation.",
+    "A positive delta means the full image probe score exceeds the central-view score."
+  ]
+}

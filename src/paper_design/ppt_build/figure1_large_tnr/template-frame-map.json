@@ -1,0 +1,55 @@
+{
+  "source": "/Users/tongyue/Documents/ppf/第四论文/图1_排版优化版.pptx",
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "Enlarged editable Figure 1 with Times New Roman typography and a 12 pt minimum.",
+      "editTargets": [
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/wvyh8rqx", "sh/547294r6", "sh/k3yl0zql",
+            "sh/ipovexwn", "sh/3qxwn2x8", "sh/1cvuxc7e", "sh/0bmd476t",
+            "sh/90ve1w7q", "sh/ozmd8r65", "sh/p4bu5s76", "sh/432dwn6l"
+          ],
+          "reason": "Apply Times New Roman and de-emphasize panel letters while preserving title hierarchy."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/wzy1szid", "sh/i1gje90j", "sh/j2pkne14", "sh/43y1gji9",
+            "sh/54r2poju", "sh/y5wjip0z", "sh/z2xgf6to", "sh/e1oz61c3",
+            "sh/14fyhgbe", "sh/036h8but", "sh/nqxgjqtk", "sh/mpozalcz",
+            "sh/9sfylgbq", "sh/or6hcvu5", "sh/buh0nqtg", "sh/at8zelcb",
+            "sh/8zqx4vq9", "sh/t0jyd0ru", "sh/uxgjq907", "sh/vyp0je1s"
+          ],
+          "reason": "Enlarge and realign the two Panel A retinal views."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/dc7md8fe", "sh/ra54bix8", "sh/q9wnidgn", "sh/5onm98f2",
+            "sh/4ne5g3yh", "sh/3m547yxw", "sh/9kr6lsfm", "sh/oji5sne1",
+            "sh/6psjmpwj", "sh/7q1kfudo", "sh/8ra1oze9", "sh/ts32h4vu",
+            "sh/ylsjipw7", "sh/jm1kbuds", "sh/kna1kzed", "sh/loj2dkvy",
+            "sh/ihc3u9cr", "sh/3ilknedw", "sh/rehk7e50", "sh/d0j29on6",
+            "sh/cfa10jml", "sh/3ahk3u54", "sh/298ju94j", "sh/pcz254na",
+            "sh/4bq1wzmp", "sh/f6x0zu58", "sh/u5ojqpon", "sh/kbmh0v25",
+            "sh/5cvy903q", "sh/ip4zyl4f"
+          ],
+          "reason": "Enlarge the three regional-mask examples in Panel B and reflow their labels."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/t8vy9gvi", "sh/na9gvmd8", "sh/pgzax4jm", "sh/ofqtoj2h",
+            "sh/3ehsve1w", "sh/2d8rm9kb", "sh/dkja1ojy", "sh/cjatsj2d"
+          ],
+          "reason": "Enlarge the Panel C evidence-bank input row."
+        }
+      ]
+    }
+  ]
+}

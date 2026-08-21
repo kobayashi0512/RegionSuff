@@ -1,0 +1,280 @@
+{
+  "sourcePptx": "/Users/tongyue/Documents/ppf/第四论文/图1_规范重绘版_LaTeX公式版_统一字号_证据放大图.pptx",
+  "workspace": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory",
+  "outDir": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect",
+  "generatedAt": "2026-08-18T06:51:32.684Z",
+  "slideCount": 1,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "nhqdmn",
+    "target": {
+      "id": "pr/ilhenv"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/image.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image.png",
+      "relativePath": "template-inspect/assets/ppt/media/image.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image2.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image2.png",
+      "relativePath": "template-inspect/assets/ppt/media/image2.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image3.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image3.png",
+      "relativePath": "template-inspect/assets/ppt/media/image3.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image4.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image4.png",
+      "relativePath": "template-inspect/assets/ppt/media/image4.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image5.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image5.png",
+      "relativePath": "template-inspect/assets/ppt/media/image5.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image6.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image6.png",
+      "relativePath": "template-inspect/assets/ppt/media/image6.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image7.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image7.png",
+      "relativePath": "template-inspect/assets/ppt/media/image7.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image.svg",
+      "bytes": 4908
+    },
+    {
+      "entry": "ppt/media/image8.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image8.png",
+      "relativePath": "template-inspect/assets/ppt/media/image8.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image9.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image9.png",
+      "relativePath": "template-inspect/assets/ppt/media/image9.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image2.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image2.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image2.svg",
+      "bytes": 4908
+    },
+    {
+      "entry": "ppt/media/image10.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image10.png",
+      "relativePath": "template-inspect/assets/ppt/media/image10.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image11.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image11.png",
+      "relativePath": "template-inspect/assets/ppt/media/image11.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image3.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image3.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image3.svg",
+      "bytes": 6143
+    },
+    {
+      "entry": "ppt/media/image12.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image12.png",
+      "relativePath": "template-inspect/assets/ppt/media/image12.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image4.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image4.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image4.svg",
+      "bytes": 15690
+    },
+    {
+      "entry": "ppt/media/image13.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image13.png",
+      "relativePath": "template-inspect/assets/ppt/media/image13.png",
+      "bytes": 224676
+    },
+    {
+      "entry": "ppt/media/image14.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image14.png",
+      "relativePath": "template-inspect/assets/ppt/media/image14.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image5.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image5.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image5.svg",
+      "bytes": 8447
+    },
+    {
+      "entry": "ppt/media/image15.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image15.png",
+      "relativePath": "template-inspect/assets/ppt/media/image15.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image6.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image6.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image6.svg",
+      "bytes": 14452
+    },
+    {
+      "entry": "ppt/media/image16.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image16.png",
+      "relativePath": "template-inspect/assets/ppt/media/image16.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image7.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image7.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image7.svg",
+      "bytes": 29992
+    },
+    {
+      "entry": "ppt/media/image17.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image17.png",
+      "relativePath": "template-inspect/assets/ppt/media/image17.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image8.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image8.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image8.svg",
+      "bytes": 14334
+    },
+    {
+      "entry": "ppt/media/image18.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image18.png",
+      "relativePath": "template-inspect/assets/ppt/media/image18.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image9.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image9.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image9.svg",
+      "bytes": 19435
+    },
+    {
+      "entry": "ppt/media/image19.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image19.png",
+      "relativePath": "template-inspect/assets/ppt/media/image19.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image10.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image10.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image10.svg",
+      "bytes": 17104
+    },
+    {
+      "entry": "ppt/media/image20.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image20.png",
+      "relativePath": "template-inspect/assets/ppt/media/image20.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image11.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image11.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image11.svg",
+      "bytes": 7127
+    },
+    {
+      "entry": "ppt/media/image21.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image21.png",
+      "relativePath": "template-inspect/assets/ppt/media/image21.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image12.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image12.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image12.svg",
+      "bytes": 9753
+    },
+    {
+      "entry": "ppt/media/image22.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image22.png",
+      "relativePath": "template-inspect/assets/ppt/media/image22.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image13.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image13.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image13.svg",
+      "bytes": 13469
+    },
+    {
+      "entry": "ppt/media/image23.png",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image23.png",
+      "relativePath": "template-inspect/assets/ppt/media/image23.png",
+      "bytes": 67
+    },
+    {
+      "entry": "ppt/media/image14.svg",
+      "path": "/Users/tongyue/Documents/77f /7hao/paper_design/figure2_rebuild/figure1_style_inventory/template-inspect/assets/ppt/media/image14.svg",
+      "relativePath": "template-inspect/assets/ppt/media/image14.svg",
+      "bytes": 10446
+    }
+  ],
+  "fonts": [
+    "+mj-lt",
+    "+mn-lt",
+    "Calibri",
+    "Calibri Light",
+    "Times New Roman"
+  ],
+  "packageParts": {
+    "mediaCount": 37,
+    "slideXmlCount": 1,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

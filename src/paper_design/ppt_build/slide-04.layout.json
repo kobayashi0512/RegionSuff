@@ -1,0 +1,1109 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/1vo1m1",
+    "id": "1vo1m1",
+    "slide": 4,
+    "layoutId": "7c4a7f83-b2d7-4e6a-ac25-d0b7f66f7a24",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "f18de450-e358-4207-8bb6-88b0fd0defbe",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFDFC",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "7c4a7f83-b2d7-4e6a-ac25-d0b7f66f7a24",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "f18de450-e358-4207-8bb6-88b0fd0defbe",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "f18de450-e358-4207-8bb6-88b0fd0defbe",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tovm1sfa",
+      "id": "1",
+      "bbox": [
+        58,
+        38,
+        260,
+        22
+      ],
+      "geometry": "rect",
+      "text": "PAPER PLACEMENT",
+      "textPreview": "PAPER PLACEMENT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#E49F5D",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PAPER PLACEMENT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PAPER PLACEMENT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#E49F5D",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PAPER PLACEMENT",
+              "fontSize": 12,
+              "color": "#E49F5D",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6lk3qdgz",
+      "id": "2",
+      "bbox": [
+        58,
+        72,
+        960,
+        46
+      ],
+      "geometry": "rect",
+      "text": "两张图在论文里各自承担什么任务？",
+      "textPreview": "两张图在论文里各自承担什么任务？",
+      "resolvedFontSize": 31,
+      "resolvedTextStyle": {
+        "fontSize": 31,
+        "typeface": "+mn-lt",
+        "color": "#704C2B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "两张图在论文里各自承担什么任务？"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "两张图在论文里各自承担什么任务？",
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "color": "#704C2B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "两张图在论文里各自承担什么任务？",
+              "fontSize": 31,
+              "color": "#704C2B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7md4zix4",
+      "id": "3",
+      "bbox": [
+        58,
+        132,
+        1164,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#E8C6AA",
+      "lineColor": "#E8C6AA",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kj2lo3yt",
+      "id": "4",
+      "bbox": [
+        58,
+        170,
+        542,
+        390
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7ECE6",
+      "lineColor": "#965E4A",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5kb2x8fe",
+      "id": "5",
+      "bbox": [
+        88,
+        194,
+        112,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E49F5D",
+      "lineColor": "#E49F5D",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ihk3mtgn",
+      "id": "6",
+      "bbox": [
+        88,
+        201,
+        112,
+        20
+      ],
+      "geometry": "rect",
+      "text": "FIGURE 1",
+      "textPreview": "FIGURE 1",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FIGURE 1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FIGURE 1",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FIGURE 1",
+              "fontSize": 13,
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jitkvyx8",
+      "id": "7",
+      "bbox": [
+        88,
+        252,
+        390,
+        32
+      ],
+      "geometry": "rect",
+      "text": "Introduction",
+      "textPreview": "Introduction",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#704C2B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Introduction"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Introduction",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#704C2B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Introduction",
+              "fontSize": 24,
+              "color": "#704C2B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wf2lk3yh",
+      "id": "8",
+      "bbox": [
+        88,
+        292,
+        440,
+        30
+      ],
+      "geometry": "rect",
+      "text": "插在首次提出 RegionSufficiency 之后",
+      "textPreview": "插在首次提出 RegionSufficiency 之后",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#965E4A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "插在首次提出 RegionSufficiency 之后"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "插在首次提出 RegionSufficiency 之后",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#965E4A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "插在首次提出 RegionSufficiency 之后",
+              "fontSize": 17,
+              "color": "#965E4A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xgb2t8f2",
+      "id": "9",
+      "bbox": [
+        88,
+        340,
+        445,
+        180
+      ],
+      "geometry": "rect",
+      "text": "它负责把全文故事讲清楚：\n\n• 什么是灯下黑问题\n• 两个主数据集怎么分工\n• 方法只看可见区域证据\n• 四组实验最终回答什么",
+      "textPreview": "它负责把全文故事讲清楚： |  | • 什么是灯下黑问题 | • 两个主数据集怎么分工 | • 方法只看可见区域证据 | • 四组实验最终回答什么",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#3F3027",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它负责把全文故事讲清楚："
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "• 什么是灯下黑问题"
+          },
+          {
+            "index": 4,
+            "text": "• 两个主数据集怎么分工"
+          },
+          {
+            "index": 5,
+            "text": "• 方法只看可见区域证据"
+          },
+          {
+            "index": 6,
+            "text": "• 四组实验最终回答什么"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它负责把全文故事讲清楚：",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "它负责把全文故事讲清楚：",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 什么是灯下黑问题",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 什么是灯下黑问题",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• 两个主数据集怎么分工",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 两个主数据集怎么分工",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• 方法只看可见区域证据",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 方法只看可见区域证据",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "• 四组实验最终回答什么",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 四组实验最终回答什么",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t03y1crq",
+      "id": "10",
+      "bbox": [
+        680,
+        170,
+        542,
+        390
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#E5E8D9",
+      "lineColor": "#8B9A7C",
+      "lineWidth": 1
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8zuxsrq5",
+      "id": "11",
+      "bbox": [
+        710,
+        194,
+        112,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#8B9A7C",
+      "lineColor": "#8B9A7C",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ylgzm9k",
+      "id": "12",
+      "bbox": [
+        710,
+        201,
+        112,
+        20
+      ],
+      "geometry": "rect",
+      "text": "FIGURE 2",
+      "textPreview": "FIGURE 2",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FIGURE 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FIGURE 2",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FIGURE 2",
+              "fontSize": 13,
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6xsfqh8z",
+      "id": "13",
+      "bbox": [
+        710,
+        252,
+        430,
+        32
+      ],
+      "geometry": "rect",
+      "text": "Materials and Methods",
+      "textPreview": "Materials and Methods",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#704C2B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Materials and Methods"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Materials and Methods",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#704C2B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Materials and Methods",
+              "fontSize": 24,
+              "color": "#704C2B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwjyxcre",
+      "id": "14",
+      "bbox": [
+        710,
+        292,
+        465,
+        30
+      ],
+      "geometry": "rect",
+      "text": "插在 2.4 RegionSufficiency architecture",
+      "textPreview": "插在 2.4 RegionSufficiency architecture",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#965E4A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "插在 2.4 RegionSufficiency architecture"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "插在 2.4 RegionSufficiency architecture",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#965E4A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "插在 2.4 RegionSufficiency architecture",
+              "fontSize": 17,
+              "color": "#965E4A",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kvaxo7q9",
+      "id": "15",
+      "bbox": [
+        710,
+        340,
+        445,
+        180
+      ],
+      "geometry": "rect",
+      "text": "它负责把算法复现清楚：\n\n• 区域、mask 和随机遮挡\n• 冻结编码器与可训练投影\n• masked attention 的共享权重\n• 18维风险向量和阈值校准",
+      "textPreview": "它负责把算法复现清楚： |  | • 区域、mask 和随机遮挡 | • 冻结编码器与可训练投影 | • masked attention 的共享权重 | • 18维风险向量和阈值校准",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#3F3027",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "它负责把算法复现清楚："
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "• 区域、mask 和随机遮挡"
+          },
+          {
+            "index": 4,
+            "text": "• 冻结编码器与可训练投影"
+          },
+          {
+            "index": 5,
+            "text": "• masked attention 的共享权重"
+          },
+          {
+            "index": 6,
+            "text": "• 18维风险向量和阈值校准"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "它负责把算法复现清楚：",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "它负责把算法复现清楚：",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 区域、mask 和随机遮挡",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 区域、mask 和随机遮挡",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• 冻结编码器与可训练投影",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 冻结编码器与可训练投影",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• masked attention 的共享权重",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• masked attention 的共享权重",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "• 18维风险向量和阈值校准",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 18维风险向量和阈值校准",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ju1gv29o",
+      "id": "16",
+      "bbox": [
+        58,
+        596,
+        1164,
+        72
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#E8C6AA",
+      "lineWidth": 1
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ytsfmx83",
+      "id": "17",
+      "bbox": [
+        86,
+        619,
+        145,
+        24
+      ],
+      "geometry": "rect",
+      "text": "一句话原则",
+      "textPreview": "一句话原则",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#C74282",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "一句话原则"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "一句话原则",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#C74282",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "一句话原则",
+              "fontSize": 16,
+              "color": "#C74282",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xsjytsri",
+      "id": "18",
+      "bbox": [
+        240,
+        617,
+        930,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Figure 1 讲“为什么要做”；Figure 2 讲“到底怎么做”。两张图不重复，前后构成完整叙事。",
+      "textPreview": "Figure 1 讲“为什么要做”；Figure 2 讲“到底怎么做”。两张图不重复，前后构成完整叙事。",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#3F3027",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Figure 1 讲“为什么要做”；Figure 2 讲“到底怎么做”。两张图不重复，前后构成完整叙事。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Figure 1 讲“为什么要做”；Figure 2 讲“到底怎么做”。两张图不重复，前后构成完整叙事。",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#3F3027",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Figure 1 讲“为什么要做”；Figure 2 讲“到底怎么做”。两张图不重复，前后构成完整叙事。",
+              "fontSize": 18,
+              "color": "#3F3027",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

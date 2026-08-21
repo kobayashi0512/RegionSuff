@@ -1,0 +1,42 @@
+{
+  "primary_endpoint": "test macro-F1 under the center+cross limited-view mask",
+  "secondary_endpoints": [
+    "test severity MAE",
+    "test underestimation rate",
+    "PDR recall",
+    "selective accepted underestimation risk at target coverage",
+    "MSHF leave-one-source-out overall AUROC",
+    "RFMiD2 mean AUROC/AP"
+  ],
+  "selection_rule": "Choose the final model using validation macro-F1 under the center+cross mask; use test only once for final reporting. If validation scores tie within 0.005, choose the smaller model and lower validation underestimation rate.",
+  "frozen_configuration": {
+    "region_grid": "3x3",
+    "encoder": "RetinaRadar EfficientNet-B0 frozen regional representation",
+    "aggregator": "attention",
+    "training_mask_ratio": 0.3,
+    "random_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "claim_boundary": [
+    "Geometric limited-view masks are proxies, not real same-eye 45-degree acquisitions.",
+    "MSHF source-holdout results are quality/domain audits, not disease external validation.",
+    "No clinical deployment claim is made."
+  ],
+  "status": {
+    "task1_multiseed": "completed",
+    "task2_grid_ablation": "completed",
+    "task3_mask_ratio": "completed",
+    "task4_pooling_ablation": "completed",
+    "task5_encoder": "completed",
+    "task6_selective": "completed",
+    "task7_occlusion": "completed",
+    "task8_rfmid": "completed",
+    "task9_bootstrap_paired": "completed",
+    "task10_final_audit": "completed"
+  }
+}

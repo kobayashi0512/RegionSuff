@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "clean",
+    "true_class": "Normal",
+    "n": 129,
+    "accuracy": 0.29457364341085274,
+    "underestimate_rate": 0.0,
+    "mean_predicted_class": 0.8837209302325582
+  },
+  {
+    "condition": "clean",
+    "true_class": "NPDR",
+    "n": 137,
+    "accuracy": 0.7153284671532847,
+    "underestimate_rate": 0.20437956204379562,
+    "mean_predicted_class": 0.8759124087591241
+  },
+  {
+    "condition": "clean",
+    "true_class": "PDR",
+    "n": 124,
+    "accuracy": 0.7096774193548387,
+    "underestimate_rate": 0.2903225806451613,
+    "mean_predicted_class": 1.6209677419354838
+  },
+  {
+    "condition": "blur",
+    "true_class": "Normal",
+    "n": 129,
+    "accuracy": 0.3875968992248062,
+    "underestimate_rate": 0.0,
+    "mean_predicted_class": 0.7054263565891473
+  },
+  {
+    "condition": "blur",
+    "true_class": "NPDR",
+    "n": 137,
+    "accuracy": 0.7153284671532847,
+    "underestimate_rate": 0.23357664233576642,
+    "mean_predicted_class": 0.8175182481751825
+  },
+  {
+    "condition": "blur",
+    "true_class": "PDR",
+    "n": 124,
+    "accuracy": 0.6290322580645161,
+    "underestimate_rate": 0.3709677419354839,
+    "mean_predicted_class": 1.5241935483870968
+  },
+  {
+    "condition": "dark",
+    "true_class": "Normal",
+    "n": 129,
+    "accuracy": 0.9922480620155039,
+    "underestimate_rate": 0.0,
+    "mean_predicted_class": 0.007751937984496124
+  },
+  {
+    "condition": "dark",
+    "true_class": "NPDR",
+    "n": 137,
+    "accuracy": 0.0,
+    "underestimate_rate": 1.0,
+    "mean_predicted_class": 0.0
+  },
+  {
+    "condition": "dark",
+    "true_class": "PDR",
+    "n": 124,
+    "accuracy": 0.1774193548387097,
+    "underestimate_rate": 0.8225806451612904,
+    "mean_predicted_class": 0.3629032258064516
+  },
+  {
+    "condition": "low_contrast",
+    "true_class": "Normal",
+    "n": 129,
+    "accuracy": 1.0,
+    "underestimate_rate": 0.0,
+    "mean_predicted_class": 0.0
+  },
+  {
+    "condition": "low_contrast",
+    "true_class": "NPDR",
+    "n": 137,
+    "accuracy": 0.0,
+    "underestimate_rate": 1.0,
+    "mean_predicted_class": 0.0
+  },
+  {
+    "condition": "low_contrast",
+    "true_class": "PDR",
+    "n": 124,
+    "accuracy": 0.0,
+    "underestimate_rate": 1.0,
+    "mean_predicted_class": 0.0
+  }
+]

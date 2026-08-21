@@ -1,0 +1,296 @@
+full: 250/876
+full: 500/876
+full: 750/876
+full: 250/364
+full: 250/390
+square55: 250/876
+square55: 500/876
+square55: 750/876
+square55: 250/364
+square55: 250/390
+circle45: 250/876
+circle45: 500/876
+circle45: 750/876
+circle45: 250/364
+circle45: 250/390
+{
+  "dataset": {
+    "n": 1630,
+    "split_counts": {
+      "train": [
+        260,
+        351,
+        265
+      ],
+      "val": [
+        107,
+        146,
+        111
+      ],
+      "test": [
+        129,
+        137,
+        124
+      ]
+    },
+    "patient_counts": {
+      "train": 602,
+      "val": 54,
+      "test": 127
+    },
+    "paired_test_images": 390
+  },
+  "protocols": {
+    "full_only_shared": {
+      "train_views": [
+        "full"
+      ],
+      "views": {
+        "full": {
+          "train": {
+            "accuracy": 0.634703196347032,
+            "macro_f1": 0.6264912576904983,
+            "severity_mae": 0.4132420091324201,
+            "underestimation_rate": 0.16210045662100456,
+            "predicted_class_counts": [
+              195,
+              447,
+              234
+            ]
+          },
+          "val": {
+            "accuracy": 0.49725274725274726,
+            "macro_f1": 0.48479473845898974,
+            "severity_mae": 0.5796703296703297,
+            "underestimation_rate": 0.19230769230769232,
+            "predicted_class_counts": [
+              67,
+              175,
+              122
+            ]
+          },
+          "test": {
+            "accuracy": 0.5743589743589743,
+            "macro_f1": 0.5606467229720841,
+            "severity_mae": 0.5128205128205128,
+            "underestimation_rate": 0.1641025641025641,
+            "predicted_class_counts": [
+              77,
+              191,
+              122
+            ]
+          }
+        },
+        "square55": {
+          "train": {
+            "accuracy": 0.5205479452054794,
+            "macro_f1": 0.5030820171264776,
+            "severity_mae": 0.5468036529680366,
+            "underestimation_rate": 0.2808219178082192,
+            "predicted_class_counts": [
+              233,
+              536,
+              107
+            ]
+          },
+          "val": {
+            "accuracy": 0.3901098901098901,
+            "macro_f1": 0.3902065509619519,
+            "severity_mae": 0.7472527472527473,
+            "underestimation_rate": 0.4258241758241758,
+            "predicted_class_counts": [
+              167,
+              152,
+              45
+            ]
+          },
+          "test": {
+            "accuracy": 0.5128205128205128,
+            "macro_f1": 0.5246197605405548,
+            "severity_mae": 0.5615384615384615,
+            "underestimation_rate": 0.3,
+            "predicted_class_counts": [
+              134,
+              194,
+              62
+            ],
+            "paired_accuracy_delta_vs_full": -0.06153846153846154,
+            "paired_win_rate": 0.1717948717948718,
+            "paired_tie_rate": 0.5948717948717949,
+            "paired_loss_rate": 0.23333333333333334,
+            "paired_underestimation_delta_vs_full": 0.1358974358974359
+          }
+        },
+        "circle45": {
+          "train": {
+            "accuracy": 0.5079908675799086,
+            "macro_f1": 0.4112717190051412,
+            "severity_mae": 0.5102739726027398,
+            "underestimation_rate": 0.1678082191780822,
+            "predicted_class_counts": [
+              21,
+              692,
+              163
+            ]
+          },
+          "val": {
+            "accuracy": 0.44505494505494503,
+            "macro_f1": 0.377134381672968,
+            "severity_mae": 0.5961538461538461,
+            "underestimation_rate": 0.2445054945054945,
+            "predicted_class_counts": [
+              30,
+              267,
+              67
+            ]
+          },
+          "test": {
+            "accuracy": 0.5102564102564102,
+            "macro_f1": 0.44825949675103466,
+            "severity_mae": 0.5461538461538461,
+            "underestimation_rate": 0.14871794871794872,
+            "predicted_class_counts": [
+              22,
+              268,
+              100
+            ],
+            "paired_accuracy_delta_vs_full": -0.0641025641025641,
+            "paired_win_rate": 0.12051282051282051,
+            "paired_tie_rate": 0.6948717948717948,
+            "paired_loss_rate": 0.18461538461538463,
+            "paired_underestimation_delta_vs_full": -0.015384615384615385
+          }
+        }
+      }
+    },
+    "view_augmented_shared": {
+      "train_views": [
+        "full",
+        "square55",
+        "circle45"
+      ],
+      "views": {
+        "full": {
+          "train": {
+            "accuracy": 0.5993150684931506,
+            "macro_f1": 0.5891812099547956,
+            "severity_mae": 0.4531963470319635,
+            "underestimation_rate": 0.1780821917808219,
+            "predicted_class_counts": [
+              183,
+              450,
+              243
+            ]
+          },
+          "val": {
+            "accuracy": 0.5082417582417582,
+            "macro_f1": 0.5072920864087477,
+            "severity_mae": 0.5741758241758241,
+            "underestimation_rate": 0.21978021978021978,
+            "predicted_class_counts": [
+              90,
+              157,
+              117
+            ]
+          },
+          "test": {
+            "accuracy": 0.5153846153846153,
+            "macro_f1": 0.5053113553113553,
+            "severity_mae": 0.5743589743589743,
+            "underestimation_rate": 0.19743589743589743,
+            "predicted_class_counts": [
+              81,
+              175,
+              134
+            ]
+          }
+        },
+        "square55": {
+          "train": {
+            "accuracy": 0.6541095890410958,
+            "macro_f1": 0.6434097002987658,
+            "severity_mae": 0.3755707762557078,
+            "underestimation_rate": 0.13812785388127855,
+            "predicted_class_counts": [
+              162,
+              484,
+              230
+            ]
+          },
+          "val": {
+            "accuracy": 0.5054945054945055,
+            "macro_f1": 0.5071904636956764,
+            "severity_mae": 0.5769230769230769,
+            "underestimation_rate": 0.23076923076923078,
+            "predicted_class_counts": [
+              102,
+              138,
+              124
+            ]
+          },
+          "test": {
+            "accuracy": 0.5769230769230769,
+            "macro_f1": 0.5706991517290908,
+            "severity_mae": 0.4948717948717949,
+            "underestimation_rate": 0.1717948717948718,
+            "predicted_class_counts": [
+              83,
+              190,
+              117
+            ],
+            "paired_accuracy_delta_vs_full": 0.06153846153846154,
+            "paired_win_rate": 0.16923076923076924,
+            "paired_tie_rate": 0.7230769230769231,
+            "paired_loss_rate": 0.1076923076923077,
+            "paired_underestimation_delta_vs_full": -0.025641025641025633
+          }
+        },
+        "circle45": {
+          "train": {
+            "accuracy": 0.613013698630137,
+            "macro_f1": 0.5931427253853975,
+            "severity_mae": 0.4292237442922374,
+            "underestimation_rate": 0.1506849315068493,
+            "predicted_class_counts": [
+              145,
+              507,
+              224
+            ]
+          },
+          "val": {
+            "accuracy": 0.4807692307692308,
+            "macro_f1": 0.4849251436211231,
+            "severity_mae": 0.6043956043956044,
+            "underestimation_rate": 0.29120879120879123,
+            "predicted_class_counts": [
+              122,
+              144,
+              98
+            ]
+          },
+          "test": {
+            "accuracy": 0.5435897435897435,
+            "macro_f1": 0.5306012314169312,
+            "severity_mae": 0.5307692307692308,
+            "underestimation_rate": 0.1717948717948718,
+            "predicted_class_counts": [
+              70,
+              200,
+              120
+            ],
+            "paired_accuracy_delta_vs_full": 0.028205128205128206,
+            "paired_win_rate": 0.17435897435897435,
+            "paired_tie_rate": 0.6794871794871795,
+            "paired_loss_rate": 0.14615384615384616,
+            "paired_underestimation_delta_vs_full": -0.025641025641025633
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "Each protocol uses one shared classifier and evaluates full, square55 and circle45 views of the same test images.",
+    "full_only_shared trains only on full-view training images; view_augmented_shared trains on full plus square55 plus circle45 training views with identical labels.",
+    "The square/circle views are geometric proxies and are not real same-eye 45-degree acquisitions."
+  ]
+}

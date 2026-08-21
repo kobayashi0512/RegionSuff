@@ -1,0 +1,1355 @@
+# Exp33：外部来源区域泛化审计
+
+在MSHF来源留一设置中比较全图RetinaRadar特征和3×3区域平均RetinaRadar特征，并比较普通训练与来源×标签均衡。重点观察UWF-mosaic来源。
+
+```json
+{
+  "dataset": {
+    "n": 1300,
+    "sources": {
+      "DR-XJU": 233,
+      "DR-ZJU": 187,
+      "Glaucoma": 52,
+      "Healthy": 26,
+      "Local1": 199,
+      "Local2": 103,
+      "UWF-mosaic": 500
+    },
+    "labels": [
+      "clarity",
+      "illumination",
+      "contrast",
+      "overall"
+    ],
+    "device": "mps"
+  },
+  "leave_one_source_out": {
+    "DR-XJU": {
+      "n_test": 233,
+      "metrics": {
+        "global_unweighted": {
+          "clarity": {
+            "auroc": 0.8955938697318008,
+            "average_precision": 0.9087322481279867,
+            "positive_rate": 0.5021459227467812,
+            "n": 233
+          },
+          "illumination": {
+            "auroc": 0.8380662609871535,
+            "average_precision": 0.9708923988819056,
+            "positive_rate": 0.8755364806866953,
+            "n": 233
+          },
+          "contrast": {
+            "auroc": 0.8097059705970597,
+            "average_precision": 0.8524985460368157,
+            "positive_rate": 0.5665236051502146,
+            "n": 233
+          },
+          "overall": {
+            "auroc": 0.9110669024462129,
+            "average_precision": 0.9260004358220794,
+            "positive_rate": 0.4978540772532189,
+            "n": 233
+          }
+        },
+        "global_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9084880636604775,
+            "average_precision": 0.9205013093700412,
+            "positive_rate": 0.5021459227467812,
+            "n": 233
+          },
+          "illumination": {
+            "auroc": 0.8497295469912102,
+            "average_precision": 0.974032744542958,
+            "positive_rate": 0.8755364806866953,
+            "n": 233
+          },
+          "contrast": {
+            "auroc": 0.8364086408640865,
+            "average_precision": 0.8745786506031568,
+            "positive_rate": 0.5665236051502146,
+            "n": 233
+          },
+          "overall": {
+            "auroc": 0.9245505452402004,
+            "average_precision": 0.9388696296209224,
+            "positive_rate": 0.4978540772532189,
+            "n": 233
+          }
+        },
+        "region_mean_unweighted": {
+          "clarity": {
+            "auroc": 0.9346448570586502,
+            "average_precision": 0.9361381674421635,
+            "positive_rate": 0.5021459227467812,
+            "n": 233
+          },
+          "illumination": {
+            "auroc": 0.8548005409060175,
+            "average_precision": 0.9762715672361281,
+            "positive_rate": 0.8755364806866953,
+            "n": 233
+          },
+          "contrast": {
+            "auroc": 0.8901890189018902,
+            "average_precision": 0.9153138228863136,
+            "positive_rate": 0.5665236051502146,
+            "n": 233
+          },
+          "overall": {
+            "auroc": 0.9617595048629531,
+            "average_precision": 0.9651795049608535,
+            "positive_rate": 0.4978540772532189,
+            "n": 233
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9471706454465075,
+            "average_precision": 0.9502286816790019,
+            "positive_rate": 0.5021459227467812,
+            "n": 233
+          },
+          "illumination": {
+            "auroc": 0.8585192697768763,
+            "average_precision": 0.9764014271584098,
+            "positive_rate": 0.8755364806866953,
+            "n": 233
+          },
+          "contrast": {
+            "auroc": 0.8937893789378938,
+            "average_precision": 0.9158206571380452,
+            "positive_rate": 0.5665236051502146,
+            "n": 233
+          },
+          "overall": {
+            "auroc": 0.9580754494547599,
+            "average_precision": 0.9611886051032805,
+            "positive_rate": 0.4978540772532189,
+            "n": 233
+          }
+        }
+      }
+    },
+    "DR-ZJU": {
+      "n_test": 187,
+      "metrics": {
+        "global_unweighted": {
+          "clarity": {
+            "auroc": 0.923963963963964,
+            "average_precision": 0.9824578508880838,
+            "positive_rate": 0.8021390374331551,
+            "n": 187
+          },
+          "illumination": {
+            "auroc": 0.9099537037037038,
+            "average_precision": 0.9811046579420678,
+            "positive_rate": 0.8556149732620321,
+            "n": 187
+          },
+          "contrast": {
+            "auroc": 0.8972318339100346,
+            "average_precision": 0.9882999058252057,
+            "positive_rate": 0.9090909090909091,
+            "n": 187
+          },
+          "overall": {
+            "auroc": 0.9440360841964583,
+            "average_precision": 0.9838091137933725,
+            "positive_rate": 0.7807486631016043,
+            "n": 187
+          }
+        },
+        "global_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9295495495495496,
+            "average_precision": 0.9839802247535913,
+            "positive_rate": 0.8021390374331551,
+            "n": 187
+          },
+          "illumination": {
+            "auroc": 0.9289351851851851,
+            "average_precision": 0.985680502341222,
+            "positive_rate": 0.8556149732620321,
+            "n": 187
+          },
+          "contrast": {
+            "auroc": 0.9044982698961938,
+            "average_precision": 0.9894862738103252,
+            "positive_rate": 0.9090909090909091,
+            "n": 187
+          },
+          "overall": {
+            "auroc": 0.9493818910791848,
+            "average_precision": 0.9855745989099739,
+            "positive_rate": 0.7807486631016043,
+            "n": 187
+          }
+        },
+        "region_mean_unweighted": {
+          "clarity": {
+            "auroc": 0.9497297297297298,
+            "average_precision": 0.9879579058056328,
+            "positive_rate": 0.8021390374331551,
+            "n": 187
+          },
+          "illumination": {
+            "auroc": 0.9254629629629629,
+            "average_precision": 0.9862329076491133,
+            "positive_rate": 0.8556149732620321,
+            "n": 187
+          },
+          "contrast": {
+            "auroc": 0.913840830449827,
+            "average_precision": 0.9906294711602097,
+            "positive_rate": 0.9090909090909091,
+            "n": 187
+          },
+          "overall": {
+            "auroc": 0.9560641496825928,
+            "average_precision": 0.987436651245804,
+            "positive_rate": 0.7807486631016043,
+            "n": 187
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9527927927927927,
+            "average_precision": 0.9887505135196686,
+            "positive_rate": 0.8021390374331551,
+            "n": 187
+          },
+          "illumination": {
+            "auroc": 0.9365740740740741,
+            "average_precision": 0.9884615700509193,
+            "positive_rate": 0.8556149732620321,
+            "n": 187
+          },
+          "contrast": {
+            "auroc": 0.9155709342560553,
+            "average_precision": 0.991014714118852,
+            "positive_rate": 0.9090909090909091,
+            "n": 187
+          },
+          "overall": {
+            "auroc": 0.9595723354493819,
+            "average_precision": 0.9886158698527234,
+            "positive_rate": 0.7807486631016043,
+            "n": 187
+          }
+        }
+      }
+    },
+    "Glaucoma": {
+      "n_test": 52,
+      "metrics": {
+        "global_unweighted": {
+          "clarity": {
+            "auroc": 1.0,
+            "average_precision": 1.0,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          },
+          "illumination": {
+            "auroc": 0.9079365079365079,
+            "average_precision": 0.6403929403929404,
+            "positive_rate": 0.1346153846153846,
+            "n": 52
+          },
+          "contrast": {
+            "auroc": 0.92,
+            "average_precision": 0.26785714285714285,
+            "positive_rate": 0.038461538461538464,
+            "n": 52
+          },
+          "overall": {
+            "auroc": 1.0,
+            "average_precision": 1.0,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          }
+        },
+        "global_source_label_balanced": {
+          "clarity": {
+            "auroc": 1.0,
+            "average_precision": 1.0,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          },
+          "illumination": {
+            "auroc": 0.907936507936508,
+            "average_precision": 0.6383149432021613,
+            "positive_rate": 0.1346153846153846,
+            "n": 52
+          },
+          "contrast": {
+            "auroc": 0.93,
+            "average_precision": 0.30952380952380953,
+            "positive_rate": 0.038461538461538464,
+            "n": 52
+          },
+          "overall": {
+            "auroc": 1.0,
+            "average_precision": 1.0,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          }
+        },
+        "region_mean_unweighted": {
+          "clarity": {
+            "auroc": 1.0,
+            "average_precision": 1.0,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          },
+          "illumination": {
+            "auroc": 0.9015873015873015,
+            "average_precision": 0.5056689342403627,
+            "positive_rate": 0.1346153846153846,
+            "n": 52
+          },
+          "contrast": {
+            "auroc": 0.92,
+            "average_precision": 0.26666666666666666,
+            "positive_rate": 0.038461538461538464,
+            "n": 52
+          },
+          "overall": {
+            "auroc": 0.9215686274509804,
+            "average_precision": 0.2,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "clarity": {
+            "auroc": 1.0,
+            "average_precision": 1.0,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          },
+          "illumination": {
+            "auroc": 0.9111111111111111,
+            "average_precision": 0.5256344962227315,
+            "positive_rate": 0.1346153846153846,
+            "n": 52
+          },
+          "contrast": {
+            "auroc": 0.92,
+            "average_precision": 0.26666666666666666,
+            "positive_rate": 0.038461538461538464,
+            "n": 52
+          },
+          "overall": {
+            "auroc": 0.9411764705882353,
+            "average_precision": 0.25,
+            "positive_rate": 0.019230769230769232,
+            "n": 52
+          }
+        }
+      }
+    },
+    "Healthy": {
+      "n_test": 26,
+      "metrics": {
+        "global_unweighted": {
+          "illumination": {
+            "auroc": 0.8125,
+            "average_precision": 0.9834955620910997,
+            "positive_rate": 0.9230769230769231,
+            "n": 26
+          }
+        },
+        "global_source_label_balanced": {
+          "illumination": {
+            "auroc": 0.8333333333333333,
+            "average_precision": 0.9856885445472401,
+            "positive_rate": 0.9230769230769231,
+            "n": 26
+          }
+        },
+        "region_mean_unweighted": {
+          "illumination": {
+            "auroc": 0.625,
+            "average_precision": 0.9557397360815973,
+            "positive_rate": 0.9230769230769231,
+            "n": 26
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "illumination": {
+            "auroc": 0.6041666666666667,
+            "average_precision": 0.9565165257170826,
+            "positive_rate": 0.9230769230769231,
+            "n": 26
+          }
+        }
+      }
+    },
+    "Local1": {
+      "n_test": 199,
+      "metrics": {
+        "global_unweighted": {
+          "clarity": {
+            "auroc": 0.9035301278149726,
+            "average_precision": 0.883302058187752,
+            "positive_rate": 0.46733668341708545,
+            "n": 199
+          },
+          "illumination": {
+            "auroc": 0.8674403399803857,
+            "average_precision": 0.7008527988901212,
+            "positive_rate": 0.19095477386934673,
+            "n": 199
+          },
+          "contrast": {
+            "auroc": 0.9519230769230769,
+            "average_precision": 0.9617415514864561,
+            "positive_rate": 0.542713567839196,
+            "n": 199
+          },
+          "overall": {
+            "auroc": 0.9427500646161799,
+            "average_precision": 0.8755595169737503,
+            "positive_rate": 0.2663316582914573,
+            "n": 199
+          }
+        },
+        "global_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9136741732602962,
+            "average_precision": 0.8957656504531426,
+            "positive_rate": 0.46733668341708545,
+            "n": 199
+          },
+          "illumination": {
+            "auroc": 0.8772474664923178,
+            "average_precision": 0.7221717344688557,
+            "positive_rate": 0.19095477386934673,
+            "n": 199
+          },
+          "contrast": {
+            "auroc": 0.957926332926333,
+            "average_precision": 0.9676101513698481,
+            "positive_rate": 0.542713567839196,
+            "n": 199
+          },
+          "overall": {
+            "auroc": 0.9515378650814164,
+            "average_precision": 0.8857992554094664,
+            "positive_rate": 0.2663316582914573,
+            "n": 199
+          }
+        },
+        "region_mean_unweighted": {
+          "clarity": {
+            "auroc": 0.9537431527693244,
+            "average_precision": 0.9430541624439307,
+            "positive_rate": 0.46733668341708545,
+            "n": 199
+          },
+          "illumination": {
+            "auroc": 0.8698921216083687,
+            "average_precision": 0.5969939124733752,
+            "positive_rate": 0.19095477386934673,
+            "n": 199
+          },
+          "contrast": {
+            "auroc": 0.9783781033781034,
+            "average_precision": 0.9823056040893307,
+            "positive_rate": 0.542713567839196,
+            "n": 199
+          },
+          "overall": {
+            "auroc": 0.9662703540966658,
+            "average_precision": 0.8880831185041076,
+            "positive_rate": 0.2663316582914573,
+            "n": 199
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9555690809494827,
+            "average_precision": 0.9466966905949874,
+            "positive_rate": 0.46733668341708545,
+            "n": 199
+          },
+          "illumination": {
+            "auroc": 0.8734880679960771,
+            "average_precision": 0.5906942511015264,
+            "positive_rate": 0.19095477386934673,
+            "n": 199
+          },
+          "contrast": {
+            "auroc": 0.9804131054131054,
+            "average_precision": 0.9843724317957088,
+            "positive_rate": 0.542713567839196,
+            "n": 199
+          },
+          "overall": {
+            "auroc": 0.9657534246575342,
+            "average_precision": 0.8994200603113477,
+            "positive_rate": 0.2663316582914573,
+            "n": 199
+          }
+        }
+      }
+    },
+    "Local2": {
+      "n_test": 103,
+      "metrics": {
+        "global_unweighted": {
+          "clarity": {
+            "auroc": 0.9498239436619719,
+            "average_precision": 0.8977549934476821,
+            "positive_rate": 0.3106796116504854,
+            "n": 103
+          },
+          "illumination": {
+            "auroc": 0.9193548387096774,
+            "average_precision": 0.8681832630481388,
+            "positive_rate": 0.30097087378640774,
+            "n": 103
+          },
+          "contrast": {
+            "auroc": 0.9730354391371341,
+            "average_precision": 0.9662525259108945,
+            "positive_rate": 0.42718446601941745,
+            "n": 103
+          },
+          "overall": {
+            "auroc": 0.9887179487179487,
+            "average_precision": 0.9623839543121413,
+            "positive_rate": 0.24271844660194175,
+            "n": 103
+          }
+        },
+        "global_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9493838028169015,
+            "average_precision": 0.8951806541425509,
+            "positive_rate": 0.3106796116504854,
+            "n": 103
+          },
+          "illumination": {
+            "auroc": 0.9292114695340502,
+            "average_precision": 0.8886137665353196,
+            "positive_rate": 0.30097087378640774,
+            "n": 103
+          },
+          "contrast": {
+            "auroc": 0.9734206471494607,
+            "average_precision": 0.9661252952269404,
+            "positive_rate": 0.42718446601941745,
+            "n": 103
+          },
+          "overall": {
+            "auroc": 0.9907692307692308,
+            "average_precision": 0.9721822385876717,
+            "positive_rate": 0.24271844660194175,
+            "n": 103
+          }
+        },
+        "region_mean_unweighted": {
+          "clarity": {
+            "auroc": 0.977112676056338,
+            "average_precision": 0.9355622845621578,
+            "positive_rate": 0.3106796116504854,
+            "n": 103
+          },
+          "illumination": {
+            "auroc": 0.9269713261648745,
+            "average_precision": 0.8252112294842232,
+            "positive_rate": 0.30097087378640774,
+            "n": 103
+          },
+          "contrast": {
+            "auroc": 0.9657164869029276,
+            "average_precision": 0.9586554077489754,
+            "positive_rate": 0.42718446601941745,
+            "n": 103
+          },
+          "overall": {
+            "auroc": 0.9907692307692307,
+            "average_precision": 0.9716810067663064,
+            "positive_rate": 0.24271844660194175,
+            "n": 103
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.9788732394366197,
+            "average_precision": 0.9392574976323709,
+            "positive_rate": 0.3106796116504854,
+            "n": 103
+          },
+          "illumination": {
+            "auroc": 0.9233870967741935,
+            "average_precision": 0.8372017937044676,
+            "positive_rate": 0.30097087378640774,
+            "n": 103
+          },
+          "contrast": {
+            "auroc": 0.9684129429892142,
+            "average_precision": 0.9610410599085201,
+            "positive_rate": 0.42718446601941745,
+            "n": 103
+          },
+          "overall": {
+            "auroc": 0.9912820512820513,
+            "average_precision": 0.9732752096648571,
+            "positive_rate": 0.24271844660194175,
+            "n": 103
+          }
+        }
+      }
+    },
+    "UWF-mosaic": {
+      "n_test": 500,
+      "metrics": {
+        "global_unweighted": {
+          "clarity": {
+            "auroc": 0.6890737297079962,
+            "average_precision": 0.7759383161169944,
+            "positive_rate": 0.606,
+            "n": 500
+          },
+          "illumination": {
+            "auroc": 0.5926159009859451,
+            "average_precision": 0.6108216889989526,
+            "positive_rate": 0.546,
+            "n": 500
+          },
+          "contrast": {
+            "auroc": 0.6040719696969696,
+            "average_precision": 0.909321364599492,
+            "positive_rate": 0.88,
+            "n": 500
+          },
+          "overall": {
+            "auroc": 0.6049968094157686,
+            "average_precision": 0.7726353181983798,
+            "positive_rate": 0.656,
+            "n": 500
+          }
+        },
+        "global_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.6984553785327772,
+            "average_precision": 0.7861859963610254,
+            "positive_rate": 0.606,
+            "n": 500
+          },
+          "illumination": {
+            "auroc": 0.5921802133255878,
+            "average_precision": 0.6045979984991992,
+            "positive_rate": 0.546,
+            "n": 500
+          },
+          "contrast": {
+            "auroc": 0.6266856060606061,
+            "average_precision": 0.9158588977418384,
+            "positive_rate": 0.88,
+            "n": 500
+          },
+          "overall": {
+            "auroc": 0.6353959869540556,
+            "average_precision": 0.7968200467977737,
+            "positive_rate": 0.656,
+            "n": 500
+          }
+        },
+        "region_mean_unweighted": {
+          "clarity": {
+            "auroc": 0.7720594394464827,
+            "average_precision": 0.8298456514854977,
+            "positive_rate": 0.606,
+            "n": 500
+          },
+          "illumination": {
+            "auroc": 0.753013506317471,
+            "average_precision": 0.7645696903820121,
+            "positive_rate": 0.546,
+            "n": 500
+          },
+          "contrast": {
+            "auroc": 0.7828219696969697,
+            "average_precision": 0.95928956664529,
+            "positive_rate": 0.88,
+            "n": 500
+          },
+          "overall": {
+            "auroc": 0.9226017441860465,
+            "average_precision": 0.9579592318666222,
+            "positive_rate": 0.656,
+            "n": 500
+          }
+        },
+        "region_mean_source_label_balanced": {
+          "clarity": {
+            "auroc": 0.7572833425474528,
+            "average_precision": 0.8160554862622758,
+            "positive_rate": 0.606,
+            "n": 500
+          },
+          "illumination": {
+            "auroc": 0.6952606864501136,
+            "average_precision": 0.7115633416551512,
+            "positive_rate": 0.546,
+            "n": 500
+          },
+          "contrast": {
+            "auroc": 0.7697537878787878,
+            "average_precision": 0.956147054940726,
+            "positive_rate": 0.88,
+            "n": 500
+          },
+          "overall": {
+            "auroc": 0.9113283465683493,
+            "average_precision": 0.9519449772558561,
+            "positive_rate": 0.656,
+            "n": 500
+          }
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "global_unweighted": {
+      "mean_auroc": 0.8702955714736369,
+      "mean_average_precision": 0.8668115261131781,
+      "n_cells": 25,
+      "cells": [
+        {
+          "source": "DR-XJU",
+          "label": "clarity",
+          "auroc": 0.8955938697318008,
+          "average_precision": 0.9087322481279867
+        },
+        {
+          "source": "DR-XJU",
+          "label": "illumination",
+          "auroc": 0.8380662609871535,
+          "average_precision": 0.9708923988819056
+        },
+        {
+          "source": "DR-XJU",
+          "label": "contrast",
+          "auroc": 0.8097059705970597,
+          "average_precision": 0.8524985460368157
+        },
+        {
+          "source": "DR-XJU",
+          "label": "overall",
+          "auroc": 0.9110669024462129,
+          "average_precision": 0.9260004358220794
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "clarity",
+          "auroc": 0.923963963963964,
+          "average_precision": 0.9824578508880838
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "illumination",
+          "auroc": 0.9099537037037038,
+          "average_precision": 0.9811046579420678
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "contrast",
+          "auroc": 0.8972318339100346,
+          "average_precision": 0.9882999058252057
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "overall",
+          "auroc": 0.9440360841964583,
+          "average_precision": 0.9838091137933725
+        },
+        {
+          "source": "Glaucoma",
+          "label": "clarity",
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "source": "Glaucoma",
+          "label": "illumination",
+          "auroc": 0.9079365079365079,
+          "average_precision": 0.6403929403929404
+        },
+        {
+          "source": "Glaucoma",
+          "label": "contrast",
+          "auroc": 0.92,
+          "average_precision": 0.26785714285714285
+        },
+        {
+          "source": "Glaucoma",
+          "label": "overall",
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "source": "Healthy",
+          "label": "illumination",
+          "auroc": 0.8125,
+          "average_precision": 0.9834955620910997
+        },
+        {
+          "source": "Local1",
+          "label": "clarity",
+          "auroc": 0.9035301278149726,
+          "average_precision": 0.883302058187752
+        },
+        {
+          "source": "Local1",
+          "label": "illumination",
+          "auroc": 0.8674403399803857,
+          "average_precision": 0.7008527988901212
+        },
+        {
+          "source": "Local1",
+          "label": "contrast",
+          "auroc": 0.9519230769230769,
+          "average_precision": 0.9617415514864561
+        },
+        {
+          "source": "Local1",
+          "label": "overall",
+          "auroc": 0.9427500646161799,
+          "average_precision": 0.8755595169737503
+        },
+        {
+          "source": "Local2",
+          "label": "clarity",
+          "auroc": 0.9498239436619719,
+          "average_precision": 0.8977549934476821
+        },
+        {
+          "source": "Local2",
+          "label": "illumination",
+          "auroc": 0.9193548387096774,
+          "average_precision": 0.8681832630481388
+        },
+        {
+          "source": "Local2",
+          "label": "contrast",
+          "auroc": 0.9730354391371341,
+          "average_precision": 0.9662525259108945
+        },
+        {
+          "source": "Local2",
+          "label": "overall",
+          "auroc": 0.9887179487179487,
+          "average_precision": 0.9623839543121413
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "clarity",
+          "auroc": 0.6890737297079962,
+          "average_precision": 0.7759383161169944
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "illumination",
+          "auroc": 0.5926159009859451,
+          "average_precision": 0.6108216889989526
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "contrast",
+          "auroc": 0.6040719696969696,
+          "average_precision": 0.909321364599492
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "overall",
+          "auroc": 0.6049968094157686,
+          "average_precision": 0.7726353181983798
+        }
+      ]
+    },
+    "global_source_label_balanced": {
+      "mean_auroc": 0.8799479882655585,
+      "mean_average_precision": 0.8753257166727613,
+      "n_cells": 25,
+      "cells": [
+        {
+          "source": "DR-XJU",
+          "label": "clarity",
+          "auroc": 0.9084880636604775,
+          "average_precision": 0.9205013093700412
+        },
+        {
+          "source": "DR-XJU",
+          "label": "illumination",
+          "auroc": 0.8497295469912102,
+          "average_precision": 0.974032744542958
+        },
+        {
+          "source": "DR-XJU",
+          "label": "contrast",
+          "auroc": 0.8364086408640865,
+          "average_precision": 0.8745786506031568
+        },
+        {
+          "source": "DR-XJU",
+          "label": "overall",
+          "auroc": 0.9245505452402004,
+          "average_precision": 0.9388696296209224
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "clarity",
+          "auroc": 0.9295495495495496,
+          "average_precision": 0.9839802247535913
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "illumination",
+          "auroc": 0.9289351851851851,
+          "average_precision": 0.985680502341222
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "contrast",
+          "auroc": 0.9044982698961938,
+          "average_precision": 0.9894862738103252
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "overall",
+          "auroc": 0.9493818910791848,
+          "average_precision": 0.9855745989099739
+        },
+        {
+          "source": "Glaucoma",
+          "label": "clarity",
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "source": "Glaucoma",
+          "label": "illumination",
+          "auroc": 0.907936507936508,
+          "average_precision": 0.6383149432021613
+        },
+        {
+          "source": "Glaucoma",
+          "label": "contrast",
+          "auroc": 0.93,
+          "average_precision": 0.30952380952380953
+        },
+        {
+          "source": "Glaucoma",
+          "label": "overall",
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "source": "Healthy",
+          "label": "illumination",
+          "auroc": 0.8333333333333333,
+          "average_precision": 0.9856885445472401
+        },
+        {
+          "source": "Local1",
+          "label": "clarity",
+          "auroc": 0.9136741732602962,
+          "average_precision": 0.8957656504531426
+        },
+        {
+          "source": "Local1",
+          "label": "illumination",
+          "auroc": 0.8772474664923178,
+          "average_precision": 0.7221717344688557
+        },
+        {
+          "source": "Local1",
+          "label": "contrast",
+          "auroc": 0.957926332926333,
+          "average_precision": 0.9676101513698481
+        },
+        {
+          "source": "Local1",
+          "label": "overall",
+          "auroc": 0.9515378650814164,
+          "average_precision": 0.8857992554094664
+        },
+        {
+          "source": "Local2",
+          "label": "clarity",
+          "auroc": 0.9493838028169015,
+          "average_precision": 0.8951806541425509
+        },
+        {
+          "source": "Local2",
+          "label": "illumination",
+          "auroc": 0.9292114695340502,
+          "average_precision": 0.8886137665353196
+        },
+        {
+          "source": "Local2",
+          "label": "contrast",
+          "auroc": 0.9734206471494607,
+          "average_precision": 0.9661252952269404
+        },
+        {
+          "source": "Local2",
+          "label": "overall",
+          "auroc": 0.9907692307692308,
+          "average_precision": 0.9721822385876717
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "clarity",
+          "auroc": 0.6984553785327772,
+          "average_precision": 0.7861859963610254
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "illumination",
+          "auroc": 0.5921802133255878,
+          "average_precision": 0.6045979984991992
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "contrast",
+          "auroc": 0.6266856060606061,
+          "average_precision": 0.9158588977418384
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "overall",
+          "auroc": 0.6353959869540556,
+          "average_precision": 0.7968200467977737
+        }
+      ]
+    },
+    "region_mean_unweighted": {
+      "mean_auroc": 0.9045599053994283,
+      "mean_average_precision": 0.851457848073067,
+      "n_cells": 25,
+      "cells": [
+        {
+          "source": "DR-XJU",
+          "label": "clarity",
+          "auroc": 0.9346448570586502,
+          "average_precision": 0.9361381674421635
+        },
+        {
+          "source": "DR-XJU",
+          "label": "illumination",
+          "auroc": 0.8548005409060175,
+          "average_precision": 0.9762715672361281
+        },
+        {
+          "source": "DR-XJU",
+          "label": "contrast",
+          "auroc": 0.8901890189018902,
+          "average_precision": 0.9153138228863136
+        },
+        {
+          "source": "DR-XJU",
+          "label": "overall",
+          "auroc": 0.9617595048629531,
+          "average_precision": 0.9651795049608535
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "clarity",
+          "auroc": 0.9497297297297298,
+          "average_precision": 0.9879579058056328
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "illumination",
+          "auroc": 0.9254629629629629,
+          "average_precision": 0.9862329076491133
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "contrast",
+          "auroc": 0.913840830449827,
+          "average_precision": 0.9906294711602097
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "overall",
+          "auroc": 0.9560641496825928,
+          "average_precision": 0.987436651245804
+        },
+        {
+          "source": "Glaucoma",
+          "label": "clarity",
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "source": "Glaucoma",
+          "label": "illumination",
+          "auroc": 0.9015873015873015,
+          "average_precision": 0.5056689342403627
+        },
+        {
+          "source": "Glaucoma",
+          "label": "contrast",
+          "auroc": 0.92,
+          "average_precision": 0.26666666666666666
+        },
+        {
+          "source": "Glaucoma",
+          "label": "overall",
+          "auroc": 0.9215686274509804,
+          "average_precision": 0.2
+        },
+        {
+          "source": "Healthy",
+          "label": "illumination",
+          "auroc": 0.625,
+          "average_precision": 0.9557397360815973
+        },
+        {
+          "source": "Local1",
+          "label": "clarity",
+          "auroc": 0.9537431527693244,
+          "average_precision": 0.9430541624439307
+        },
+        {
+          "source": "Local1",
+          "label": "illumination",
+          "auroc": 0.8698921216083687,
+          "average_precision": 0.5969939124733752
+        },
+        {
+          "source": "Local1",
+          "label": "contrast",
+          "auroc": 0.9783781033781034,
+          "average_precision": 0.9823056040893307
+        },
+        {
+          "source": "Local1",
+          "label": "overall",
+          "auroc": 0.9662703540966658,
+          "average_precision": 0.8880831185041076
+        },
+        {
+          "source": "Local2",
+          "label": "clarity",
+          "auroc": 0.977112676056338,
+          "average_precision": 0.9355622845621578
+        },
+        {
+          "source": "Local2",
+          "label": "illumination",
+          "auroc": 0.9269713261648745,
+          "average_precision": 0.8252112294842232
+        },
+        {
+          "source": "Local2",
+          "label": "contrast",
+          "auroc": 0.9657164869029276,
+          "average_precision": 0.9586554077489754
+        },
+        {
+          "source": "Local2",
+          "label": "overall",
+          "auroc": 0.9907692307692307,
+          "average_precision": 0.9716810067663064
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "clarity",
+          "auroc": 0.7720594394464827,
+          "average_precision": 0.8298456514854977
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "illumination",
+          "auroc": 0.753013506317471,
+          "average_precision": 0.7645696903820121
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "contrast",
+          "auroc": 0.7828219696969697,
+          "average_precision": 0.95928956664529
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "overall",
+          "auroc": 0.9226017441860465,
+          "average_precision": 0.9579592318666222
+        }
+      ]
+    },
+    "region_mean_source_label_balanced": {
+      "mean_auroc": 0.9027729720598934,
+      "mean_average_precision": 0.8530787832822071,
+      "n_cells": 25,
+      "cells": [
+        {
+          "source": "DR-XJU",
+          "label": "clarity",
+          "auroc": 0.9471706454465075,
+          "average_precision": 0.9502286816790019
+        },
+        {
+          "source": "DR-XJU",
+          "label": "illumination",
+          "auroc": 0.8585192697768763,
+          "average_precision": 0.9764014271584098
+        },
+        {
+          "source": "DR-XJU",
+          "label": "contrast",
+          "auroc": 0.8937893789378938,
+          "average_precision": 0.9158206571380452
+        },
+        {
+          "source": "DR-XJU",
+          "label": "overall",
+          "auroc": 0.9580754494547599,
+          "average_precision": 0.9611886051032805
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "clarity",
+          "auroc": 0.9527927927927927,
+          "average_precision": 0.9887505135196686
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "illumination",
+          "auroc": 0.9365740740740741,
+          "average_precision": 0.9884615700509193
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "contrast",
+          "auroc": 0.9155709342560553,
+          "average_precision": 0.991014714118852
+        },
+        {
+          "source": "DR-ZJU",
+          "label": "overall",
+          "auroc": 0.9595723354493819,
+          "average_precision": 0.9886158698527234
+        },
+        {
+          "source": "Glaucoma",
+          "label": "clarity",
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "source": "Glaucoma",
+          "label": "illumination",
+          "auroc": 0.9111111111111111,
+          "average_precision": 0.5256344962227315
+        },
+        {
+          "source": "Glaucoma",
+          "label": "contrast",
+          "auroc": 0.92,
+          "average_precision": 0.26666666666666666
+        },
+        {
+          "source": "Glaucoma",
+          "label": "overall",
+          "auroc": 0.9411764705882353,
+          "average_precision": 0.25
+        },
+        {
+          "source": "Healthy",
+          "label": "illumination",
+          "auroc": 0.6041666666666667,
+          "average_precision": 0.9565165257170826
+        },
+        {
+          "source": "Local1",
+          "label": "clarity",
+          "auroc": 0.9555690809494827,
+          "average_precision": 0.9466966905949874
+        },
+        {
+          "source": "Local1",
+          "label": "illumination",
+          "auroc": 0.8734880679960771,
+          "average_precision": 0.5906942511015264
+        },
+        {
+          "source": "Local1",
+          "label": "contrast",
+          "auroc": 0.9804131054131054,
+          "average_precision": 0.9843724317957088
+        },
+        {
+          "source": "Local1",
+          "label": "overall",
+          "auroc": 0.9657534246575342,
+          "average_precision": 0.8994200603113477
+        },
+        {
+          "source": "Local2",
+          "label": "clarity",
+          "auroc": 0.9788732394366197,
+          "average_precision": 0.9392574976323709
+        },
+        {
+          "source": "Local2",
+          "label": "illumination",
+          "auroc": 0.9233870967741935,
+          "average_precision": 0.8372017937044676
+        },
+        {
+          "source": "Local2",
+          "label": "contrast",
+          "auroc": 0.9684129429892142,
+          "average_precision": 0.9610410599085201
+        },
+        {
+          "source": "Local2",
+          "label": "overall",
+          "auroc": 0.9912820512820513,
+          "average_precision": 0.9732752096648571
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "clarity",
+          "auroc": 0.7572833425474528,
+          "average_precision": 0.8160554862622758
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "illumination",
+          "auroc": 0.6952606864501136,
+          "average_precision": 0.7115633416551512
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "contrast",
+          "auroc": 0.7697537878787878,
+          "average_precision": 0.956147054940726
+        },
+        {
+          "source": "UWF-mosaic",
+          "label": "overall",
+          "auroc": 0.9113283465683493,
+          "average_precision": 0.9519449772558561
+        }
+      ]
+    }
+  },
+  "notes": [
+    "MSHF has no public patient identifier; source holdout is used as the conservative available split.",
+    "All features are frozen RetinaRadar representations; region_mean averages the 3x3 regional embeddings.",
+    "This is an external quality/domain audit, not disease diagnosis validation."
+  ]
+}
+```

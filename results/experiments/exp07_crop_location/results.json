@@ -1,0 +1,44 @@
+{
+  "crop_fraction": 0.55,
+  "rows": [
+    {
+      "position": "center",
+      "accuracy": 0.6230769230769231,
+      "macro_f1": 0.6190483747423837,
+      "severity_mae": 0.441025641025641,
+      "underestimate_rate": 0.15128205128205127
+    },
+    {
+      "position": "left",
+      "accuracy": 0.5897435897435898,
+      "macro_f1": 0.57984039760169,
+      "severity_mae": 0.46923076923076923,
+      "underestimate_rate": 0.14615384615384616
+    },
+    {
+      "position": "right",
+      "accuracy": 0.5512820512820513,
+      "macro_f1": 0.5400945203214659,
+      "severity_mae": 0.5051282051282051,
+      "underestimate_rate": 0.15897435897435896
+    },
+    {
+      "position": "up",
+      "accuracy": 0.541025641025641,
+      "macro_f1": 0.5370817612915357,
+      "severity_mae": 0.5230769230769231,
+      "underestimate_rate": 0.17435897435897435
+    },
+    {
+      "position": "down",
+      "accuracy": 0.5615384615384615,
+      "macro_f1": 0.552012629967666,
+      "severity_mae": 0.5128205128205128,
+      "underestimate_rate": 0.16923076923076924
+    }
+  ],
+  "notes": [
+    "All views have the same crop size; only location changes.",
+    "Positions are geometric shifts inside the retinal bounding box."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "sourcePptx": "/Users/tongyue/Documents/ppf/第四论文/图1_排版优化版.pptx",
+  "mapPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-frame-map.json",
+  "output": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter.pptx",
+  "outputBytes": 247113,
+  "sourceSlideCount": 1,
+  "slideCount": 1,
+  "previewDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter-preview",
+  "layoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "Enlarged editable Figure 1 with Times New Roman typography and a 12 pt minimum.",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 4,
+      "previewPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_large_tnr/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    }
+  ]
+}

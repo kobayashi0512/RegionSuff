@@ -1,0 +1,791 @@
+{
+  "dataset": {
+    "name": "RFMiD2.0",
+    "train_n": 684,
+    "test_n": 170,
+    "eligible_labels": 15,
+    "excluded_labels": 36,
+    "bootstrap_replicates": 2000
+  },
+  "per_disease": [
+    {
+      "label": "WNL",
+      "test_positive": 52,
+      "test_negative": 118,
+      "global_auroc": 0.9967405475880052,
+      "region_auroc": 0.9991851368970013,
+      "global_average_precision": 0.9936962019555833,
+      "region_average_precision": 0.9983130904183537,
+      "global_auroc_ci": [
+        0.9908735332464147,
+        1.0
+      ],
+      "region_auroc_ci": [
+        0.9965775749674055,
+        1.0
+      ],
+      "delta_auroc_ci": [
+        0.0,
+        0.007333767926988255
+      ],
+      "delta_auroc_p_two_sided": 0.127936031984008,
+      "global_ap_ci": [
+        0.9834133784114184,
+        1.0
+      ],
+      "region_ap_ci": [
+        0.9931551499348111,
+        1.0000000000000002
+      ],
+      "delta_ap_ci": [
+        0.0,
+        0.012926748461699302
+      ],
+      "delta_ap_p_two_sided": 0.12493753123438281,
+      "delta_auroc_q_bh": 0.63968015992004,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "BRVO",
+      "test_positive": 5,
+      "test_negative": 165,
+      "global_auroc": 0.8812121212121213,
+      "region_auroc": 0.953939393939394,
+      "global_average_precision": 0.5874183006535947,
+      "region_average_precision": 0.4525974025974026,
+      "global_auroc_ci": [
+        0.7248181818181818,
+        1.0
+      ],
+      "region_auroc_ci": [
+        0.9078484848484848,
+        0.9878787878787879
+      ],
+      "delta_auroc_ci": [
+        -0.02666666666666662,
+        0.218242424242424
+      ],
+      "delta_auroc_p_two_sided": 0.31084457771114443,
+      "global_ap_ci": [
+        0.17017511074197123,
+        1.0
+      ],
+      "region_ap_ci": [
+        0.1909076792772445,
+        0.8285714285714285
+      ],
+      "delta_ap_ci": [
+        -0.4245316742081448,
+        0.15568074728869324
+      ],
+      "delta_ap_p_two_sided": 0.45977011494252873,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7662835249042145
+    },
+    {
+      "label": "CME",
+      "test_positive": 7,
+      "test_negative": 163,
+      "global_auroc": 0.7861524978089395,
+      "region_auroc": 0.9474145486415425,
+      "global_average_precision": 0.36804576376004944,
+      "region_average_precision": 0.5053595527279737,
+      "global_auroc_ci": [
+        0.5310692375109554,
+        0.9658413672217352
+      ],
+      "region_auroc_ci": [
+        0.8991893076248905,
+        0.9842243645924628
+      ],
+      "delta_auroc_ci": [
+        -0.010517090271691457,
+        0.40315512708150747
+      ],
+      "delta_auroc_p_two_sided": 0.08595702148925537,
+      "global_ap_ci": [
+        0.10611100190979715,
+        0.722457808444872
+      ],
+      "region_ap_ci": [
+        0.2576329707164106,
+        0.8255394657863144
+      ],
+      "delta_ap_ci": [
+        -0.22773728396379733,
+        0.46927072622292276
+      ],
+      "delta_ap_p_two_sided": 0.3828085957021489,
+      "delta_auroc_q_bh": 0.63968015992004,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "CRS",
+      "test_positive": 9,
+      "test_negative": 161,
+      "global_auroc": 0.6052449965493445,
+      "region_auroc": 0.5452035886818496,
+      "global_average_precision": 0.20581028777408927,
+      "region_average_precision": 0.09948570224571929,
+      "global_auroc_ci": [
+        0.3691511387163561,
+        0.8212732919254657
+      ],
+      "region_auroc_ci": [
+        0.3533471359558316,
+        0.7508971704623877
+      ],
+      "delta_auroc_ci": [
+        -0.27677708764665276,
+        0.16357832988267756
+      ],
+      "delta_auroc_p_two_sided": 0.5997001499250375,
+      "global_ap_ci": [
+        0.05778850587769955,
+        0.4666103294995999
+      ],
+      "region_ap_ci": [
+        0.04884869862293272,
+        0.3302283913687398
+      ],
+      "delta_ap_ci": [
+        -0.22592961615298582,
+        0.021143064863899864
+      ],
+      "delta_ap_p_two_sided": 0.1549225387306347,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "CWS",
+      "test_positive": 6,
+      "test_negative": 164,
+      "global_auroc": 0.6981707317073171,
+      "region_auroc": 0.7489837398373984,
+      "global_average_precision": 0.13350086201771594,
+      "region_average_precision": 0.4323964672978472,
+      "global_auroc_ci": [
+        0.48772865853658537,
+        0.9034806910569104
+      ],
+      "region_auroc_ci": [
+        0.5315040650406504,
+        0.943089430894309
+      ],
+      "delta_auroc_ci": [
+        -0.21344004065040648,
+        0.27746443089430883
+      ],
+      "delta_auroc_p_two_sided": 0.6786606696651675,
+      "global_ap_ci": [
+        0.04903136765378727,
+        0.451439292114695
+      ],
+      "region_ap_ci": [
+        0.10291881647426197,
+        0.8450980392156864
+      ],
+      "delta_ap_ci": [
+        -0.012689900266288932,
+        0.6103804820265516
+      ],
+      "delta_ap_p_two_sided": 0.06196901549225387,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "DR",
+      "test_positive": 14,
+      "test_negative": 156,
+      "global_auroc": 0.9981684981684982,
+      "region_auroc": 0.9986263736263736,
+      "global_average_precision": 0.9804748822605964,
+      "region_average_precision": 0.9846415489272632,
+      "global_auroc_ci": [
+        0.9935782967032968,
+        1.0
+      ],
+      "region_auroc_ci": [
+        0.9945054945054944,
+        1.0
+      ],
+      "delta_auroc_ci": [
+        -0.0045787545787546735,
+        0.005494505494505475
+      ],
+      "delta_auroc_p_two_sided": 0.9725137431284357,
+      "global_ap_ci": [
+        0.9370699048850311,
+        1.0
+      ],
+      "region_ap_ci": [
+        0.9385404030493316,
+        1.0
+      ],
+      "delta_ap_ci": [
+        -0.05003924646781788,
+        0.05265861472794246
+      ],
+      "delta_ap_p_two_sided": 0.9695152423788106,
+      "delta_auroc_q_bh": 0.9725137431284357,
+      "delta_ap_q_bh": 0.9695152423788106
+    },
+    {
+      "label": "EDN",
+      "test_positive": 17,
+      "test_negative": 153,
+      "global_auroc": 0.8869665513264129,
+      "region_auroc": 0.9058054594386774,
+      "global_average_precision": 0.5003098852570504,
+      "region_average_precision": 0.5434669718620362,
+      "global_auroc_ci": [
+        0.813917723952326,
+        0.9481161091887734
+      ],
+      "region_auroc_ci": [
+        0.8212226066897347,
+        0.9680988081507113
+      ],
+      "delta_auroc_ci": [
+        -0.07656670511341798,
+        0.11074586697424071
+      ],
+      "delta_auroc_p_two_sided": 0.6356821589205397,
+      "global_ap_ci": [
+        0.3288632726618723,
+        0.7220600188957649
+      ],
+      "region_ap_ci": [
+        0.38265562628909605,
+        0.7935136614650783
+      ],
+      "delta_ap_ci": [
+        -0.12879128694863087,
+        0.2784293027084701
+      ],
+      "delta_ap_p_two_sided": 0.5667166416791605,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7727954204715825
+    },
+    {
+      "label": "HR",
+      "test_positive": 16,
+      "test_negative": 154,
+      "global_auroc": 0.7061688311688311,
+      "region_auroc": 0.7228084415584416,
+      "global_average_precision": 0.30069104184182893,
+      "region_average_precision": 0.30702274030263527,
+      "global_auroc_ci": [
+        0.5725953733766234,
+        0.8311688311688311
+      ],
+      "region_auroc_ci": [
+        0.5896712662337663,
+        0.8421266233766234
+      ],
+      "delta_auroc_ci": [
+        -0.14163961038961037,
+        0.1655844155844156
+      ],
+      "delta_auroc_p_two_sided": 0.8735632183908046,
+      "global_ap_ci": [
+        0.1488306196600067,
+        0.5380510054638719
+      ],
+      "region_ap_ci": [
+        0.16718187281539573,
+        0.5654971916191968
+      ],
+      "delta_ap_ci": [
+        -0.22145690119876346,
+        0.257411351032758
+      ],
+      "delta_ap_p_two_sided": 0.9225387306346826,
+      "delta_auroc_q_bh": 0.935960591133005,
+      "delta_ap_q_bh": 0.9695152423788106
+    },
+    {
+      "label": "MH",
+      "test_positive": 7,
+      "test_negative": 163,
+      "global_auroc": 0.7300613496932515,
+      "region_auroc": 0.677475898334794,
+      "global_average_precision": 0.26092581950699556,
+      "region_average_precision": 0.11777469879572375,
+      "global_auroc_ci": [
+        0.5109333917616127,
+        0.9106266432953548
+      ],
+      "region_auroc_ci": [
+        0.44522348816827345,
+        0.8817046450482032
+      ],
+      "delta_auroc_ci": [
+        -0.2971297107800176,
+        0.16652059596844881
+      ],
+      "delta_auroc_p_two_sided": 0.6936531734132934,
+      "global_ap_ci": [
+        0.06388387140176585,
+        0.597349349492463
+      ],
+      "region_ap_ci": [
+        0.05465975861132633,
+        0.34969263315680804
+      ],
+      "delta_ap_ci": [
+        -0.3846319546196413,
+        0.09970204690676474
+      ],
+      "delta_ap_p_two_sided": 0.3498250874562719,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "MS",
+      "test_positive": 7,
+      "test_negative": 163,
+      "global_auroc": 0.7458369851007887,
+      "region_auroc": 0.7326906222611744,
+      "global_average_precision": 0.12037183055040199,
+      "region_average_precision": 0.20970723451009532,
+      "global_auroc_ci": [
+        0.5021910604732691,
+        0.9114811568799298
+      ],
+      "region_auroc_ci": [
+        0.46360648553900086,
+        0.9272567922874672
+      ],
+      "delta_auroc_ci": [
+        -0.13674408413672215,
+        0.11218229623137599
+      ],
+      "delta_auroc_p_two_sided": 0.8465767116441779,
+      "global_ap_ci": [
+        0.07093534128735914,
+        0.2488199966441426
+      ],
+      "region_ap_ci": [
+        0.07326272396224619,
+        0.5847337037962026
+      ],
+      "delta_ap_ci": [
+        -0.06933478702851299,
+        0.424657773343879
+      ],
+      "delta_ap_p_two_sided": 0.3498250874562719,
+      "delta_auroc_q_bh": 0.935960591133005,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "MYA",
+      "test_positive": 5,
+      "test_negative": 165,
+      "global_auroc": 0.8933333333333333,
+      "region_auroc": 0.9030303030303031,
+      "global_average_precision": 0.652987012987013,
+      "region_average_precision": 0.8117647058823529,
+      "global_auroc_ci": [
+        0.7127272727272728,
+        1.0
+      ],
+      "region_auroc_ci": [
+        0.6980909090909091,
+        1.0
+      ],
+      "delta_auroc_ci": [
+        -0.046060606060606024,
+        0.06303030303030299
+      ],
+      "delta_auroc_p_two_sided": 0.7246376811594203,
+      "global_ap_ci": [
+        0.2571398432790838,
+        1.0
+      ],
+      "region_ap_ci": [
+        0.43408133299284984,
+        1.0
+      ],
+      "delta_ap_ci": [
+        -0.005564217155045434,
+        0.48
+      ],
+      "delta_ap_p_two_sided": 0.5557221389305347,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7727954204715825
+    },
+    {
+      "label": "ODC",
+      "test_positive": 7,
+      "test_negative": 163,
+      "global_auroc": 0.7309377738825591,
+      "region_auroc": 0.838737949167397,
+      "global_average_precision": 0.08764581729802114,
+      "region_average_precision": 0.1341895243497074,
+      "global_auroc_ci": [
+        0.5950701139351446,
+        0.8580411919368974
+      ],
+      "region_auroc_ci": [
+        0.7537028921998248,
+        0.9149868536371604
+      ],
+      "delta_auroc_ci": [
+        -0.048225241016652064,
+        0.28398334794040314
+      ],
+      "delta_auroc_p_two_sided": 0.18690654672663667,
+      "global_ap_ci": [
+        0.06293403866835527,
+        0.20194372043996103
+      ],
+      "region_ap_ci": [
+        0.09718696729155805,
+        0.2751386156281373
+      ],
+      "delta_ap_ci": [
+        -0.0465258536567192,
+        0.1889377551530309
+      ],
+      "delta_ap_p_two_sided": 0.2938530734632684,
+      "delta_auroc_q_bh": 0.7008995502248875,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "RT",
+      "test_positive": 8,
+      "test_negative": 162,
+      "global_auroc": 0.7283950617283951,
+      "region_auroc": 0.8024691358024691,
+      "global_average_precision": 0.32296374993067495,
+      "region_average_precision": 0.1634280496467773,
+      "global_auroc_ci": [
+        0.49535108024691354,
+        0.9228395061728395
+      ],
+      "region_auroc_ci": [
+        0.6651234567901235,
+        0.9120370370370371
+      ],
+      "delta_auroc_ci": [
+        -0.09413580246913578,
+        0.2669945987654321
+      ],
+      "delta_auroc_p_two_sided": 0.43778110944527737,
+      "global_ap_ci": [
+        0.11193807528216569,
+        0.7179024109643858
+      ],
+      "region_ap_ci": [
+        0.09628899284955908,
+        0.37197705645929674
+      ],
+      "delta_ap_ci": [
+        -0.5310075424065938,
+        0.12679744986255348
+      ],
+      "delta_ap_p_two_sided": 0.2818590704647676,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.7177661169415293
+    },
+    {
+      "label": "TSLN",
+      "test_positive": 8,
+      "test_negative": 162,
+      "global_auroc": 0.9567901234567902,
+      "region_auroc": 0.8302469135802469,
+      "global_average_precision": 0.5575358422939068,
+      "region_average_precision": 0.5345250814000814,
+      "global_auroc_ci": [
+        0.9127893518518518,
+        0.9907407407407408
+      ],
+      "region_auroc_ci": [
+        0.6242091049382715,
+        0.983815586419753
+      ],
+      "delta_auroc_ci": [
+        -0.3109760802469137,
+        0.01311728395061729
+      ],
+      "delta_auroc_p_two_sided": 0.09295352323838081,
+      "global_ap_ci": [
+        0.33002890840884264,
+        0.8580481150793651
+      ],
+      "region_ap_ci": [
+        0.23899017670309228,
+        0.8604736201298696
+      ],
+      "delta_ap_ci": [
+        -0.37901888344971935,
+        0.32062841487406035
+      ],
+      "delta_ap_p_two_sided": 0.8135932033983009,
+      "delta_auroc_q_bh": 0.63968015992004,
+      "delta_ap_q_bh": 0.9695152423788106
+    },
+    {
+      "label": "TV",
+      "test_positive": 6,
+      "test_negative": 164,
+      "global_auroc": 0.8658536585365855,
+      "region_auroc": 0.8302845528455285,
+      "global_average_precision": 0.27972135530275066,
+      "region_average_precision": 0.32885699734439233,
+      "global_auroc_ci": [
+        0.7317073170731707,
+        0.975609756097561
+      ],
+      "region_auroc_ci": [
+        0.6473323170731707,
+        0.972586382113821
+      ],
+      "delta_auroc_ci": [
+        -0.20833333333333326,
+        0.15955284552845517
+      ],
+      "delta_auroc_p_two_sided": 0.6756621689155422,
+      "global_ap_ci": [
+        0.11634244498161925,
+        0.7083333333333333
+      ],
+      "region_ap_ci": [
+        0.09399743287642365,
+        0.6777808988764045
+      ],
+      "delta_ap_ci": [
+        -0.2627540812116925,
+        0.26921387976435557
+      ],
+      "delta_ap_p_two_sided": 0.9315342328835582,
+      "delta_auroc_q_bh": 0.9057971014492754,
+      "delta_ap_q_bh": 0.9695152423788106
+    }
+  ],
+  "excluded": [
+    {
+      "label": "AH",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "AION",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ARMD",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CB",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CF",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CL",
+      "test_positive": 0,
+      "test_negative": 170,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CNV",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CRAO",
+      "test_positive": 0,
+      "test_negative": 170,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CRVO",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CSR",
+      "test_positive": 3,
+      "test_negative": 167,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "CSC",
+      "test_positive": 0,
+      "test_negative": 170,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "DN",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ERM",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "GRT",
+      "test_positive": 0,
+      "test_negative": 170,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "HPED",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "LS",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "MCA",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ME",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "MHL",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ODE",
+      "test_positive": 4,
+      "test_negative": 166,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ODP",
+      "test_positive": 4,
+      "test_negative": 166,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ON ",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "OPDM",
+      "test_positive": 0,
+      "test_negative": 170,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "PRH",
+      "test_positive": 4,
+      "test_negative": 166,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "RD",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "RHL",
+      "test_positive": 0,
+      "test_negative": 170,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "RTR",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "RP",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "RPEC",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "RS",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "SOFE",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "ST",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "TD",
+      "test_positive": 4,
+      "test_negative": 166,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "VS",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "HTN",
+      "test_positive": 2,
+      "test_negative": 168,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    },
+    {
+      "label": "IIH",
+      "test_positive": 1,
+      "test_negative": 169,
+      "reason": "requires >=5 positives and >=5 negatives for bootstrap inference"
+    }
+  ],
+  "notes": [
+    "Per-disease probes train only on RFMiD2 Training+Validation labels.",
+    "Bootstrap is paired and stratified within test positives/negatives to preserve disease prevalence.",
+    "Benjamini-Hochberg q-values control FDR across eligible diseases.",
+    "This is external ordinary-color-fundus validation, not true same-eye UWF/45-degree validation."
+  ]
+}

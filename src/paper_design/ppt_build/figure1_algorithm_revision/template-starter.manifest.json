@@ -1,0 +1,23 @@
+{
+  "sourcePptx": "/Users/tongyue/Documents/ppf/第四论文/图1_放大新罗马版.pptx",
+  "mapPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-frame-map.json",
+  "output": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter.pptx",
+  "outputBytes": 247235,
+  "sourceSlideCount": 1,
+  "slideCount": 1,
+  "previewDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter-preview",
+  "layoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "Revised editable Figure 1 showing exact pixel apertures, the visibility-conditioned attention equations, the primary DR output, and the downstream paired-view risk audit.",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_algorithm_revision/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    }
+  ]
+}

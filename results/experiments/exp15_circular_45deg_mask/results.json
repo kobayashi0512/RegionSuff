@@ -1,0 +1,90 @@
+{
+  "dataset": {
+    "n": 1630,
+    "ratio_45_over_200": 0.225,
+    "split_counts": {
+      "train": [
+        260,
+        351,
+        265
+      ],
+      "val": [
+        107,
+        146,
+        111
+      ],
+      "test": [
+        129,
+        137,
+        124
+      ]
+    }
+  },
+  "views": {
+    "full": {
+      "train": {
+        "accuracy": 0.634703196347032,
+        "macro_f1": 0.6264912576904983,
+        "severity_mae": 0.4132420091324201,
+        "underestimation_rate": 0.16210045662100456
+      },
+      "val": {
+        "accuracy": 0.49725274725274726,
+        "macro_f1": 0.48479473845898974,
+        "severity_mae": 0.5796703296703297,
+        "underestimation_rate": 0.19230769230769232
+      },
+      "test": {
+        "accuracy": 0.5743589743589743,
+        "macro_f1": 0.5606467229720841,
+        "severity_mae": 0.5128205128205128,
+        "underestimation_rate": 0.1641025641025641
+      }
+    },
+    "square55": {
+      "train": {
+        "accuracy": 0.6974885844748858,
+        "macro_f1": 0.6966732695946102,
+        "severity_mae": 0.3264840182648402,
+        "underestimation_rate": 0.13470319634703196
+      },
+      "val": {
+        "accuracy": 0.5192307692307693,
+        "macro_f1": 0.5186104996613132,
+        "severity_mae": 0.5494505494505495,
+        "underestimation_rate": 0.2032967032967033
+      },
+      "test": {
+        "accuracy": 0.6230769230769231,
+        "macro_f1": 0.6190483747423837,
+        "severity_mae": 0.441025641025641,
+        "underestimation_rate": 0.15128205128205127
+      }
+    },
+    "circle45": {
+      "train": {
+        "accuracy": 0.6712328767123288,
+        "macro_f1": 0.6673907326277649,
+        "severity_mae": 0.3641552511415525,
+        "underestimation_rate": 0.1506849315068493
+      },
+      "val": {
+        "accuracy": 0.521978021978022,
+        "macro_f1": 0.5245602745602745,
+        "severity_mae": 0.554945054945055,
+        "underestimation_rate": 0.26373626373626374
+      },
+      "test": {
+        "accuracy": 0.6307692307692307,
+        "macro_f1": 0.6296165368624179,
+        "severity_mae": 0.45384615384615384,
+        "underestimation_rate": 0.16923076923076924
+      }
+    }
+  },
+  "notes": [
+    "circle45 retains a central circular region with radius ratio 45/200 inside the retinal bounding box; it is a geometric proxy, not a real 45-degree camera pair.",
+    "Patient-level grouped split is reused for comparability.",
+    "The experiment tests whether the qualitative underestimation signal survives a more camera-like circular mask."
+  ]
+}

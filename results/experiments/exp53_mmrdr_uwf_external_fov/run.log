@@ -1,0 +1,199 @@
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1152:1280
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1280:1408
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1408:1536
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1536:1664
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1664:1792
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1792:1920
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 1920:2048
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 2048:2176
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 2176:2304
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 2304:2432
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+regions: 32/144
+block complete: 2432:2560
+regions: 32/144
+regions: 32/144
+regions: 32/45
+block complete: 2560:2597
+{
+  "summary": {
+    "full": {
+      "accuracy": {
+        "mean": 0.6274932614555255,
+        "std": 0.01032721171668679
+      },
+      "macro_f1": {
+        "mean": 0.6250688320811616,
+        "std": 0.009863398837103627
+      },
+      "severity_mae": {
+        "mean": 0.40030804774740086,
+        "std": 0.01310504687028889
+      },
+      "underestimation_rate": {
+        "mean": 0.2718521370812476,
+        "std": 0.013308255416854415
+      }
+    },
+    "center": {
+      "accuracy": {
+        "mean": 0.6020793222949556,
+        "std": 0.004429023376052539
+      },
+      "macro_f1": {
+        "mean": 0.5998914429399688,
+        "std": 0.003708047801275816
+      },
+      "severity_mae": {
+        "mean": 0.4321139776665383,
+        "std": 0.005104038376474246
+      },
+      "underestimation_rate": {
+        "mean": 0.2839430111667308,
+        "std": 0.01582871659181346
+      }
+    },
+    "center_plus_cross": {
+      "accuracy": {
+        "mean": 0.6441278398151713,
+        "std": 0.00433427395156108
+      },
+      "macro_f1": {
+        "mean": 0.642452418986693,
+        "std": 0.004688008613764187
+      },
+      "severity_mae": {
+        "mean": 0.3780515979976896,
+        "std": 0.005992597651893898
+      },
+      "underestimation_rate": {
+        "mean": 0.26045437042741626,
+        "std": 0.00502499199622944
+      }
+    }
+  },
+  "paired_limited_minus_full": {
+    "center": {
+      "accuracy": {
+        "mean": -0.025413939160569887,
+        "std": 0.01221009626161561
+      },
+      "macro_f1": {
+        "mean": -0.02517738914119281,
+        "std": 0.01296822820170378
+      },
+      "severity_mae": {
+        "mean": 0.031805929919137464,
+        "std": 0.0163969427808277
+      },
+      "underestimation_rate": {
+        "mean": 0.01209087408548325,
+        "std": 0.014160043071861092
+      }
+    },
+    "center_plus_cross": {
+      "accuracy": {
+        "mean": 0.016634578359645748,
+        "std": 0.006405199040819086
+      },
+      "macro_f1": {
+        "mean": 0.017383586905531413,
+        "std": 0.006466999313949465
+      },
+      "severity_mae": {
+        "mean": -0.022256449749711204,
+        "std": 0.0075328146504925605
+      },
+      "underestimation_rate": {
+        "mean": -0.011397766653831343,
+        "std": 0.009453979847161433
+      }
+    }
+  }
+}

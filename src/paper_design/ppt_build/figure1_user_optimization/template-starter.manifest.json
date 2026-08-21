@@ -1,0 +1,23 @@
+{
+  "sourcePptx": "/Users/tongyue/Documents/ppf/第四论文/图1.pptx",
+  "mapPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-frame-map.json",
+  "output": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-starter.pptx",
+  "outputBytes": 247263,
+  "sourceSlideCount": 1,
+  "slideCount": 1,
+  "previewDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-starter-preview",
+  "layoutDir": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "Editable Figure 1 study overview preserving the four-stage RegionSuff narrative.",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/tongyue/Documents/77f /7hao/paper_design/ppt_build/figure1_user_optimization/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    }
+  ]
+}

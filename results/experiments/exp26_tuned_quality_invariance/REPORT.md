@@ -1,0 +1,318 @@
+# Exp26：质量鲁棒性策略选择
+
+对简单增强、clean加权增强和前景光度归一化进行验证集选择，再在测试集做全量压力测试；门控阈值只用验证混合集确定。
+
+```json
+{
+  "dataset": {
+    "n": 1630,
+    "split_counts": {
+      "train": [
+        260,
+        351,
+        265
+      ],
+      "val": [
+        107,
+        146,
+        111
+      ],
+      "test": [
+        129,
+        137,
+        124
+      ]
+    }
+  },
+  "candidate_selection": {
+    "raw_clean": {
+      "validation_mean_accuracy": 0.40345368916797486,
+      "validation_clean_accuracy": 0.49725274725274726,
+      "validation_stress_mean_accuracy": 0.3878205128205128,
+      "validation_rows": {
+        "clean": {
+          "accuracy": 0.49725274725274726,
+          "macro_f1": 0.48479473845898974,
+          "severity_mae": 0.5796703296703297,
+          "underestimation_rate": 0.19230769230769232
+        },
+        "blur_L1": {
+          "accuracy": 0.48626373626373626,
+          "macro_f1": 0.4758743281045433,
+          "severity_mae": 0.5934065934065934,
+          "underestimation_rate": 0.2087912087912088
+        },
+        "blur_L2": {
+          "accuracy": 0.4945054945054945,
+          "macro_f1": 0.4834609245503099,
+          "severity_mae": 0.5796703296703297,
+          "underestimation_rate": 0.2087912087912088
+        },
+        "brightness_L1": {
+          "accuracy": 0.42857142857142855,
+          "macro_f1": 0.3970111330008949,
+          "severity_mae": 0.7582417582417582,
+          "underestimation_rate": 0.5082417582417582
+        },
+        "brightness_L2": {
+          "accuracy": 0.32967032967032966,
+          "macro_f1": 0.2287760302049109,
+          "severity_mae": 0.9423076923076923,
+          "underestimation_rate": 0.6675824175824175
+        },
+        "contrast_L1": {
+          "accuracy": 0.29395604395604397,
+          "macro_f1": 0.15145081387119605,
+          "severity_mae": 1.010989010989011,
+          "underestimation_rate": 0.7060439560439561
+        },
+        "contrast_L2": {
+          "accuracy": 0.29395604395604397,
+          "macro_f1": 0.15145081387119605,
+          "severity_mae": 1.010989010989011,
+          "underestimation_rate": 0.7060439560439561
+        }
+      }
+    },
+    "raw_weighted_moderate_aug": {
+      "validation_mean_accuracy": 0.4945054945054945,
+      "validation_clean_accuracy": 0.49725274725274726,
+      "validation_stress_mean_accuracy": 0.49404761904761907,
+      "validation_rows": {
+        "clean": {
+          "accuracy": 0.49725274725274726,
+          "macro_f1": 0.4762692250985971,
+          "severity_mae": 0.5741758241758241,
+          "underestimation_rate": 0.18681318681318682
+        },
+        "blur_L1": {
+          "accuracy": 0.49725274725274726,
+          "macro_f1": 0.4757461795404428,
+          "severity_mae": 0.5741758241758241,
+          "underestimation_rate": 0.18681318681318682
+        },
+        "blur_L2": {
+          "accuracy": 0.4945054945054945,
+          "macro_f1": 0.47510824455472295,
+          "severity_mae": 0.5769230769230769,
+          "underestimation_rate": 0.2032967032967033
+        },
+        "brightness_L1": {
+          "accuracy": 0.5,
+          "macro_f1": 0.4904908333378211,
+          "severity_mae": 0.5741758241758241,
+          "underestimation_rate": 0.23351648351648352
+        },
+        "brightness_L2": {
+          "accuracy": 0.46703296703296704,
+          "macro_f1": 0.4680128332782862,
+          "severity_mae": 0.6126373626373627,
+          "underestimation_rate": 0.3708791208791209
+        },
+        "contrast_L1": {
+          "accuracy": 0.5,
+          "macro_f1": 0.48317095786050596,
+          "severity_mae": 0.5769230769230769,
+          "underestimation_rate": 0.1978021978021978
+        },
+        "contrast_L2": {
+          "accuracy": 0.5054945054945055,
+          "macro_f1": 0.49863083635013455,
+          "severity_mae": 0.5686813186813187,
+          "underestimation_rate": 0.22527472527472528
+        }
+      }
+    },
+    "photometric_normalized": {
+      "validation_mean_accuracy": 0.46036106750392464,
+      "validation_clean_accuracy": 0.5054945054945055,
+      "validation_stress_mean_accuracy": 0.45283882783882784,
+      "validation_rows": {
+        "clean": {
+          "accuracy": 0.5054945054945055,
+          "macro_f1": 0.4747060902119207,
+          "severity_mae": 0.5879120879120879,
+          "underestimation_rate": 0.16483516483516483
+        },
+        "blur_L1": {
+          "accuracy": 0.4835164835164835,
+          "macro_f1": 0.45072107210721074,
+          "severity_mae": 0.6510989010989011,
+          "underestimation_rate": 0.1510989010989011
+        },
+        "blur_L2": {
+          "accuracy": 0.36538461538461536,
+          "macro_f1": 0.26628537729288254,
+          "severity_mae": 0.8791208791208791,
+          "underestimation_rate": 0.016483516483516484
+        },
+        "brightness_L1": {
+          "accuracy": 0.47527472527472525,
+          "macro_f1": 0.4601611560526268,
+          "severity_mae": 0.6263736263736264,
+          "underestimation_rate": 0.22802197802197802
+        },
+        "brightness_L2": {
+          "accuracy": 0.4807692307692308,
+          "macro_f1": 0.4632926922781995,
+          "severity_mae": 0.6456043956043956,
+          "underestimation_rate": 0.16758241758241757
+        },
+        "contrast_L1": {
+          "accuracy": 0.4368131868131868,
+          "macro_f1": 0.4092386460110513,
+          "severity_mae": 0.6620879120879121,
+          "underestimation_rate": 0.29945054945054944
+        },
+        "contrast_L2": {
+          "accuracy": 0.47527472527472525,
+          "macro_f1": 0.432917785449431,
+          "severity_mae": 0.6208791208791209,
+          "underestimation_rate": 0.42857142857142855
+        }
+      }
+    }
+  },
+  "models": {
+    "clean": {
+      "accuracy": 0.5769230769230769,
+      "macro_f1": 0.5483408245779995,
+      "severity_mae": 0.5153846153846153,
+      "underestimation_rate": 0.1358974358974359
+    },
+    "blur_L1": {
+      "accuracy": 0.5846153846153846,
+      "macro_f1": 0.5643127845512513,
+      "severity_mae": 0.49743589743589745,
+      "underestimation_rate": 0.14358974358974358
+    },
+    "blur_L2": {
+      "accuracy": 0.5897435897435898,
+      "macro_f1": 0.5775158964232521,
+      "severity_mae": 0.48717948717948717,
+      "underestimation_rate": 0.1641025641025641
+    },
+    "blur_L3": {
+      "accuracy": 0.5846153846153846,
+      "macro_f1": 0.5813665986113888,
+      "severity_mae": 0.48717948717948717,
+      "underestimation_rate": 0.19487179487179487
+    },
+    "brightness_L1": {
+      "accuracy": 0.5820512820512821,
+      "macro_f1": 0.5876324393055519,
+      "severity_mae": 0.4948717948717949,
+      "underestimation_rate": 0.22564102564102564
+    },
+    "brightness_L2": {
+      "accuracy": 0.5384615384615384,
+      "macro_f1": 0.540480831463843,
+      "severity_mae": 0.5666666666666667,
+      "underestimation_rate": 0.38461538461538464
+    },
+    "brightness_L3": {
+      "accuracy": 0.4076923076923077,
+      "macro_f1": 0.32545652882258774,
+      "severity_mae": 0.7974358974358975,
+      "underestimation_rate": 0.5820512820512821
+    },
+    "contrast_L1": {
+      "accuracy": 0.6025641025641025,
+      "macro_f1": 0.5891956310454946,
+      "severity_mae": 0.47692307692307695,
+      "underestimation_rate": 0.14871794871794872
+    },
+    "contrast_L2": {
+      "accuracy": 0.5897435897435898,
+      "macro_f1": 0.5862247272532977,
+      "severity_mae": 0.49743589743589745,
+      "underestimation_rate": 0.18461538461538463
+    },
+    "contrast_L3": {
+      "accuracy": 0.5538461538461539,
+      "macro_f1": 0.5607959857730961,
+      "severity_mae": 0.5358974358974359,
+      "underestimation_rate": 0.24102564102564103
+    }
+  },
+  "quality_gate": {
+    "threshold": -2.2347948892239287,
+    "clean": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5769230769230769,
+      "accepted_underestimation_rate": 0.1358974358974359,
+      "rejected_n": 0
+    },
+    "blur_L1": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5846153846153846,
+      "accepted_underestimation_rate": 0.14358974358974358,
+      "rejected_n": 0
+    },
+    "blur_L2": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5897435897435898,
+      "accepted_underestimation_rate": 0.1641025641025641,
+      "rejected_n": 0
+    },
+    "blur_L3": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5846153846153846,
+      "accepted_underestimation_rate": 0.19487179487179487,
+      "rejected_n": 0
+    },
+    "brightness_L1": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5820512820512821,
+      "accepted_underestimation_rate": 0.22564102564102564,
+      "rejected_n": 0
+    },
+    "brightness_L2": {
+      "threshold": -2.2347948892239287,
+      "coverage": 0.8512820512820513,
+      "accepted_accuracy": 0.5301204819277109,
+      "accepted_underestimation_rate": 0.39156626506024095,
+      "rejected_n": 58
+    },
+    "brightness_L3": {
+      "threshold": -2.2347948892239287,
+      "coverage": 0.03076923076923077,
+      "accepted_accuracy": 0.3333333333333333,
+      "accepted_underestimation_rate": 0.5833333333333334,
+      "rejected_n": 378
+    },
+    "contrast_L1": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.6025641025641025,
+      "accepted_underestimation_rate": 0.14871794871794872,
+      "rejected_n": 0
+    },
+    "contrast_L2": {
+      "threshold": -2.2347948892239287,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5897435897435898,
+      "accepted_underestimation_rate": 0.18461538461538463,
+      "rejected_n": 0
+    },
+    "contrast_L3": {
+      "threshold": -2.2347948892239287,
+      "coverage": 0.8692307692307693,
+      "accepted_accuracy": 0.5781710914454278,
+      "accepted_underestimation_rate": 0.24188790560471976,
+      "rejected_n": 51
+    }
+  },
+  "notes": [
+    "Candidate selected on a validation mixture of clean and L1/L2 synthetic stress, not on the test set.",
+    "Photometric normalization operates only on foreground pixels; it is designed for brightness/contrast shifts, not blur.",
+    "Synthetic stress is not a clinical quality ground truth."
+  ],
+  "chosen_model": "raw_weighted_moderate_aug"
+}
+```

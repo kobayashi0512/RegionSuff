@@ -1,0 +1,646 @@
+{
+  "dataset": "RFMiD2.0",
+  "models": {
+    "full": {
+      "n_labels": 45,
+      "mean_auroc": 0.765131709111002,
+      "mean_average_precision": 0.3674613286960141,
+      "per_label": [
+        {
+          "label": "WNL",
+          "test_positive": 52,
+          "auroc": 0.9898956975228161,
+          "average_precision": 0.9866272189349112
+        },
+        {
+          "label": "AH",
+          "test_positive": 1,
+          "auroc": 0.9940828402366864,
+          "average_precision": 0.5
+        },
+        {
+          "label": "AION",
+          "test_positive": 1,
+          "auroc": 0.6094674556213018,
+          "average_precision": 0.014925373134328358
+        },
+        {
+          "label": "ARMD",
+          "test_positive": 2,
+          "auroc": 0.8452380952380952,
+          "average_precision": 0.5185185185185185
+        },
+        {
+          "label": "BRVO",
+          "test_positive": 5,
+          "auroc": 0.8290909090909091,
+          "average_precision": 0.575890356142457
+        },
+        {
+          "label": "CB",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "CF",
+          "test_positive": 1,
+          "auroc": 0.3076923076923077,
+          "average_precision": 0.00847457627118644
+        },
+        {
+          "label": "CME",
+          "test_positive": 7,
+          "auroc": 0.8124452234881683,
+          "average_precision": 0.4245650183150183
+        },
+        {
+          "label": "CNV",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "CRS",
+          "test_positive": 9,
+          "auroc": 0.5134575569358178,
+          "average_precision": 0.07972673844328101
+        },
+        {
+          "label": "CRVO",
+          "test_positive": 2,
+          "auroc": 0.8363095238095238,
+          "average_precision": 0.5175438596491229
+        },
+        {
+          "label": "CSR",
+          "test_positive": 3,
+          "auroc": 0.7904191616766467,
+          "average_precision": 0.45405982905982906
+        },
+        {
+          "label": "CWS",
+          "test_positive": 6,
+          "auroc": 0.676829268292683,
+          "average_precision": 0.0923009867489784
+        },
+        {
+          "label": "DN",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "DR",
+          "test_positive": 14,
+          "auroc": 0.9945054945054945,
+          "average_precision": 0.9499148512306407
+        },
+        {
+          "label": "EDN",
+          "test_positive": 17,
+          "auroc": 0.8811995386389849,
+          "average_precision": 0.5740960680931751
+        },
+        {
+          "label": "ERM",
+          "test_positive": 1,
+          "auroc": 0.514792899408284,
+          "average_precision": 0.012048192771084338
+        },
+        {
+          "label": "HPED",
+          "test_positive": 1,
+          "auroc": 0.12426035502958577,
+          "average_precision": 0.006711409395973154
+        },
+        {
+          "label": "HR",
+          "test_positive": 16,
+          "auroc": 0.7325487012987013,
+          "average_precision": 0.33442047480975384
+        },
+        {
+          "label": "LS",
+          "test_positive": 2,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "MCA",
+          "test_positive": 2,
+          "auroc": 0.6011904761904762,
+          "average_precision": 0.09096692111959287
+        },
+        {
+          "label": "ME",
+          "test_positive": 2,
+          "auroc": 0.7976190476190477,
+          "average_precision": 0.09871794871794871
+        },
+        {
+          "label": "MH",
+          "test_positive": 7,
+          "auroc": 0.7730061349693251,
+          "average_precision": 0.29343577869825715
+        },
+        {
+          "label": "MHL",
+          "test_positive": 1,
+          "auroc": 0.8461538461538461,
+          "average_precision": 0.037037037037037035
+        },
+        {
+          "label": "MS",
+          "test_positive": 7,
+          "auroc": 0.6231375985977212,
+          "average_precision": 0.08707548453755784
+        },
+        {
+          "label": "MYA",
+          "test_positive": 5,
+          "auroc": 0.8715151515151516,
+          "average_precision": 0.6823426573426573
+        },
+        {
+          "label": "ODC",
+          "test_positive": 7,
+          "auroc": 0.7449605609114811,
+          "average_precision": 0.08751395618346872
+        },
+        {
+          "label": "ODE",
+          "test_positive": 4,
+          "auroc": 0.8192771084337349,
+          "average_precision": 0.1009920634920635
+        },
+        {
+          "label": "ODP",
+          "test_positive": 4,
+          "auroc": 0.3704819277108434,
+          "average_precision": 0.07822954428034039
+        },
+        {
+          "label": "ON ",
+          "test_positive": 1,
+          "auroc": 0.7810650887573964,
+          "average_precision": 0.02631578947368421
+        },
+        {
+          "label": "PRH",
+          "test_positive": 4,
+          "auroc": 0.7680722891566265,
+          "average_precision": 0.07232103732967943
+        },
+        {
+          "label": "RD",
+          "test_positive": 2,
+          "auroc": 0.8184523809523809,
+          "average_precision": 0.5158730158730158
+        },
+        {
+          "label": "RTR",
+          "test_positive": 1,
+          "auroc": 0.5562130177514792,
+          "average_precision": 0.013157894736842105
+        },
+        {
+          "label": "RP",
+          "test_positive": 1,
+          "auroc": 0.9171597633136095,
+          "average_precision": 0.06666666666666667
+        },
+        {
+          "label": "RPEC",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "RS",
+          "test_positive": 1,
+          "auroc": 0.9822485207100592,
+          "average_precision": 0.25
+        },
+        {
+          "label": "RT",
+          "test_positive": 8,
+          "auroc": 0.7677469135802469,
+          "average_precision": 0.2973844395006797
+        },
+        {
+          "label": "SOFE",
+          "test_positive": 1,
+          "auroc": 0.8816568047337279,
+          "average_precision": 0.047619047619047616
+        },
+        {
+          "label": "ST",
+          "test_positive": 1,
+          "auroc": 0.2781065088757396,
+          "average_precision": 0.008130081300813009
+        },
+        {
+          "label": "TD",
+          "test_positive": 4,
+          "auroc": 0.5662650602409638,
+          "average_precision": 0.05890376984126984
+        },
+        {
+          "label": "TSLN",
+          "test_positive": 8,
+          "auroc": 0.9290123456790124,
+          "average_precision": 0.4256397537647537
+        },
+        {
+          "label": "TV",
+          "test_positive": 6,
+          "auroc": 0.7347560975609756,
+          "average_precision": 0.29420783881717977
+        },
+        {
+          "label": "VS",
+          "test_positive": 2,
+          "auroc": 0.5535714285714286,
+          "average_precision": 0.02007226013649137
+        },
+        {
+          "label": "HTN",
+          "test_positive": 2,
+          "auroc": 0.9970238095238095,
+          "average_precision": 0.8333333333333333
+        },
+        {
+          "label": "IIH",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        }
+      ]
+    },
+    "central": {
+      "n_labels": 45,
+      "mean_auroc": 0.7275848205241789,
+      "mean_average_precision": 0.3232033542785899,
+      "per_label": [
+        {
+          "label": "WNL",
+          "test_positive": 52,
+          "auroc": 0.988754889178618,
+          "average_precision": 0.9848599865047234
+        },
+        {
+          "label": "AH",
+          "test_positive": 1,
+          "auroc": 0.9940828402366864,
+          "average_precision": 0.5
+        },
+        {
+          "label": "AION",
+          "test_positive": 1,
+          "auroc": 0.17159763313609466,
+          "average_precision": 0.0070921985815602835
+        },
+        {
+          "label": "ARMD",
+          "test_positive": 2,
+          "auroc": 0.9166666666666667,
+          "average_precision": 0.5333333333333333
+        },
+        {
+          "label": "BRVO",
+          "test_positive": 5,
+          "auroc": 0.8569696969696969,
+          "average_precision": 0.6561497326203207
+        },
+        {
+          "label": "CB",
+          "test_positive": 1,
+          "auroc": 0.9940828402366864,
+          "average_precision": 0.5
+        },
+        {
+          "label": "CF",
+          "test_positive": 1,
+          "auroc": 0.2899408284023669,
+          "average_precision": 0.008264462809917356
+        },
+        {
+          "label": "CME",
+          "test_positive": 7,
+          "auroc": 0.7151621384750219,
+          "average_precision": 0.28268909841709455
+        },
+        {
+          "label": "CNV",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "CRS",
+          "test_positive": 9,
+          "auroc": 0.5707384403036577,
+          "average_precision": 0.09199528808119523
+        },
+        {
+          "label": "CRVO",
+          "test_positive": 2,
+          "auroc": 0.7559523809523809,
+          "average_precision": 0.2620481927710843
+        },
+        {
+          "label": "CSR",
+          "test_positive": 3,
+          "auroc": 0.7704590818363273,
+          "average_precision": 0.675141242937853
+        },
+        {
+          "label": "CWS",
+          "test_positive": 6,
+          "auroc": 0.8607723577235773,
+          "average_precision": 0.3023674916190733
+        },
+        {
+          "label": "DN",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        },
+        {
+          "label": "DR",
+          "test_positive": 14,
+          "auroc": 0.9990842490842491,
+          "average_precision": 0.9910714285714285
+        },
+        {
+          "label": "EDN",
+          "test_positive": 17,
+          "auroc": 0.9150326797385621,
+          "average_precision": 0.7099461064912875
+        },
+        {
+          "label": "ERM",
+          "test_positive": 1,
+          "auroc": 0.3905325443786982,
+          "average_precision": 0.009615384615384616
+        },
+        {
+          "label": "HPED",
+          "test_positive": 1,
+          "auroc": 0.1952662721893491,
+          "average_precision": 0.0072992700729927005
+        },
+        {
+          "label": "HR",
+          "test_positive": 16,
+          "auroc": 0.7077922077922078,
+          "average_precision": 0.26445678703025505
+        },
+        {
+          "label": "LS",
+          "test_positive": 2,
+          "auroc": 0.9761904761904763,
+          "average_precision": 0.3611111111111111
+        },
+        {
+          "label": "MCA",
+          "test_positive": 2,
+          "auroc": 0.5535714285714286,
+          "average_precision": 0.0385492700729927
+        },
+        {
+          "label": "ME",
+          "test_positive": 2,
+          "auroc": 0.31845238095238093,
+          "average_precision": 0.013085870680807389
+        },
+        {
+          "label": "MH",
+          "test_positive": 7,
+          "auroc": 0.5740578439964943,
+          "average_precision": 0.3261363457242305
+        },
+        {
+          "label": "MHL",
+          "test_positive": 1,
+          "auroc": 0.4319526627218935,
+          "average_precision": 0.010309278350515464
+        },
+        {
+          "label": "MS",
+          "test_positive": 7,
+          "auroc": 0.6213847502191061,
+          "average_precision": 0.07537351395733569
+        },
+        {
+          "label": "MYA",
+          "test_positive": 5,
+          "auroc": 0.9684848484848485,
+          "average_precision": 0.7026315789473683
+        },
+        {
+          "label": "ODC",
+          "test_positive": 7,
+          "auroc": 0.8106923751095529,
+          "average_precision": 0.25575045109928835
+        },
+        {
+          "label": "ODE",
+          "test_positive": 4,
+          "auroc": 0.911144578313253,
+          "average_precision": 0.15556118999323867
+        },
+        {
+          "label": "ODP",
+          "test_positive": 4,
+          "auroc": 0.5481927710843373,
+          "average_precision": 0.031098417627920732
+        },
+        {
+          "label": "ON ",
+          "test_positive": 1,
+          "auroc": 0.9112426035502958,
+          "average_precision": 0.0625
+        },
+        {
+          "label": "PRH",
+          "test_positive": 4,
+          "auroc": 0.5256024096385542,
+          "average_precision": 0.02990921359342412
+        },
+        {
+          "label": "RD",
+          "test_positive": 2,
+          "auroc": 0.8154761904761905,
+          "average_precision": 0.515625
+        },
+        {
+          "label": "RTR",
+          "test_positive": 1,
+          "auroc": 0.6035502958579881,
+          "average_precision": 0.014705882352941176
+        },
+        {
+          "label": "RP",
+          "test_positive": 1,
+          "auroc": 0.9940828402366864,
+          "average_precision": 0.5
+        },
+        {
+          "label": "RPEC",
+          "test_positive": 1,
+          "auroc": 0.9349112426035503,
+          "average_precision": 0.08333333333333333
+        },
+        {
+          "label": "RS",
+          "test_positive": 1,
+          "auroc": 0.8994082840236687,
+          "average_precision": 0.05555555555555555
+        },
+        {
+          "label": "RT",
+          "test_positive": 8,
+          "auroc": 0.7631172839506173,
+          "average_precision": 0.13996360191280632
+        },
+        {
+          "label": "SOFE",
+          "test_positive": 1,
+          "auroc": 0.6449704142011834,
+          "average_precision": 0.01639344262295082
+        },
+        {
+          "label": "ST",
+          "test_positive": 1,
+          "auroc": 0.21893491124260356,
+          "average_precision": 0.007518796992481203
+        },
+        {
+          "label": "TD",
+          "test_positive": 4,
+          "auroc": 0.4668674698795181,
+          "average_precision": 0.04006984372696447
+        },
+        {
+          "label": "TSLN",
+          "test_positive": 8,
+          "auroc": 0.8958333333333333,
+          "average_precision": 0.37842781910522494
+        },
+        {
+          "label": "TV",
+          "test_positive": 6,
+          "auroc": 0.9329268292682927,
+          "average_precision": 0.5688346883468834
+        },
+        {
+          "label": "VS",
+          "test_positive": 2,
+          "auroc": 0.35119047619047616,
+          "average_precision": 0.014265621860558568
+        },
+        {
+          "label": "HTN",
+          "test_positive": 2,
+          "auroc": 0.9761904761904763,
+          "average_precision": 0.3611111111111111
+        },
+        {
+          "label": "IIH",
+          "test_positive": 1,
+          "auroc": 1.0,
+          "average_precision": 1.0
+        }
+      ]
+    }
+  },
+  "quality_shift": {
+    "full": {
+      "mean_quality_logits_sigmoid": [
+        0.5059547424316406,
+        0.5013681650161743,
+        0.9574503302574158,
+        0.0185636468231678,
+        0.008332237601280212,
+        0.23887856304645538,
+        0.8118205070495605,
+        0.7465347051620483,
+        0.30169567465782166,
+        0.6080796122550964,
+        0.3162785768508911,
+        0.4987797141075134,
+        0.611643373966217,
+        0.26595354080200195,
+        0.6132943630218506,
+        0.7623940110206604,
+        0.26998433470726013
+      ],
+      "mean_abs_quality_logit": [
+        2.6527836322784424,
+        2.6456241607666016,
+        4.557977676391602,
+        5.337377071380615,
+        5.383718967437744,
+        1.7121610641479492,
+        2.047292947769165,
+        1.4405876398086548,
+        1.30270516872406,
+        1.8273582458496094,
+        2.1593523025512695,
+        1.8864519596099854,
+        2.1293816566467285,
+        1.6302404403686523,
+        1.2407208681106567,
+        2.036120891571045,
+        1.840484380722046
+      ]
+    },
+    "central": {
+      "mean_quality_logits_sigmoid": [
+        0.552883505821228,
+        0.4791374206542969,
+        0.8208231329917908,
+        0.08117175102233887,
+        0.0067185526713728905,
+        0.24177944660186768,
+        0.812195360660553,
+        0.4787566363811493,
+        0.4774213135242462,
+        0.5192144513130188,
+        0.42387840151786804,
+        0.42509227991104126,
+        0.584528923034668,
+        0.18137258291244507,
+        0.7529960870742798,
+        0.6687973141670227,
+        0.34643012285232544
+      ],
+      "mean_abs_quality_logit": [
+        3.0209505558013916,
+        3.08058762550354,
+        2.962745428085327,
+        3.823092222213745,
+        5.810441017150879,
+        2.0016214847564697,
+        2.125336170196533,
+        1.0361156463623047,
+        0.9744564294815063,
+        1.8299483060836792,
+        1.9651273488998413,
+        2.228609561920166,
+        2.3375043869018555,
+        2.1291146278381348,
+        1.9147261381149292,
+        1.8683496713638306,
+        1.6931432485580444
+      ]
+    }
+  },
+  "notes": [
+    "RFMiD2.0 is an external ordinary color fundus dataset, not a paired UWF/45-degree dataset.",
+    "The frozen RetinaRadar representation is trained only through linear probes on the RFMiD training+validation images.",
+    "Quality outputs are reported for shift diagnosis, not as ophthalmologist quality labels."
+  ]
+}

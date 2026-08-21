@@ -1,0 +1,124 @@
+{
+  "ensemble": {
+    "full": {
+      "validation": {
+        "accuracy": 0.760989010989011,
+        "macro_f1": 0.7685783576055605,
+        "severity_mae": 0.25274725274725274,
+        "underestimation_rate": 0.08791208791208792
+      },
+      "test": {
+        "accuracy": 0.8307692307692308,
+        "macro_f1": 0.8321529549522557,
+        "severity_mae": 0.1794871794871795,
+        "underestimation_rate": 0.07179487179487179
+      }
+    },
+    "cross": {
+      "validation": {
+        "accuracy": 0.75,
+        "macro_f1": 0.7587816451264123,
+        "severity_mae": 0.260989010989011,
+        "underestimation_rate": 0.0989010989010989
+      },
+      "test": {
+        "accuracy": 0.841025641025641,
+        "macro_f1": 0.8424464196460089,
+        "severity_mae": 0.16666666666666666,
+        "underestimation_rate": 0.07179487179487179
+      }
+    }
+  },
+  "risk": {
+    "single_seed": {
+      "risk_head": {
+        "test": {
+          "auroc": 0.7405288082083662,
+          "average_precision": 0.12357684679656036,
+          "brier": 0.1762227515157819,
+          "positive_rate": 0.07179487179487179
+        }
+      },
+      "selective": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.5168709196316315,
+            "validation_coverage": 0.532967032967033,
+            "validation_risk": 0.015463917525773196,
+            "validation_cp_upper": 0.03947999390917666,
+            "feasible": true
+          },
+          "test_coverage": 0.6230769230769231,
+          "test_accepted_risk": 0.024691358024691357
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.6388336253018277,
+            "validation_coverage": 0.7554945054945055,
+            "validation_risk": 0.06909090909090909,
+            "validation_cp_upper": 0.09973332176198718,
+            "feasible": true
+          },
+          "test_coverage": 0.8205128205128205,
+          "test_accepted_risk": 0.0625
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.8001289360822914,
+            "validation_coverage": 1.0,
+            "validation_risk": 0.0989010989010989,
+            "validation_cp_upper": 0.1285079215928169,
+            "feasible": true
+          },
+          "test_coverage": 1.0,
+          "test_accepted_risk": 0.07179487179487179
+        }
+      }
+    },
+    "ensemble": {
+      "risk_head": {
+        "test": {
+          "auroc": 0.7670678768745067,
+          "average_precision": 0.14160342939975976,
+          "brier": 0.16799451025143325,
+          "positive_rate": 0.07179487179487179
+        }
+      },
+      "selective": {
+        "0.05": {
+          "calibration": {
+            "threshold": 0.6184488199453508,
+            "validation_coverage": 0.6428571428571429,
+            "validation_risk": 0.02564102564102564,
+            "validation_cp_upper": 0.04997839123291399,
+            "feasible": true
+          },
+          "test_coverage": 0.764102564102564,
+          "test_accepted_risk": 0.050335570469798654
+        },
+        "0.1": {
+          "calibration": {
+            "threshold": 0.6789750167248093,
+            "validation_coverage": 0.8186813186813187,
+            "validation_risk": 0.07046979865771812,
+            "validation_cp_upper": 0.09989467079518917,
+            "feasible": true
+          },
+          "test_coverage": 0.9,
+          "test_accepted_risk": 0.07122507122507123
+        },
+        "0.2": {
+          "calibration": {
+            "threshold": 0.7433567126734942,
+            "validation_coverage": 1.0,
+            "validation_risk": 0.0989010989010989,
+            "validation_cp_upper": 0.1285079215928169,
+            "feasible": true
+          },
+          "test_coverage": 1.0,
+          "test_accepted_risk": 0.07179487179487179
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "source": "/Users/tongyue/Documents/ppf/第四论文/图1.pptx",
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "reuseMode": "duplicate-slide",
+      "narrativeRole": "Editable Figure 1 study overview preserving the four-stage RegionSuff narrative.",
+      "editTargets": [
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/wvyh8rqx", "sh/547294r6", "sh/k3yl0zql",
+            "sh/7qp4be9c", "sh/65g3298r", "sh/ts7md4r2",
+            "sh/4r6dg7et", "sh/5sfepcfe", "sh/ipovexwn", "sh/3qxwn2x8",
+            "sh/sfqdkrep", "sh/dgzetcfa", "sh/1cvuxc7e", "sh/0bmd476t",
+            "sh/zadcv2p8", "sh/e94v2hon", "sh/90ve1w7q", "sh/ozmd8r65",
+            "sh/nydczmpk", "sh/mx4v6hoz", "sh/p4bu5s76", "sh/432dwn6l"
+          ],
+          "reason": "Normalize title hierarchy, panel grid, headers, and inter-panel flow."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/uxgjq907", "sh/vyp0je1s", "sh/wzy1szid",
+            "sh/i1gje90j", "sh/j2pkne14", "sh/43y1gji9", "sh/54r2poju",
+            "sh/y5wjip0z", "sh/z2xgf6to", "sh/e1oz61c3",
+            "sh/14fyhgbe", "sh/036h8but", "sh/nqxgjqtk", "sh/mpozalcz",
+            "sh/9sfylgbq", "sh/or6hcvu5", "sh/buh0nqtg", "sh/at8zelcb",
+            "sh/8zqx4vq9", "sh/t0jyd0ru", "sh/6x8f2583", "sh/7yhgbq9o",
+            "sh/kvqx0vqd", "sh/lwzy90ry", "sh/yt8fyl87", "sh/juhg7q9s",
+            "sh/wr6xwbq1", "sh/xsfy5grm"
+          ],
+          "reason": "Rebalance Panel A and shorten the research-question callout."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/dc7md8fe", "sh/ra54bix8", "sh/q9wnidgn",
+            "sh/5onm98f2", "sh/4ne5g3yh", "sh/3m547yxw",
+            "sh/9kr6lsfm", "sh/oji5sne1", "sh/6psjmpwj", "sh/7q1kfudo",
+            "sh/8ra1oze9", "sh/ts32h4vu", "sh/ylsjipw7", "sh/jm1kbuds",
+            "sh/kna1kzed", "sh/loj2dkvy", "sh/ihc3u9cr", "sh/3ilknedw",
+            "sh/rehk7e50", "sh/d0j29on6", "sh/cfa10jml",
+            "sh/3ahk3u54", "sh/298ju94j", "sh/pcz254na", "sh/4bq1wzmp",
+            "sh/f6x0zu58", "sh/u5ojqpon", "sh/kbmh0v25", "sh/5cvy903q",
+            "sh/ip4zyl4f", "sh/jadg7ql0", "sh/sf6h4v2h", "sh/tgfyd032",
+            "sh/6d4z25kb", "sh/7edgbalw", "sh/8j2xsbmd", "sh/9kby1g3i",
+            "sh/yhkza1wv", "sh/jitg36dg", "sh/kj2hcbel", "sh/l4by5wv6",
+            "sh/654ze1wr", "sh/76dg76dc", "sh/87mhgbex"
+          ],
+          "reason": "Align controlled-perturbation examples, labels, and qualifier note in Panel B."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/sryl4zqx", "sh/fu94fe98", "sh/utg3698n", "sh/wn6dc7eh",
+            "sh/t8vy9gvi", "sh/na9gvmd8", "sh/pgzax4jm",
+            "sh/ofqtoj2h", "sh/3ehsve1w", "sh/2d8rm9kb", "sh/dkja1ojy",
+            "sh/cjatsj2d", "sh/bi1sze1s", "sh/qhsbq9k7", "sh/tofapkju",
+            "sh/sn69gf29", "sh/kratwza5", "sh/lsja54ra", "sh/ypsbupsz",
+            "sh/jq1s3u9k", "sh/svut0za1", "sh/tw3a94rm"
+          ],
+          "reason": "Center the RegionSuff pipeline on one vertical axis and equalize outputs."
+        },
+        {
+          "action": "rewrite-and-reposition",
+          "shapeIds": [
+            "sh/hofulsf2", "sh/ul4vaxgb", "sh/vmdcj2xw", "sh/6tsbypsv",
+            "sh/7u1s7u9g", "sh/gzut4jax", "sh/hk3adori", "sh/repw3it0",
+            "sh/qtwvadcf", "sh/dg7e5sbq", "sh/cfydcnu5", "sh/3q5czyto",
+            "sh/2pwv6tc3", "sh/psne18bu", "sh/4red83u9", "sh/nm9wb2ts"
+          ],
+          "reason": "Regularize the evidence-chain cards and reduce the boundary note's visual weight."
+        }
+      ]
+    }
+  ]
+}

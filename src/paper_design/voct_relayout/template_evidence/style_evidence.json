@@ -1,0 +1,170 @@
+{
+  "input": "/Users/tongyue/Documents/ppf/\u7b2c\u4e8c\u8bba\u6587/VOCT_2.0.docx",
+  "fonts_by_char_count": {
+    "Times New Roman": 41258
+  },
+  "direct_run_formatting_runs": 375,
+  "direct_paragraph_formatting_paragraphs": 302,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 7,
+      "text": "Email: Liwei Liu (liutree80@163.com)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 131,
+      "text": "References ",
+      "style": "EndNote Bibliography"
+    },
+    {
+      "para_index": 159,
+      "text": "Cohort",
+      "style": "Normal"
+    },
+    {
+      "para_index": 160,
+      "text": "Evaluation samples",
+      "style": "Normal"
+    },
+    {
+      "para_index": 161,
+      "text": "Dice (mean \u00b1 SD)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 162,
+      "text": "Bootstrap 95% CI",
+      "style": "Normal"
+    },
+    {
+      "para_index": 163,
+      "text": "Median Dice",
+      "style": "Normal"
+    },
+    {
+      "para_index": 184,
+      "text": "Cohort",
+      "style": "Normal"
+    },
+    {
+      "para_index": 185,
+      "text": "Pearson r",
+      "style": "Normal"
+    },
+    {
+      "para_index": 186,
+      "text": "Mean bias (pixels)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 187,
+      "text": "95% limits of agreement (pixels)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 204,
+      "text": "Module Variations (Ablation Target)",
+      "style": "Normal (Web)"
+    },
+    {
+      "para_index": 205,
+      "text": "Duke (Bioptigen)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 206,
+      "text": "GOALS (Topcon)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 207,
+      "text": "AMD (Zeiss)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 208,
+      "text": "OIMHS (Heidelberg)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 229,
+      "text": "Source",
+      "style": "Normal"
+    },
+    {
+      "para_index": 230,
+      "text": "Image n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 231,
+      "text": "Unit n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 232,
+      "text": "Precision",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "VOCT: Recovering Hidden Acquisition Context via Image-Only Source Routing for Multi-Platform OCT Segmentation",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "",
+        "style": "Authors"
+      },
+      {
+        "para_index": 3,
+        "text": "Liwei Liu*, Kaiwen Deng",
+        "style": "Normal (Web)"
+      },
+      {
+        "para_index": 4,
+        "text": "School of Railway Intelligent Engineering, Dalian Jiaotong University, Dalian, 116028, China",
+        "style": "Normal (Web)"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "VOCT: Recovering Hidden Acquisition Context via Image-Only Source Routing for Mu",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "run_text": "Liwei Liu",
+        "style": "Normal (Web)"
+      },
+      {
+        "para_index": 3,
+        "run_text": "*",
+        "style": "Normal (Web)"
+      },
+      {
+        "para_index": 3,
+        "run_text": ", Kaiwen Deng",
+        "style": "Normal (Web)"
+      },
+      {
+        "para_index": 4,
+        "run_text": "School of Railway Intelligent Engineering, Dalian Jiaotong University, Dalian, 1",
+        "style": "Normal (Web)"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

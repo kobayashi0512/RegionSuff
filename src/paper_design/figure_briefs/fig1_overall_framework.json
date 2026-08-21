@@ -1,0 +1,32 @@
+{
+  "figure_goal": "Explain the clinical gap, study design, RegionSufficiency concept, and validation outputs in one left-to-right overview.",
+  "paper_claim": "Diagnostic sufficiency is a property of the visible retinal evidence set rather than image quality or field-of-view area alone.",
+  "figure_type": "graphical-abstract",
+  "mode": "mixed",
+  "panels": [
+    {"name": "A", "content": "Hidden diagnostic gap: image quality is not diagnostic sufficiency."},
+    {"name": "B", "content": "Internal UWF development and controlled field-of-view construction; independent MMRDR-UWF test."},
+    {"name": "C", "content": "RegionSufficiency thumbnail: 3x3 regions, shared retinal encoder, visibility-conditioned aggregation."},
+    {"name": "D", "content": "Evaluation questions and actions: severity, underestimation, external replication, accept or defer."}
+  ],
+  "must_keep_labels": ["Image quality", "Diagnostic sufficiency", "UWF-DR", "MMRDR-UWF", "RegionSufficiency", "Accept", "Defer"],
+  "data": {"internal_images": 1630, "external_images": 2597},
+  "style_constraints": [
+    "2019 RMB 20 inspired peach, ochre, olive and brown palette",
+    "white-to-ivory background",
+    "horizontal four-stage layout",
+    "only single horizontal or vertical straight arrows",
+    "no crossing connectors",
+    "English manuscript labels",
+    "editable SVG"
+  ],
+  "output_formats": ["svg", "pdf", "png"],
+  "verification_checklist": [
+    "Reading order is left to right.",
+    "No connector overlaps text or panels.",
+    "Image quality and diagnostic sufficiency are visually distinct.",
+    "External labels are not depicted as training inputs.",
+    "All text remains readable at double-column width."
+  ]
+}
+

@@ -1,0 +1,200 @@
+{
+  "dataset": {
+    "n_test": 390,
+    "test_class_counts": [
+      129,
+      137,
+      124
+    ],
+    "bootstrap_replicates": 2000
+  },
+  "models": {
+    "central_frozen_ordinal": {
+      "point": {
+        "accuracy": 0.8461538461538461,
+        "macro_f1": 0.8457083857339032,
+        "severity_mae": 0.1641025641025641,
+        "underestimation_rate": 0.09743589743589744,
+        "pdr_prevalence": 0.31794871794871793,
+        "pdr_auroc": 0.9713497453310695,
+        "pdr_average_precision": 0.9545914009006075
+      },
+      "bootstrap": {
+        "accuracy": {
+          "estimate": 0.8461538461538461,
+          "ci95": [
+            0.8076923076923077,
+            0.882051282051282
+          ]
+        },
+        "macro_f1": {
+          "estimate": 0.8457083857339032,
+          "ci95": [
+            0.8084868921063184,
+            0.8805719791761804
+          ]
+        },
+        "severity_mae": {
+          "estimate": 0.1641025641025641,
+          "ci95": [
+            0.12564102564102564,
+            0.20512820512820512
+          ]
+        },
+        "underestimation_rate": {
+          "estimate": 0.09743589743589744,
+          "ci95": [
+            0.06923076923076923,
+            0.12564102564102564
+          ]
+        },
+        "pdr_auroc": {
+          "estimate": 0.9713497453310695,
+          "ci95": [
+            0.9541647949923124,
+            0.9860330461011234
+          ]
+        },
+        "pdr_average_precision": {
+          "estimate": 0.9545914009006075,
+          "ci95": [
+            0.9303375140860858,
+            0.9754689620774268
+          ]
+        }
+      }
+    },
+    "central_frozen_balanced": {
+      "point": {
+        "accuracy": 0.8589743589743589,
+        "macro_f1": 0.8592172953269421,
+        "severity_mae": 0.14871794871794872,
+        "underestimation_rate": 0.09230769230769231,
+        "pdr_prevalence": 0.31794871794871793,
+        "pdr_auroc": 0.9654377880184333,
+        "pdr_average_precision": 0.9540385508417142
+      },
+      "bootstrap": {
+        "accuracy": {
+          "estimate": 0.8589743589743589,
+          "ci95": [
+            0.823076923076923,
+            0.8923076923076924
+          ]
+        },
+        "macro_f1": {
+          "estimate": 0.8592172953269421,
+          "ci95": [
+            0.8236055305801653,
+            0.8927568453242496
+          ]
+        },
+        "severity_mae": {
+          "estimate": 0.14871794871794872,
+          "ci95": [
+            0.11025641025641025,
+            0.18717948717948718
+          ]
+        },
+        "underestimation_rate": {
+          "estimate": 0.09230769230769231,
+          "ci95": [
+            0.06666666666666667,
+            0.12051282051282051
+          ]
+        },
+        "pdr_auroc": {
+          "estimate": 0.9654377880184333,
+          "ci95": [
+            0.9409913711583924,
+            0.9852406440850283
+          ]
+        },
+        "pdr_average_precision": {
+          "estimate": 0.9540385508417142,
+          "ci95": [
+            0.9263130084314073,
+            0.9760292059546897
+          ]
+        }
+      }
+    }
+  },
+  "paired_comparison": {
+    "optimized": "central_frozen_balanced",
+    "reference": "Exp11 central frozen linear probe",
+    "optimized_point": {
+      "accuracy": 0.8589743589743589,
+      "macro_f1": 0.8592172953269421,
+      "severity_mae": 0.14871794871794872,
+      "underestimation_rate": 0.09230769230769231,
+      "pdr_prevalence": 0.31794871794871793,
+      "pdr_auroc": 0.9654377880184333,
+      "pdr_average_precision": 0.9540385508417142
+    },
+    "reference_accuracy": 0.8384615384615385,
+    "reference_underestimation_rate": 0.10256410256410256,
+    "accuracy_delta_optimized_minus_reference": {
+      "estimate": 0.02051282051282044,
+      "ci95": [
+        0.002564102564102555,
+        0.0410256410256411
+      ]
+    },
+    "underestimation_delta_optimized_minus_reference": {
+      "estimate": -0.010256410256410248,
+      "ci95": [
+        -0.025641025641025647,
+        0.002564102564102569
+      ]
+    }
+  },
+  "stratified": {
+    "severity_0": {
+      "n": 129,
+      "accuracy": 0.937984496124031,
+      "underestimation_rate": 0.0
+    },
+    "severity_1": {
+      "n": 137,
+      "accuracy": 0.7737226277372263,
+      "underestimation_rate": 0.145985401459854
+    },
+    "severity_2": {
+      "n": 124,
+      "accuracy": 0.8709677419354839,
+      "underestimation_rate": 0.12903225806451613
+    },
+    "quality_low": {
+      "n": 130,
+      "quality_proxy_range": [
+        0.27489589210187676,
+        0.3085959042239031
+      ],
+      "accuracy": 0.8307692307692308,
+      "underestimation_rate": 0.12307692307692308
+    },
+    "quality_middle": {
+      "n": 130,
+      "quality_proxy_range": [
+        0.3085959042239031,
+        0.34417998205207173
+      ],
+      "accuracy": 0.8769230769230769,
+      "underestimation_rate": 0.08461538461538462
+    },
+    "quality_high": {
+      "n": 130,
+      "quality_proxy_range": [
+        0.34417998205207173,
+        0.47887530798948963
+      ],
+      "accuracy": 0.8692307692307693,
+      "underestimation_rate": 0.06923076923076923
+    }
+  },
+  "notes": [
+    "Bootstrap resamples the held-out test images with replacement; it quantifies sampling uncertainty but is not a substitute for an independent external cohort.",
+    "Ordinal is selected by validation macro-F1 in Exp23; balanced is shown as an accuracy-oriented companion."
+  ]
+}

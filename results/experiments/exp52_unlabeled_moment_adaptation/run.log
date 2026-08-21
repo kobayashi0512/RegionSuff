@@ -1,0 +1,66 @@
+regions: 64/927
+regions: 576/927
+regions: 64/10971
+regions: 576/10971
+regions: 1088/10971
+regions: 1600/10971
+regions: 2112/10971
+regions: 2624/10971
+regions: 3136/10971
+regions: 3648/10971
+regions: 4160/10971
+regions: 4672/10971
+regions: 5184/10971
+regions: 5696/10971
+regions: 6208/10971
+regions: 6720/10971
+regions: 7232/10971
+regions: 7744/10971
+regions: 8256/10971
+regions: 8768/10971
+regions: 9280/10971
+regions: 9792/10971
+regions: 10304/10971
+regions: 10816/10971
+{
+  "IDRiD_test": {
+    "source_macro_f1": {
+      "mean": 0.1237169075582782,
+      "std": 0.045587578674769764
+    },
+    "adapted_macro_f1": {
+      "mean": 0.34136316796519484,
+      "std": 0.00801566950328854
+    },
+    "delta": {
+      "delta_macro_f1": {
+        "mean": 0.21764626040691662,
+        "std": 0.04565703529593998
+      },
+      "delta_auroc": {
+        "mean": -0.002046035805626545,
+        "std": 0.028789581545284947
+      }
+    }
+  },
+  "SUSTech_SYSU": {
+    "source_macro_f1": {
+      "mean": 0.08016577738609822,
+      "std": 0.02882943614229021
+    },
+    "adapted_macro_f1": {
+      "mean": 0.4324893875983111,
+      "std": 0.01878047998343055
+    },
+    "delta": {
+      "delta_macro_f1": {
+        "mean": 0.35232361021221287,
+        "std": 0.04372015655485518
+      },
+      "delta_auroc": {
+        "mean": 0.017027555871793987,
+        "std": 0.0242437775381214
+      }
+    }
+  }
+}

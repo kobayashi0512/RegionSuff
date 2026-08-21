@@ -1,0 +1,48 @@
+regions: 32/10971
+regions: 544/10971
+regions: 1056/10971
+regions: 1568/10971
+regions: 2080/10971
+regions: 2592/10971
+regions: 3104/10971
+regions: 3616/10971
+regions: 4128/10971
+regions: 4640/10971
+regions: 5152/10971
+regions: 5664/10971
+regions: 6176/10971
+regions: 6688/10971
+regions: 7200/10971
+regions: 7712/10971
+regions: 8224/10971
+regions: 8736/10971
+regions: 9248/10971
+regions: 9760/10971
+regions: 10272/10971
+regions: 10784/10971
+{
+  "aggregate": {
+    "accuracy": {
+      "mean": 0.11681706316652993,
+      "std": 0.021940191146740905
+    },
+    "macro_f1": {
+      "mean": 0.08016577738609822,
+      "std": 0.02882943614229021
+    },
+    "severity_mae": {
+      "mean": 1.3842493847415915,
+      "std": 0.04920563073411367
+    },
+    "underestimation_rate": {
+      "mean": 0.0018047579983593112,
+      "std": 0.0028653403111686595
+    }
+  },
+  "attention_exudate_audit": {
+    "spearman_rho": 0.1383805468707254,
+    "p_value": 3.986615303884276e-23,
+    "region_pairs": 5076,
+    "note": "Exploratory image-region correlation using exudate bounding-box area fractions; region pairs are not independent."
+  }
+}
